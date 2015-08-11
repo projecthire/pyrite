@@ -6,6 +6,10 @@ en:
       with_weekday:
         "%a %m/%d/%y"
 
+  home:
+    hello_world:
+      Hello World
+
   time:
     formats:
       default:
