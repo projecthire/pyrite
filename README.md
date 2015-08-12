@@ -1,4 +1,6 @@
-# Pyrite
+# projectHire: Pyrite
+
+[![Code Climate](https://codeclimate.com/repos/55cb8f94e30ba062a1000783/badges/66177bfbcdc9f0bf2db7/gpa.svg)](https://codeclimate.com/repos/55cb8f94e30ba062a1000783/feed)
 
 ## Getting Started
 
