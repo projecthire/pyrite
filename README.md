@@ -1,6 +1,6 @@
 # projectHire: Pyrite
 
-[![Code Climate](https://codeclimate.com/repos/55cb8f94e30ba062a1000783/badges/66177bfbcdc9f0bf2db7/gpa.svg)](https://codeclimate.com/repos/55cb8f94e30ba062a1000783/feed)
+[![Code Climate](https://codeclimate.com/repos/55cb9913e30ba00a240009bb/badges/e7437e1a3d9f82b192d6/gpa.svg)](https://codeclimate.com/repos/55cb9913e30ba00a240009bb/feed)
 [![Test Coverage](https://codeclimate.com/repos/55cb9913e30ba00a240009bb/badges/e7437e1a3d9f82b192d6/coverage.svg)](https://codeclimate.com/repos/55cb9913e30ba00a240009bb/coverage)
 
 ## Getting Started
