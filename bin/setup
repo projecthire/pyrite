@@ -34,3 +34,10 @@ fi
 # Only if this isn't CI
 # if [ -z "$CI" ]; then
 # fi
+
+# Set up staging and production git remotes
+git remote add staging git@heroku.com:pyrite-staging.git || true
+heroku join --app pyrite-staging || true
+
+git remote add production git@heroku.com:pyrite-production.git || true
+heroku join --app pyrite-production || true
