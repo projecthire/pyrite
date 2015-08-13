@@ -300,7 +300,6 @@ DEPENDENCIES
   sass-rails (~> 5.0)
   shoulda-matchers
   simple_form
-  simplecov
   spring
   spring-commands-rspec
   timecop
@@ -310,4 +309,4 @@ DEPENDENCIES
   webmock
 
 BUNDLED WITH
-   1.10.5
+   1.10.6
