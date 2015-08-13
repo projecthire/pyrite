@@ -3,6 +3,8 @@
 [![Code Climate](https://codeclimate.com/repos/55cb9913e30ba00a240009bb/badges/e7437e1a3d9f82b192d6/gpa.svg)](https://codeclimate.com/repos/55cb9913e30ba00a240009bb/feed)
 [![Test Coverage](https://codeclimate.com/repos/55cb9913e30ba00a240009bb/badges/e7437e1a3d9f82b192d6/coverage.svg)](https://codeclimate.com/repos/55cb9913e30ba00a240009bb/coverage)
 
+[![Circle CI](https://circleci.com/gh/projecthire/pyrite.svg?style=svg&circle-token=0933776241a3ed7dd68f89c395f3c2a1e0a7fb8d)](https://circleci.com/gh/projecthire/pyrite)
+
 ## Getting Started
 
 After you have cloned this repo, run this setup script to set up your machine
