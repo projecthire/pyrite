@@ -26,6 +26,13 @@ gem "simple_form"
 gem "title"
 gem "uglifier"
 
+# see https://rails-assets.org/
+source 'https://rails-assets.org' do
+  gem 'rails-assets-bootstrap'
+  gem 'rails-assets-backbone.marionette'
+  gem 'rails-assets-font-awesome'
+end
+
 group :development do
   gem "spring"
   gem "spring-commands-rspec"
