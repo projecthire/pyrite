@@ -172,8 +172,8 @@ GEM
       sprockets-rails
     rails-assets-backbone (1.2.1)
       rails-assets-underscore (>= 1.7.0)
-    rails-assets-backbone.babysitter (0.1.9)
-      rails-assets-backbone (>= 0.9.9, <= 1.2.2)
+    rails-assets-backbone.babysitter (0.1.10)
+      rails-assets-backbone (>= 0.9.9, <= 1.2.3)
       rails-assets-underscore (>= 1.4.0, <= 1.8.3)
     rails-assets-backbone.marionette (2.4.2)
       rails-assets-backbone (>= 1.0.0, < 1.2.2)
