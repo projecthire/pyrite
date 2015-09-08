@@ -42,7 +42,7 @@ GEM
       builder
       multi_json
     arel (6.0.3)
-    autoprefixer-rails (5.2.1.1)
+    autoprefixer-rails (6.0.2)
       execjs
       json
     awesome_print (1.6.1)
