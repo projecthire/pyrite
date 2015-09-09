@@ -4,7 +4,6 @@ ruby "2.2.2"
 
 gem "airbrake"
 gem "autoprefixer-rails"
-gem "bourbon", "~> 4.2.0"
 gem "coffee-rails", "~> 4.1.0"
 gem "delayed_job_active_record"
 gem "email_validator"
@@ -22,15 +21,15 @@ gem "rails", "~> 4.2.0"
 gem "recipient_interceptor"
 gem "refills"
 gem "sass-rails", "~> 5.0"
+gem 'bootstrap-sass', '~> 3.3.5'
+gem 'font-awesome-sass', '~> 4.4.0'
 gem "simple_form"
 gem "title"
 gem "uglifier", "~>2.7.2"
 
 # see https://rails-assets.org/
 source 'https://rails-assets.org' do
-  gem 'rails-assets-bootstrap'
   gem 'rails-assets-backbone.marionette'
-  gem 'rails-assets-font-awesome'
 end
 
 group :development do
