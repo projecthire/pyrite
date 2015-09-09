@@ -1,3 +1,7 @@
 @charset "utf-8";
 
-//=require bootstrap
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
+@import "bootstrap-sprockets";
+@import "pyrite.bootstrap";

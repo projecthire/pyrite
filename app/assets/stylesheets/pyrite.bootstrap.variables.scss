@@ -1,0 +1,36 @@
+// customized bootstrap build:
+
+$gray-dark: #828282;
+$gray: #adadad;
+$gray-light: #f0f0f0;
+$brand-primary: #1e90ff;
+$brand-success: #0066dd;
+$brand-warning: rgb(238,65,30);
+$brand-danger: #ff0000;
+$font-family-sans-serif: "Montserrat", sans-serif;
+$font-size-large: 18px;
+$font-size-h3: 24px;
+$line-height-base: 1.38888888888;
+$headings-font-weight: 700;
+$headings-line-height: 1.5;
+$icon-font-name: "fontawesome-webfont";
+$icon-font-svg-id: "fontawesomeregular";
+$line-height-large: 1.5;
+$line-height-small: 1.38888888;
+$border-radius-base: 0;
+$border-radius-large: 0;
+$border-radius-small: 0;
+$input-border: $gray;
+$input-border-focus: $brand-primary;
+$input-color-placeholder: $gray;
+$screen-xs: 640px;
+$screen-sm: 768px; // same as default, here for clarity
+$screen-md: 1024px;
+$screen-lg: 1440px;
+$state-success-text: $brand-success;
+$state-info-text: $brand-info;
+$state-warning-text: $brand-warning;
+$state-warning-bg: $brand-warning;
+$state-danger-text: $brand-danger;
+$state-danger-bg: transparent;
+$state-danger-border: #ff0000;
