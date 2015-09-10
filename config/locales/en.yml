@@ -38,4 +38,4 @@ en:
           success:
             "You'll be hearing from us shortly."
           error:
-            Please enter a valid email address
+            Please enter a valid email address.
