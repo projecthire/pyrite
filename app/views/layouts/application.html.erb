@@ -14,8 +14,10 @@
   <%= stylesheet_link_tag :application, media: "all" %>
   <%= csrf_meta_tags %>
 </head>
-<body class="<%= body_class %> container">
-  <%= yield %>
+<body class="<%= body_class %>">
+  <div class="container">
+    <%= yield %>
+  </div>
   <%= render "javascript" %>
 </body>
 </html>
