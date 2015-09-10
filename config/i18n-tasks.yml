@@ -4,6 +4,7 @@ search:
     - "app/helpers"
     - "app/presenters"
     - "app/views"
+    - "app/assets/javascripts"
 
 ignore_unused:
   - activerecord.*
