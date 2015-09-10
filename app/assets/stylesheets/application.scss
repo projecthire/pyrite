@@ -5,3 +5,69 @@
 
 @import "bootstrap-sprockets";
 @import "pyrite.bootstrap";
+
+@import "contacts/new";
+
+html, body{
+  height: 100%;
+}
+
+.container {
+  height: 100%;
+}
+
+.container-fluid {
+  margin-right: auto;
+	margin-left: auto;
+	padding-left: 5%;
+	padding-right: 5%;
+}
+
+//body > .container,
+//body > .container-fluid {
+//  padding-top: 72px;
+//}
+
+.bg-gray-darker {
+  background-color: $gray-darker;
+}
+
+.bg-gray-dark {
+  background-color: $gray-dark;
+}
+
+.bg-gray {
+  background-color: $gray;
+}
+
+.bg-gray-light {
+  background-color: $gray-light;
+}
+
+.bg-gray-lighter {
+  background-color: $gray-lighter;
+}
+
+@media (min-width: $screen-xs) {
+  .height-xs-full {
+    height: 100vh;
+  }
+}
+
+@media (min-width: $screen-sm) {
+  .height-sm-full {
+    height: 100vh;
+  }
+}
+
+@media (min-width: $screen-md) {
+  .height-md-full {
+    height: 100vh;
+  }
+}
+
+@media (min-width: $screen-lg) {
+  .height-lg-full {
+    height: 100vh;
+  }
+}
