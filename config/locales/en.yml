@@ -6,10 +6,6 @@ en:
       with_weekday:
         "%a %m/%d/%y"
 
-  home:
-    hello_world:
-      Hello World
-
   time:
     formats:
       default:
@@ -20,4 +16,26 @@ en:
         "%B %d"
 
   titles:
-    application: Pyrite
+    application: Project Hire
+
+  coming_soon:
+    description:
+      Project Hire is a merit-based recruiting platform that evaluates candidates solely on the quality of their submissions.
+    text: |
+      Lorem ipsum dolor sit amet, vel elitr aperiam singulis ex. Ne has nominati reprimique, duo ut habeo iriure apeirian. Modus homero detraxit mea no. Quis laoreet delicatissimi an his, vix sapientem salutandi eu, vix ei novum tibique dignissim.
+
+      Eos sonet postea comprehensam ad, eligendi concludaturque sit no, sed indoctum euripidis at. Erat ponderum adipisci at nam, ne quo moderatius dissentiet.
+    form:
+      submit:
+        text:
+          SUBMIT INFO
+      title:
+        Keep In Touch
+      description:
+        Full site coming in early 2016.  Submit your info below to stay updated in the meantime.
+      state:
+        email:
+          success:
+            "You'll be hearing from us shortly."
+          error:
+            Please enter a valid email address
