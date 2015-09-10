@@ -1,0 +1,21 @@
+<div class="row">
+  <div class="col-sm-8 height-sm-full">
+    <div class="col-sm-6">
+      <%= image_tag "logo.svg" %>
+    </div>
+    <div class="col-sm-9">
+      <h3><%= t "coming_soon.description" %></h3>
+      <p><%= t "coming_soon.text" %></p>
+    </div>
+  </div>
+  <div class="col-xs-12 col-sm-4 bg-gray-light height-sm-full">
+    <h3><%= t "coming_soon.form.title" %></h3>
+    <p><%= t "coming_soon.form.description" %></p>
+    <%= simple_form_for @contact, remote: true do |f| %>
+      <%= f.input :name, placeholder: 'Name', label: false %>
+      <%= f.input :email, placeholder: 'Email Address', label: false %>
+      <%= f.button :submit, t("coming_soon.form.submit.text"), class: 'btn-primary btn-block' %>
+    <% end %>
+    <p id="new_contact_status" class="success"></p>
+  </div>
+</div>
