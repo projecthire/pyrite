@@ -24,10 +24,11 @@
 # * :procfile - an alternate Procfile to use (default is Procfile)
 # * :port - an alternate port to use (default is 5000)
 # * :root - an alternate application root
+
 guard :foreman do
-  # Rails example - Watch controllers, models, helpers, lib, and config files
   watch(/^app\/(controllers|models|helpers)\/.+\.rb$/)
-  watch(/^app\/assets\/(javascripts|stylesheets)\/.+\.(js|coffee|css|scss|sass)$/)
+  watch(/^app\/assets\/javascripts\/.+\.(js|coffee|es6)$/)
+  watch(/^app\/assets\/stylesheets\/.+\.(css|scss|sass)$/)
   watch(/^app\/views\/.+\.erb/)
   watch(/^lib\/.+\.rb$/)
   watch(/^config\/*/)
