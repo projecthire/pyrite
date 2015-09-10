@@ -37,6 +37,7 @@ end
 group :development do
   gem "spring"
   gem "spring-commands-rspec"
+  gem 'guard-foreman'
   # waiting on https://github.com/guard/guard-livereload/issues/142
   # gem 'guard-livereload', require: false
   gem "web-console"
