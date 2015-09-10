@@ -1,8 +1,16 @@
 $(document).on('ready', () =>
 {
-  $('#new_contact').on('ajax:success', (e) =>
+  var newContactForm = '#new_contact';
+
+  $(newContactForm).on('ajax:success', (e) =>
   {
-    console.log("[Pyrite] $('#new_contact').on('ajax:success'):", e);
-    $('#new_contact_status').text("<%= I18n.t "coming_soon.form.state.email.success" %>")
-  })
+    console.log(`[Pyrite] $('${newContactForm}').on('ajax:success'):`, e);
+    $('#new_contact_status').text("<%= I18n.t "coming_soon.form.state.email.success" %>");
+  });
+
+  $(newContactForm).on('ajax:error', (e) =>
+  {
+    console.log(`[Pyrite] $('${newContactForm}').on('ajax:error'):`, e);
+    $('#new_contact_status').text("<%= I18n.t "coming_soon.form.state.email.error" %>");
+  });
 });
