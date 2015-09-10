@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  get 'pages/home'
+  resources :contacts
 
-  root to: "pages#home"
+  root "contacts#new"
 end
