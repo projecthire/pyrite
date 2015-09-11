@@ -1,6 +1,21 @@
 @import "bootstrap/variables";
 
-form.new_contact {
-  padding-top: $line-height-computed;
-  padding-bottom: ($line-height-computed / 2);
+#new_contact {
+  padding: $line-height-computed 15px ($line-height-computed / 2);
+}
+
+.coming-soon-col {
+  padding-top: 72px;
+}
+.logo {
+  padding-bottom: 72px;
+}
+
+@media (max-width: $screen-xs) {
+  .coming-soon-col {
+    padding-top: 48px;
+  }
+  .logo {
+    padding-bottom: 48px;
+  }
 }
