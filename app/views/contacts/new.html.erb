@@ -8,9 +8,9 @@
       <p><%= t "coming_soon.text" %></p>
     </div>
   </div>
-  <div class="col-sm-4 coming-soon-col bg-gray-light height-sm-full">
-    <h3 class="col-xs-12 bg-gray-light new-contact-title"><%= t "coming_soon.form.title" %></h3>
-    <p class="col-xs-12 bg-gray-light new-contact-description"><%= t "coming_soon.form.description" %></p>
+  <div class="col-xs-12 col-sm-4 coming-soon-col bg-gray-light height-sm-full">
+    <h3 class="bg-gray-light new-contact-title"><%= t "coming_soon.form.title" %></h3>
+    <p class="bg-gray-light new-contact-description"><%= t "coming_soon.form.description" %></p>
     <%= simple_form_for @contact, remote: true, html: { class: "bg-gray-light", data: { toggle: "validator", delay: 100 } } do |f| %>
       <%= f.input :name, placeholder: 'Name', label: false %>
       <%= f.input :email, placeholder: 'Email Address', label: false, input_html: { data: { error: t("coming_soon.form.state.email.error") } } %>
