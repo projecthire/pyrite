@@ -6,10 +6,6 @@ en:
       with_weekday:
         "%a %m/%d/%y"
 
-  home:
-    hello_world:
-      Hello World
-
   time:
     formats:
       default:
@@ -20,4 +16,25 @@ en:
         "%B %d"
 
   titles:
-    application: Pyrite
+    application: Project Hire
+
+  coming_soon:
+    description:
+      Project Hire is a merit-based recruiting platform that evaluates candidates solely on the quality of their submissions.
+    text: |
+      Hedge funds and private equity firms need to hire exceptional candidates - but they don't have the resources to evaluate everyone. That's where we come in. projectHire allows you to showcase your capabilities and get the job you deserve.
+    form:
+      submit:
+        text:
+          SUBMIT INFO
+      title:
+        Keep In Touch
+      description: |
+        Want to learn more? Submit your info below!
+        Sign-ups start in October.
+      state:
+        email:
+          success:
+            "You'll be hearing from us shortly."
+          error:
+            "Please enter a valid email address."

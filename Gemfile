@@ -26,16 +26,20 @@ gem 'font-awesome-sass', '~> 4.4.0'
 gem "simple_form"
 gem "title"
 gem "uglifier", "~>2.7.2"
+gem "sprockets-es6"
 
 # see https://rails-assets.org/
 source 'https://rails-assets.org' do
   gem 'rails-assets-backbone.marionette'
+  gem 'rails-assets-bootstrap-validator'
 end
 
 group :development do
   gem "spring"
   gem "spring-commands-rspec"
   gem 'guard-foreman'
+  # waiting on https://github.com/guard/guard-livereload/issues/142
+  # gem 'guard-livereload', require: false
   gem "web-console"
 end
 

@@ -13,6 +13,7 @@
 //= require jquery
 //= require jquery_ujs
 //= require bootstrap
+//= require bootstrap-validator
 //= require underscore
 //= require backbone
 //= require backbone.marionette

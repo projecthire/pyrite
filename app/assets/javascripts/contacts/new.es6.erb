@@ -1,0 +1,31 @@
+$(document).on('ready', () =>
+{
+  var newContactForm = '#new_contact',
+      newContactEmailState = '#new_contact_email_error',
+      newContactFormState = '#new_contact_status';
+
+  $(newContactForm).on('ajax:before', (e) =>
+  {
+    // don't POST to server if form has invalid inputs
+    if ($('input[type=submit]').hasClass('disabled')) {
+      return false;
+    }
+  });
+
+  $(newContactForm).on('ajax:success', (event) =>
+  {
+    $(newContactFormState).text("<%= I18n.t "coming_soon.form.state.email.success" %>");
+  });
+
+  $(newContactForm).on('invalid.bs.validator', (event) =>
+  {
+    $(newContactEmailState).text("<%= I18n.t "coming_soon.form.state.email.error" %>").addClass('text-danger');
+  });
+
+  $(newContactForm).on('valid.bs.validator', (event) =>
+  {
+    if ($(newContactEmailState).text() == "<%= I18n.t "coming_soon.form.state.email.error" %>") {
+      $(newContactEmailState).text("").removeClass('text-danger');
+    }
+  });
+});
