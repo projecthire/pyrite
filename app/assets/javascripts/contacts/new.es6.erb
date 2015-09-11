@@ -15,6 +15,7 @@ $(document).on('ready', () =>
   $(newContactForm).on('ajax:success', (event) =>
   {
     $(newContactFormState).text("<%= I18n.t "coming_soon.form.state.email.success" %>");
+    $('input[type=submit]').val("<%= I18n.t "coming_soon.form.submit.disabled_text" %>").attr('disabled', true);
   });
 
   $(newContactForm).on('invalid.bs.validator', (event) =>

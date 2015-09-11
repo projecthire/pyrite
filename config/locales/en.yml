@@ -27,6 +27,8 @@ en:
       submit:
         text:
           SUBMIT INFO
+        disabled_text:
+          THANK YOU
       title:
         Keep In Touch
       description: |
