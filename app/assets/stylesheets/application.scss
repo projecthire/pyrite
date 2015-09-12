@@ -23,11 +23,6 @@ html, body{
 	padding-right: 5%;
 }
 
-//body > .container,
-//body > .container-fluid {
-//  padding-top: 72px;
-//}
-
 .bg-gray-darker {
   background-color: $gray-darker;
 }
@@ -46,6 +41,13 @@ html, body{
 
 .bg-gray-lighter {
   background-color: $gray-lighter;
+}
+
+@media (max-width: $screen-md) {
+  body > .container,
+  body > .container-fluid {
+    width: 100%;
+  }
 }
 
 @media (min-width: $screen-xs) {
