@@ -1,4 +1,5 @@
-if ("<%= Rails.env.production?.to_s %>" == 'true') {
+if ("<%= Rails.env.production?.to_s %>" == 'true' ||
+    "<%= Rails.env.staging?.to_s %>" == 'true') {
   // Create a queue, but don't obliterate an existing one!
   window.analytics = window.analytics || [];
 
