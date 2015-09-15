@@ -12,7 +12,7 @@
     <h3 class="bg-gray-light new-contact-title"><%= t "coming_soon.form.title" %></h3>
     <p class="bg-gray-light new-contact-description"><%= t "coming_soon.form.description" %></p>
     <%= simple_form_for @contact, remote: true, html: { class: "bg-gray-light", data: { toggle: "validator", delay: 100 } } do |f| %>
-      <%= f.input :name, placeholder: 'Name', label: false %>
+      <%= f.input :full_name, placeholder: 'Name', label: false %>
       <%= f.input :email, placeholder: 'Email Address', label: false, input_html: { data: { error: t("coming_soon.form.state.email.error") } } %>
       <span id="new_contact_email_error" class="help-block"></span>
       <%= f.button :submit, t("coming_soon.form.submit.text"), class: 'btn-primary btn-block' %>

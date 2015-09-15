@@ -28,6 +28,13 @@ class ContactsController < ApplicationController
 
   private
     def contact_params
-      params.require(:contact).permit(:name, :email)
+      clean_params = params.require(:contact).permit(:full_name, :email)
+      name_parts = clean_params[:full_name].rpartition ' '
+      {
+          full_name: clean_params[:full_name],
+          first_name: name_parts[0],
+          last_name: name_parts[-1],
+          email: clean_params[:email]
+      }
     end
 end
