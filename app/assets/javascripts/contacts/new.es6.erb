@@ -18,6 +18,12 @@ $(document).on('ready', () =>
     $('input[type=submit]').val("<%= I18n.t "coming_soon.form.submit.disabled_text" %>").attr('disabled', true);
   });
 
+  $('#contact_email').on('input.bs.validator', (e) =>
+  {
+    // only validate email field onBlur
+    e.stopImmediatePropagation()
+  });
+
   $(newContactForm).on('invalid.bs.validator', (event) =>
   {
     $(newContactEmailState).text("<%= I18n.t "coming_soon.form.state.email.error" %>").addClass('text-danger');
