@@ -11,6 +11,7 @@ feature 'Guest registers via coming soon page' do
     visit root_path
     fill_in "contact[name]", :with => "P.T. Barnum"
     fill_in "contact[email]", :with => "pt@bar."
+    find("body").click
     expect(page).to have_text I18n.t "coming_soon.form.state.email.error"
   end
 
