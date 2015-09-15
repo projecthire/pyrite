@@ -15,6 +15,7 @@
 
   input[type=submit] {
     height: 48px;
+    margin-top: 24px;
   }
 }
 
@@ -42,14 +43,31 @@
 
 .coming-soon-col {
   padding-top: 72px;
+
+  h3{
+    margin-bottom: 24px;
+  }
 }
+
+@media (min-width: $screen-lg) {
+  .coming-soon-col {
+    padding-top: 72px;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+
 .logo {
   padding-bottom: 48px;
 }
 
-@media (max-width: $screen-xs) {
+@media (max-width: $screen-sm) {
   .coming-soon-col {
     padding-top: 48px;
+
+    p.description {
+      margin-bottom: 48px;
+    }
   }
   .logo {
     padding-bottom: 24px;
