@@ -59,7 +59,7 @@ if ("<%= Rails.env.production?.to_s %>" == 'true' ||
 
   // Load Analytics.js with your key, which will automatically
   // load the tools you've enabled for your account. Boosh!
-  window.analytics.load(<%= ENV["SEGMENT_IO_KEY"] %>);
+  window.analytics.load("<%= ENV["SEGMENT_IO_KEY"] %>");
 
   // Make the first page call to load the integrations. If
   // you'd like to manually name or tag the page, edit or
