@@ -12,11 +12,11 @@
 
 common: &default_settings
   # Required license key associated with your New Relic account.
-  license_key: f1df83acebbba5a2953ec569d1c4724c12269161
+  license_key: c82edca1091448e891c6eae4470b58406134222c
 
   # Your application name. Renaming here affects where data displays in New
   # Relic.  For more details, see https://docs.newrelic.com/docs/apm/new-relic-apm/maintenance/renaming-applications
-  app_name: Pyrite
+  app_name: pyrite-production
 
   # To disable the agent regardless of other settings, uncomment the following:
   # agent_enabled: false
@@ -30,7 +30,7 @@ common: &default_settings
 # If your application has other named environments, configure them here.
 development:
   <<: *default_settings
-  app_name: Pyrite (Development)
+  app_name: pyrite-development
 
   # NOTE: There is substantial overhead when running in developer mode.
   # Do not use for production or load testing.
@@ -43,7 +43,7 @@ test:
 
 staging:
   <<: *default_settings
-  app_name: Pyrite (Staging)
+  app_name: pyrite-staging
 
 production:
   <<: *default_settings
