@@ -12,15 +12,13 @@ en:
     application: Project Hire
   coming_soon:
     description: "Project Hire is a merit-based recruiting platform that evaluates candidates solely on the quality of their submissions."
-    text: "Hedge funds and private equity firms need to hire exceptional candidates - but they don't have the resources to evaluate everyone.  That's where we come in.  projectHire allows you to showcase your capabilities and get the job you deserve."
+    text: "Hedge funds and private equity firms need to hire exceptional candidates - but they don't have the resources to evaluate everyone.  That's where we come in - the projectHire platform allows you to showcase your capabilities so that you can get the job you deserve."
     form:
       submit:
         text: SUBMIT INFO
         disabled_text: THANK YOU
       title: Keep In Touch
-      description: |
-        Want to learn more? Submit your info below!
-        Sign-ups start in October.
+      description: "Want to learn more? Submit your info below!"
       state:
         email:
           success: "You'll be hearing from us shortly."
