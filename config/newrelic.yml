@@ -27,8 +27,9 @@ test:
   monitor_mode: false
 production:
   <<: *default_settings
+  app_name: "pyrite-production"
   monitor_mode: true
 staging:
   <<: *default_settings
-  app_name: "pyrite (Staging)"
+  app_name: "pyrite-staging"
   monitor_mode: true
