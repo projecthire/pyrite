@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
-  resources :contacts
-
   root "contacts#new"
+
+  devise_for :users, path_prefix: 'auth'
+
+  resource :contacts
 end
