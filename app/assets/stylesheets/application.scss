@@ -21,6 +21,15 @@ html, body{
 	margin-left: auto;
 }
 
+.navbar {
+  height: 4vh;
+  margin-bottom: 0;
+}
+
+.alert {
+  margin-bottom: 0;
+}
+
 .bg-gray-darker {
   background-color: $gray-darker;
 }
@@ -50,24 +59,24 @@ html, body{
 
 @media (min-width: $screen-xs) {
   .height-xs-full {
-    height: 100vh;
+    height: 95vh;
   }
 }
 
 @media (min-width: $screen-sm) {
   .height-sm-full {
-    height: 100vh;
+    height: 95vh;
   }
 }
 
 @media (min-width: $screen-md) {
   .height-md-full {
-    height: 100vh;
+    height: 95vh;
   }
 }
 
 @media (min-width: $screen-lg) {
   .height-lg-full {
-    height: 100vh;
+    height: 95vh;
   }
 }
