@@ -31,6 +31,9 @@ gem "faker"
 gem "devise"
 gem 'cancancan', '~> 1.10'
 gem 'devise-bootstrap-views'
+gem 'omniauth'
+gem 'omniauth-linkedin'
+gem 'linkedin'
 
 # see https://rails-assets.org/
 source 'https://rails-assets.org' do
