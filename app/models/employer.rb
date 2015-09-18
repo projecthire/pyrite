@@ -1,6 +1,5 @@
 class Employer < User
   belongs_to :organization
-  belongs_to :role
 
   before_save :set_default_role
 

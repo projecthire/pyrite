@@ -1,5 +1,5 @@
 class Candidate < User
-  belongs_to :role
+  has_one :linkedin_auth
 
   before_save :set_default_role
 
