@@ -49,11 +49,11 @@
   }
 }
 
-@media (min-width: $screen-lg) {
+@media (min-width: $screen-md) {
   .coming-soon-col {
     padding-top: 72px;
-    padding-left: 5%;
-    padding-right: 5%;
+    padding-left: 3.75%;
+    padding-right: 3.75%;
   }
 }
 
@@ -64,6 +64,10 @@
 @media (max-width: $screen-sm) {
   .coming-soon-col {
     padding-top: 48px;
+
+    h3{
+      font-size: 20px;
+    }
 
     p.description {
       margin-bottom: 48px;
