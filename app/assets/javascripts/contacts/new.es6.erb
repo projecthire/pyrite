@@ -2,6 +2,7 @@ $(document).on('ready', () =>
 {
   var newContactForm = '#new_contact',
       newContactEmailState = '#new_contact_email_error',
+      newContactNameState = '#new_contact_name_error',
       newContactFormState = '#new_contact_status';
 
   $(newContactForm).on('ajax:before', (e) =>
@@ -9,6 +10,17 @@ $(document).on('ready', () =>
     // don't POST to server if form has invalid inputs
     if ($('input[type=submit]').hasClass('disabled')) {
       return false;
+    }
+  });
+
+  $(newContactForm).on('ajax:error', (event, xhr, status, error) =>
+  {
+    var responseJson = JSON.parse(xhr.responseText);
+
+    if (responseJson.hasOwnProperty('email')) {
+      $(newContactEmailState).text(responseJson.email).addClass('text-danger');
+    } else if (responseJson.hasOwnProperty('name')) {
+      $(newContactNameState).text(responseJson.name).addClass('text-danger');
     }
   });
 
@@ -24,15 +36,35 @@ $(document).on('ready', () =>
     e.stopImmediatePropagation()
   });
 
+  $('#contact_name').on('input.bs.validator', (e) =>
+  {
+    // only validate name field onBlur
+    e.stopImmediatePropagation()
+  });
+
   $(newContactForm).on('invalid.bs.validator', (event) =>
   {
-    $(newContactEmailState).text("<%= I18n.t "coming_soon.form.state.email.error" %>").addClass('text-danger');
+    _.each(event.detail, (errorText) =>
+    {
+      if (errorText == "<%= I18n.t "coming_soon.form.state.email.errors.invalid" %>" ||
+          errorText == "<%= I18n.t "coming_soon.form.state.email.errors.missing" %>" ||
+          errorText == "<%= I18n.t "coming_soon.form.state.email.errors.duplicate" %>") {
+        $(newContactEmailState).text(errorText).addClass('text-danger');
+      } else if (errorText == "<%= I18n.t "coming_soon.form.state.name.errors.missing" %>") {
+        $(newContactNameState).text(errorText).addClass('text-danger');
+      }
+    })
   });
 
   $(newContactForm).on('valid.bs.validator', (event) =>
   {
-    if ($(newContactEmailState).text() == "<%= I18n.t "coming_soon.form.state.email.error" %>") {
-      $(newContactEmailState).text("").removeClass('text-danger');
-    }
+    _.each(event.detail, (errorText) =>
+    {
+      if ($(newContactEmailState).text() == errorText) {
+        $(newContactEmailState).text("").removeClass('text-danger');
+      } else if ($(newContactNameState).text() == errorText) {
+        $(newContactNameState).text("").removeClass('text-danger');
+      }
+    });
   });
 });

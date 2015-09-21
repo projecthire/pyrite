@@ -19,9 +19,11 @@
   }
 }
 
-#new_contact_email_error.help-block {
+#new_contact_email_error.help-block,
+#new_contact_name_error.help-block {
   color: #ff0000;
 }
+
 
 #new_contact_status.help-block {
   margin-top: 24px;

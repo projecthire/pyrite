@@ -20,6 +20,12 @@ en:
       title: Keep In Touch
       description: "Want to learn more? Submit your info below!"
       state:
+        name:
+          errors:
+            missing: Please provide your name.
         email:
           success: "You'll be hearing from us shortly."
-          error: Please enter a valid email address.
+          errors:
+            invalid: Please enter a valid email address.
+            duplicate: That email address has already been registered.
+            missing: Please provide an email address.
