@@ -27,6 +27,10 @@ gem "simple_form"
 gem "title"
 gem "uglifier", "~>2.7.2"
 gem "sprockets-es6"
+gem "faker"
+gem "devise"
+gem 'cancancan', '~> 1.10'
+gem 'devise-bootstrap-views'
 
 # see https://rails-assets.org/
 source 'https://rails-assets.org' do
@@ -41,6 +45,7 @@ group :development do
   # waiting on https://github.com/guard/guard-livereload/issues/142
   # gem 'guard-livereload', require: false
   gem "web-console"
+  gem "letter_opener"
 end
 
 group :development, :test do
