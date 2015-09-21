@@ -15,6 +15,4 @@
 //= require bootstrap
 //= require bootstrap-validator
 //= require underscore
-//= require backbone
-//= require backbone.marionette
-//= require_tree .
+// = require_tree .
