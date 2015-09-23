@@ -42,4 +42,5 @@ ActiveRecord::Schema.define(version: 20150921202122) do
   end
 
   add_index "delayed_jobs", ["priority", "run_at"], name: "delayed_jobs_priority", using: :btree
+
 end
