@@ -29,6 +29,7 @@ gem "uglifier", "~>2.7.2"
 gem "sprockets-es6"
 gem 'faker'
 gem 'devise'
+gem 'rails_admin'
 
 # see https://rails-assets.org/
 source 'https://rails-assets.org' do
