@@ -30,6 +30,7 @@ gem "sprockets-es6"
 gem 'faker'
 gem 'devise'
 gem 'rails_admin'
+gem 'rack-cors', require: 'rack/cors'
 
 # see https://rails-assets.org/
 source 'https://rails-assets.org' do
