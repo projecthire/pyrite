@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-  constraints subdomain: /admin/ do
+  constraints subdomain: /^admin(\.|$)/ do
     devise_for :admins,
                path_names: { sign_in: 'login', sign_out: 'logout' }
 
