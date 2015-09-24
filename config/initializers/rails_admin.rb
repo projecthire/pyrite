@@ -33,4 +33,10 @@ RailsAdmin.config do |config|
     # history_index
     # history_show
   end
+
+  config.model 'Admin' do
+    edit do
+      exclude_fields :unlock_token
+    end
+  end
 end
