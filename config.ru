@@ -7,7 +7,7 @@ require 'rack/cors'
 use Rack::Cors do
   allow do
     origins '*'
-    resource '/fonts/*', headers: :any, methods: :get
+    resource '/assets/fontawesome-webfont-*', headers: :any, methods: :get
   end
 end
 
