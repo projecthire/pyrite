@@ -1,8 +1,9 @@
 require_relative "production"
 
-Mail.register_interceptor(
-  RecipientInterceptor.new(ENV.fetch("EMAIL_RECIPIENTS"))
-)
+# perhaps we'll want this one day?
+# Mail.register_interceptor(
+#   RecipientInterceptor.new(ENV.fetch("EMAIL_RECIPIENTS"))
+# )
 
 Rails.application.configure do
   # ...
