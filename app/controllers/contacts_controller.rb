@@ -30,12 +30,10 @@ class ContactsController < ApplicationController
   private
     def contact_params
       clean_params = params.require(:contact).permit(:name, :email)
-      name_parts = clean_params[:name].rpartition ' '
-      {
-          name: clean_params[:name],
-          first_name: name_parts[0],
-          last_name: name_parts[-1],
-          email: clean_params[:email]
-      }
+      name_parts = clean_params[:name].rpartition(' ').delete_if(&:empty?)
+      # if only given single name use it as first_name
+      (name_parts.size > 1) ?
+          {name: clean_params[:name], first_name: name_parts[0], last_name: name_parts[-1], email: clean_params[:email]} :
+          {name: clean_params[:name], first_name: name_parts[0], email: clean_params[:email]}
     end
 end
