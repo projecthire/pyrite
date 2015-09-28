@@ -31,6 +31,7 @@ gem 'faker'
 gem 'devise'
 gem 'rails_admin'
 gem 'rack-cors', require: 'rack/cors'
+gem 'slim-rails'
 
 # see https://rails-assets.org/
 source 'https://rails-assets.org' do
@@ -46,6 +47,7 @@ group :development do
   # gem 'guard-livereload', require: false
   gem "web-console"
   gem 'letter_opener'
+  gem 'html2slim'
 end
 
 group :development, :test do
