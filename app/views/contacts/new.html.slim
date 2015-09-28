@@ -1,0 +1,22 @@
+.row
+  .col-sm-7.col-md-8.coming-soon-col.height-sm-full
+    .logo.col-xs-10.col-sm-7.col-md-7.col-lg-6
+      = image_tag "logo.svg", class: "img-responsive"
+    .clearfix.visible-xs-block
+    .col-sm-11.col-md-9
+      h3
+        = t "coming_soon.description"
+      p.description
+        = t "coming_soon.text"
+  .col-xs-12.col-sm-5.col-md-4.coming-soon-col.bg-gray-light.height-sm-full
+    h3.bg-gray-light.new-contact-title
+      = t "coming_soon.form.title"
+    p.bg-gray-light.new-contact-description
+      = t "coming_soon.form.description"
+    = simple_form_for @contact, remote: true, html: { class: "bg-gray-light", data: { toggle: "validator", delay: 100 } } do |f|
+      = f.input :name, placeholder: 'Name', label: false, input_html: { data: { error: t("coming_soon.form.state.name.errors.missing") } }
+      span#new_contact_name_error.help-block
+      = f.input :email, placeholder: 'Email Address', label: false, input_html: { data: { error: t("coming_soon.form.state.email.errors.invalid") } }
+      span#new_contact_email_error.help-block
+      = f.button :submit, t("coming_soon.form.submit.text"), class: 'btn-primary btn-block'
+      span#new_contact_status.help-block
