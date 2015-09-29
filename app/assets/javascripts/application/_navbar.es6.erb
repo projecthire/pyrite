@@ -5,8 +5,6 @@ $(window).on('scroll', () =>
       navbarHeight = 0,
       scrolledClass = 'navbar-scrolled';
 
-  console.log(`$(document).scrollTop():`, $(document).scrollTop());
-
   if ($(document).scrollTop() > navbarHeight) {
     $navbar.addClass(scrolledClass);
   } else {
