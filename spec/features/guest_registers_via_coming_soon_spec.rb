@@ -1,6 +1,6 @@
 feature 'Guest registers via coming soon page' do
   scenario 'should confirm that their valid email has been registered', :js do
-    visit root_path
+    visit new_contact_path
     fill_in "contact[name]", :with => "P.T. Barnum"
     fill_in "contact[email]", :with => "pt@barnum.com"
     click_button I18n.t "coming_soon.form.submit.text"
@@ -8,7 +8,7 @@ feature 'Guest registers via coming soon page' do
   end
 
   scenario 'should not allow form to be submitted without a name', :js do
-    visit root_path
+    visit new_contact_path
     fill_in "contact[name]", :with => ""
     fill_in "contact[email]", :with => "pt@barnum.com"
     find("body").click
@@ -16,7 +16,7 @@ feature 'Guest registers via coming soon page' do
   end
 
   scenario 'should not allow invalid email addresses', :js do
-    visit root_path
+    visit new_contact_path
     fill_in "contact[name]", :with => "P.T. Barnum"
     fill_in "contact[email]", :with => "pt@bar."
     find("body").click
@@ -24,7 +24,7 @@ feature 'Guest registers via coming soon page' do
   end
 
   scenario 'should not allow form to be submitted with invalid inputs', :js do
-    visit root_path
+    visit new_contact_path
     fill_in "contact[name]", :with => "P.T. Barnum"
     fill_in "contact[email]", :with => "pt@bar."
     click_button I18n.t "coming_soon.form.submit.text"
@@ -32,7 +32,7 @@ feature 'Guest registers via coming soon page' do
   end
 
   scenario 'should not allow form to be submitted twice', :js do
-    visit root_path
+    visit new_contact_path
     fill_in "contact[name]", :with => "P.T. Barnum"
     fill_in "contact[email]", :with => "pt@barnum.com"
     click_button I18n.t "coming_soon.form.submit.text"
@@ -40,12 +40,12 @@ feature 'Guest registers via coming soon page' do
   end
 
   scenario 'should not allow same email to register twice', :js do
-    visit root_path
+    visit new_contact_path
     fill_in "contact[name]", :with => "P.T. Barnum"
     fill_in "contact[email]", :with => "pt@barnum.com"
     click_button I18n.t "coming_soon.form.submit.text"
 
-    visit root_path
+    visit new_contact_path
     fill_in "contact[name]", :with => "P.T. Barnum"
     fill_in "contact[email]", :with => "pt@barnum.com"
     click_button I18n.t "coming_soon.form.submit.text"
