@@ -1,0 +1,15 @@
+nav.navbar.navbar-default.navbar-fixed-top
+  .container-fluid
+    .navbar-header
+      button.navbar-toggle.collapsed[data-toggle="collapse" data-target="#navbar"]
+        span.sr-only Toggle Navigation
+        span.icon-bar
+        span.icon-bar
+        span.icon-bar
+      = link_to root_path do
+        = image_tag 'logo_white.svg', class: 'navbar-brand'
+    #navbar.collapse.navbar-collapse
+      ul.nav.navbar-nav
+        li = link_to 'HOW IT WORKS'
+        li = link_to 'ABOUT'
+        li = link_to 'FAQ'
