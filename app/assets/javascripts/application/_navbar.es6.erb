@@ -1,0 +1,15 @@
+$(window).on('scroll', () =>
+{
+  var $navbar = $('.navbar'),
+      //navbarHeight = 611,  // bottom of hero
+      navbarHeight = 0,
+      scrolledClass = 'navbar-scrolled';
+
+  console.log(`$(document).scrollTop():`, $(document).scrollTop());
+
+  if ($(document).scrollTop() > navbarHeight) {
+    $navbar.addClass(scrolledClass);
+  } else {
+    $navbar.removeClass(scrolledClass);
+  }
+});
