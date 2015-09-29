@@ -6,6 +6,9 @@
 @import "bootstrap-sprockets";
 @import "pyrite.bootstrap";
 
+@import "application/navbar";
+@import "application/footer";
+
 @import "contacts/new";
 
 html, body{
@@ -19,6 +22,14 @@ html, body{
 .container-fluid {
   margin-right: auto;
 	margin-left: auto;
+}
+
+section:nth-child(even) {
+  background-color: #fff;
+}
+
+section:nth-child(odd) {
+  background-color: #f2f2f2;
 }
 
 .bg-gray-darker {
