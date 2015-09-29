@@ -1,0 +1,24 @@
+.navbar {
+  margin-bottom: 0;
+
+  transition: background-color 0.5s ease;
+  background: rgba(255, 255, 255, 0.05);
+
+  &.navbar-default {
+    border: none;
+
+    .navbar-nav > li > a {
+      color: #fff;
+      letter-spacing: 1px;
+    }
+  }
+
+  &.navbar-scrolled {
+    background: rgba(130, 130, 130, 1);
+  }
+
+  .navbar-brand {
+    margin-left: 0;
+    padding: $navbar-padding-vertical/2 $navbar-padding-horizontal;
+  }
+}
