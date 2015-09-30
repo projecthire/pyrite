@@ -8,11 +8,22 @@
 
 @import "application/navbar";
 @import "application/footer";
+@import "application/mixins";
+@import "application/buttons";
 
 @import "contacts/new";
+@import "pages/candidate_landing";
 
 html, body{
   height: 100%;
+}
+
+body {
+  margin-top: $navbar-height;
+}
+
+body.pages.pages-candidate_landing {
+  margin-top: 0;
 }
 
 .container {
@@ -24,12 +35,18 @@ html, body{
 	margin-left: auto;
 }
 
-section:nth-child(even) {
-  background-color: #fff;
+// Centered Columns
+.row-centered {
+  text-align:center;
 }
 
-section:nth-child(odd) {
-  background-color: #f2f2f2;
+.col-centered {
+  display: inline-block;
+  float: none;
+  // reset the text-align
+  text-align: left;
+  // inline-block space fix
+  margin-right: -4px;
 }
 
 .bg-gray-darker {
