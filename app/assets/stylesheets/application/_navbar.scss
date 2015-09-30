@@ -7,18 +7,28 @@
   &.navbar-default {
     border: none;
 
-    .navbar-nav > li > a {
+    .navbar-nav > li > a,
+    .navbar-nav > li > button > a {
       color: #fff;
       letter-spacing: 1px;
     }
   }
 
   &.navbar-scrolled {
-    background: rgba(130, 130, 130, 1);
+    //background: #545360;
+    background: #454453;
+  }
+
+  .navbar-right {
+    margin-right: 15px;
   }
 
   .navbar-brand {
     margin-left: 0;
     padding: $navbar-padding-vertical/2 $navbar-padding-horizontal;
+  }
+
+  .btn.btn-link {
+    color: #fff;
   }
 }
