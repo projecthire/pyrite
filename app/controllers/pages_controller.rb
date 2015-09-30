@@ -1,4 +1,4 @@
 class PagesController < ApplicationController
-  def landing
+  def candidate_landing
   end
 end
