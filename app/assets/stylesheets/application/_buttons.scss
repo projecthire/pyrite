@@ -1,0 +1,77 @@
+.btn-default-stroke {
+  @extend .btn-default;
+  color: #fff;
+  background-color: transparent;
+  border: 2px solid #fff;
+
+  &:hover {
+    color: #545360;
+    background-color: #fff;
+    border: 2px solid #fff;
+  }
+}
+
+.btn-primary-stroke {
+  @extend .btn-primary;
+  color: $brand-primary;
+  background-color: #fff;
+  border: 2px solid $brand-primary;
+
+  &:hover {
+    color: #fff;
+    background-color: $brand-primary;
+    border: 2px solid $brand-primary;
+  }
+}
+
+.btn-success-stroke {
+  @extend .btn-success;
+  color: $brand-success;
+  background-color: #fff;
+  border: 2px solid $brand-success;
+
+  &:hover {
+    color: #fff;
+    background-color: $brand-success;
+    border: 2px solid $brand-success;
+  }
+}
+
+.btn-info-stroke {
+  @extend .btn-info;
+  color: $brand-info;
+  background-color: #fff;
+  border: 2px solid $brand-info;
+
+  &:hover {
+    color: #fff;
+    background-color: $brand-info;
+    border: 2px solid $brand-info;
+  }
+}
+
+.btn-warning-stroke {
+  @extend .btn-warning;
+  color: $brand-warning;
+  background-color: #fff;
+  border: 2px solid $brand-warning;
+
+  &:hover {
+    color: #fff;
+    background-color: $brand-warning;
+    border: 2px solid $brand-warning;
+  }
+}
+
+.btn-danger-stroke {
+  @extend .btn-danger;
+  color: $brand-danger;
+  background-color: #fff;
+  border: 2px solid $brand-danger;
+
+  &:hover {
+    color: #fff;
+    background-color: $brand-danger;
+    border: 2px solid $brand-danger;
+  }
+}
