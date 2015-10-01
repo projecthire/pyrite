@@ -1,5 +1,5 @@
 @mixin background-image($image-path, $options...) {
-  background: url(image-path($image-path)) $options;
+  background: image-url($image-path) $options;
   background-size: cover;
 }
 
