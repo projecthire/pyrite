@@ -1,9 +1,0 @@
-#!/usr/bin/env bash
-
-# dynamic HOST var
-echo "Running bin/review_app_setup ..."
-echo "HEROKU_APP_NAME=${HEROKU_APP_NAME}"
-
-heroku config:set HOST="${HEROKU_APP_NAME}.herokuapp.com"
-
-heroku config

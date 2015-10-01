@@ -23,7 +23,7 @@
     }
   },
   "scripts": {
-    "postdeploy": "bundle exec rake db:setup && bin/review_app_setup"
+    "postdeploy": "bundle exec rake db:setup"
   },
   "addons": [
     "heroku-postgresql:hobby-dev",
