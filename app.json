@@ -21,7 +21,7 @@
   },
   "addons": [
     "heroku-postgresql:hobby-dev",
-    "papertrail:Choklad",
+    "papertrail",
     "sendgrid:starter"
   ]
 }
