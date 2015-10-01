@@ -1,0 +1,15 @@
+{
+  "success_url": "/",
+  "env": {
+    "RAILS_ENV": "staging",
+    "RACK_ENV": "staging"
+  },
+  "scripts": {
+    "postdeploy": "bundle exec rake db:setup"
+  },
+  "addons": [
+    "heroku-postgresql:hobby-dev",
+    "papertrail",
+    "sendgrid::starter"
+  ]
+}
