@@ -32,6 +32,7 @@ gem 'devise'
 gem 'rails_admin'
 gem 'rack-cors', require: 'rack/cors'
 gem 'slim-rails'
+gem 'wicked'
 
 # see https://rails-assets.org/
 source 'https://rails-assets.org' do

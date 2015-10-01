@@ -375,6 +375,8 @@ GEM
     webmock (1.21.0)
       addressable (>= 2.3.6)
       crack (>= 0.3.2)
+    wicked (1.2.1)
+      railties (>= 3.0.7)
     xpath (2.0.0)
       nokogiri (~> 1.3)
 
@@ -436,6 +438,7 @@ DEPENDENCIES
   uglifier (~> 2.7.2)
   web-console
   webmock
+  wicked
 
 BUNDLED WITH
    1.10.6
