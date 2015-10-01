@@ -13,7 +13,7 @@ en:
           body: Join for free in under two minutes—your identity remains anonymous.
         step_2:
           heading: Submit
-          body: Evaluate a company (selected by projectHire) OR submit your own investment idea.
+          body: Evaluate a company (selected by Project Hire) OR submit your own investment idea.
         step_3:
           heading: Succeed
           body: Submit a great write-up to become a Certified Candidate, which lets employers recruit you.
@@ -25,21 +25,22 @@ en:
         test:
           heading: The PH Case
           body:
-            line_1: We choose the company.
-            line_2: You have 48 hours to evaluate the business.
+            line_1: We choose the company
+            line_2: You have 48 hours to evaluate the business
             line_3: Give us your recommendation.
           button: Learn More
         idea:
           heading: The PH Idea Forum
           body:
-            line_1: You pick the company.
-            line_2: Present your investment thesis.
+            line_1: You pick the company
+            line_2: Present your investment thesis
             line_3: Publish it to the Forum for comments and review.
           button: Learn More
       get_certified:
         heading: Get Certified
         body:
-          lead: A candidate who submits a great investment idea or an excellent company write-up becomes a Certified Candidate, and is allowed to make their profile visible to employers.
+          lead: |
+            A candidate who submits a great investment idea or an excellent company write-up becomes a Certified Candidate and can make their profile visible to employers.
           text: |
             Each submission is evaluated solely on its merits - the candidate's background is not considered.
             Investment professionals from both hedge funds and private equity participate in our review process.
@@ -47,5 +48,5 @@ en:
       get_hired:
         heading: Get Hired
         body: |
-          Project Hire candidates get access to an elite nework of employers.  50+ funds with over $100 Billion in total AUM subscribe to Project Hire, including great brands like:"
+          Candidates get access to an elite nework of employers.  50+ funds with over $100 Billion in total AUM subscribe to Project Hire, including great brands like:
         button: Sign Up Now
