@@ -14,6 +14,9 @@
     },
     "SECRET_KEY_BASE": {
       "generator": "secret"
+    },
+    "HOST": {
+      "required": true
     }
   },
   "scripts": {
