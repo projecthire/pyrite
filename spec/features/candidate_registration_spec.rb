@@ -6,7 +6,7 @@ feature 'Candidate registration' do
     password = Faker::Internet.password 8
     fill_in "candidate[password]", with: password
     fill_in "candidate[password_confirmation]", with: password
-    click_button "Sign up"
+    click_button "new_candidate_registration_submit_btn"
 
     expect(Candidate.count == 1)
   end
@@ -19,7 +19,7 @@ feature 'Candidate registration' do
     visit new_candidate_session_path
     fill_in "candidate[email]", with: candidate.email
     fill_in "candidate[password]", with: candidate.password
-    click_button "Log in"
+    click_button "new_candidate_session_submit_btn"
 
     expect(current_path == "/")
   end
