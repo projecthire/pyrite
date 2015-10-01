@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+# dynamic HOST var
+export HOST="${HEROKU_APP_NAME}.herokuapp.com"
