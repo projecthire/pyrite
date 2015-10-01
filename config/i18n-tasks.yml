@@ -12,6 +12,7 @@ data:
 ignore_unused:
   - activerecord.*
   - date.*
+  - devise.*
   - simple_form.*
   - time.*
   - titles.*
