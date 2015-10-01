@@ -23,12 +23,28 @@
     margin-right: 15px;
   }
 
-  .navbar-brand {
-    margin-left: 0;
-    padding: $navbar-padding-vertical/2 $navbar-padding-horizontal;
+  // need the specificity of .container-fluid
+  .container-fluid {
+    .navbar-brand {
+      margin-left: 0;
+      padding: $navbar-padding-vertical/2 $navbar-padding-horizontal;
+    }
   }
 
   .btn.btn-link {
     color: #fff;
+  }
+}
+
+// fix button margins for phones
+@media (max-width: $screen-sm - 1) {
+  .navbar {
+    .navbar-btn {
+      margin-top: 15px;
+      margin-bottom: 15px;
+    }
+    .navbar-right {
+      margin-right: -15px;
+    }
   }
 }
