@@ -33,6 +33,7 @@ gem 'rails_admin'
 gem 'rack-cors', require: 'rack/cors'
 gem 'slim-rails'
 gem 'wicked'
+gem 'enum_help'
 
 # see https://rails-assets.org/
 source 'https://rails-assets.org' do

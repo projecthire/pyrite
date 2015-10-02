@@ -111,6 +111,7 @@ GEM
       thread_safe
     email_validator (1.6.0)
       activemodel
+    enum_help (0.0.14)
     erubis (2.7.0)
     execjs (2.6.0)
     factory_girl (4.5.0)
@@ -398,6 +399,7 @@ DEPENDENCIES
   devise
   dotenv-rails
   email_validator
+  enum_help
   factory_girl_rails
   faker
   flutie
