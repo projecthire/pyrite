@@ -1,0 +1,11 @@
+h2 Tell Us About Yourself
+= simple_form_for @candidate, url: wizard_path, method: :put  do |f|
+  = f.error_notification
+  .form-inputs
+    = f.input :current_profession, Candidate.current_professions
+    = f.input :years_experience, Candidate.years_experiences
+    = f.input :desired_profession, Candidate.desired_professions
+    = f.input :desired_location, Candidate.desired_locations
+    = f.input :work_status, Candidate.work_statuses
+  .form-actions
+    = f.button :submit, "Continue"
