@@ -16,7 +16,14 @@ nav.navbar.navbar-default.navbar-fixed-top
           li.text-center = link_to 'FAQ'
           li.divider[role="separator"]
         ul.nav.navbar-nav.navbar-right
-          li.text-center
-            = button_to "Log in", new_candidate_session_path, class: 'btn btn-link navbar-btn btn-block', method: :get
-          li.text-center
-            = button_to "Sign up", new_candidate_registration_path, class: 'btn btn-warning navbar-btn btn-block', method: :get
+          - if candidate_signed_in?
+            li.text-center
+              = button_to "Logout", destroy_candidate_session_path,
+                          class: 'btn btn-warning navbar-btn btn-block', method: :get
+          - else
+            li.text-center
+              = button_to "Log in", new_candidate_session_path,
+                          class: 'btn btn-link navbar-btn btn-block', method: :get
+            li.text-center
+              = button_to "Sign up", new_candidate_registration_path,
+                          class: 'btn btn-warning navbar-btn btn-block', method: :get
