@@ -1,25 +1,20 @@
-class RegistrationStepsController < ApplicationController
+class RegistrationWizardController < ApplicationController
   include Wicked::Wizard
   steps :personal, :professional, :authorize
 
   def show
-    puts "RegistrationStepsController.show()"
-    @candidate = Candidate.new
+    @candidate = Candidate.find_by_confirmation_token session[:candidate_confirmation_token]
     render_wizard
   end
 
   def update
-    puts "RegistrationStepsController.update()"
-    # @TODO: how to verify params[:candidate][:id] is for the user who just signed up?
-    puts session.awesome_inspect
-    @candidate = Candidate.find session[:candidate_id]
+    @candidate = Candidate.find_by_confirmation_token session[:candidate_confirmation_token]
     @candidate.update candidate_params(params[:id])
     render_wizard @candidate
   end
 
   private
     def candidate_params(step)
-      puts "RegistrationStepsController.candidate_params(#{step})"
       permitted_attributes =
         case step
           when 'personal'

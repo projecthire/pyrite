@@ -22,18 +22,18 @@ module Candidates
 
       # The path used after sign up.
       def after_sign_up_path_for(resource)
-        session[:candidate_id] = resource.id
-        registration_steps_path(id: :professional)
+        session[:candidate_confirmation_token] = resource.confirmation_token
+        registration_wizard_path(id: :professional)
       end
 
       def after_inactive_sign_up_path_for(resource)
-        session[:candidate_id] = resource.id
-        registration_steps_path(id: :professional)
+        session[:candidate_confirmation_token] = resource.confirmation_token
+        registration_wizard_path(id: :professional)
       end
 
       def after_update_path_for(resource)
-        session[:candidate_id] = resource.id
-        registration_steps_path(id: :professional)
+        session[:candidat_confirmation_token] = resource.confirmation_token
+        registration_wizard_path(id: :professional)
       end
   end
 end
