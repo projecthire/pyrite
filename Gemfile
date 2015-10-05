@@ -34,6 +34,9 @@ gem 'rack-cors', require: 'rack/cors'
 gem 'slim-rails'
 gem 'wicked'
 gem 'enum_help'
+gem 'omniauth'
+gem 'omniauth-linkedin'
+gem 'linkedin'
 
 # see https://rails-assets.org/
 source 'https://rails-assets.org' do
