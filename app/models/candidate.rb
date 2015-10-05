@@ -14,4 +14,8 @@ class Candidate < ActiveRecord::Base
   enum desired_profession: [:hedge_fund, :private_equity, :other]
   enum desired_location: [:new_york_city, :san_franciso, :london, :chicago, :boston, :hong_kong, :los_angeles]
   enum work_status: [:us_citizen, :h1b_visa, :other_us_work_visa, :none_of_the_above]
+
+  def password_required?
+    new_record? ? false : super
+  end
 end
