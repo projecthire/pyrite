@@ -5,7 +5,8 @@ section.row.row-centered
       h1.text-center = t "marketing.candidate_landing.hero.heading"
     .row-centered
       .col-sm-10.col-md-8.col-lg-6.col-centered
-        p.text-center = t "marketing.candidate_landing.hero.body"
+        p.text-center = t "marketing.candidate_landing.hero.body.line_1"
+        p.text-center = t "marketing.candidate_landing.hero.body.line_2"
     .row-centered
       .col-xs-10.col-sm-6.col-md-3.col-centered.call-to-action
         = button_to t("marketing.candidate_landing.hero.button"), new_candidate_registration_path,
@@ -81,7 +82,8 @@ section.row.row-centered
     .row-centered
       .col-xs-12.col-md-10.col-lg-8.col-centered
         h4.text-center = t "marketing.candidate_landing.get_certified.body.lead"
-        p.text-center = t "marketing.candidate_landing.get_certified.body.text"
+        p.text-center = t "marketing.candidate_landing.get_certified.body.text.line_1"
+        p.text-center = t "marketing.candidate_landing.get_certified.body.text.line_2"
     .row-centered
       .col-xs-8.col-sm-4.col-md-2.col-centered.call-to-action
         = button_to t("marketing.candidate_landing.get_certified.button"), new_candidate_registration_path,
