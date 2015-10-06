@@ -1,7 +1,6 @@
 h2 Tell Us About Yourself
 = simple_form_for @candidate, url: wizard_path, method: :put  do |f|
   = f.error_notification
-  = render "application/flashes"
   .form-inputs
     = f.input :current_profession, Candidate.current_professions
     = f.input :years_experience, Candidate.years_experiences
