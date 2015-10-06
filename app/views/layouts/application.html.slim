@@ -6,7 +6,7 @@ html
     meta[name="viewport" content="initial-scale=1"]
     title = title
     = render "application/favicon"
-    link[href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css"]
+    = render "application/fonts"
     = stylesheet_link_tag :application, media: "all"
     = csrf_meta_tags
   body[class="#{body_class}" data-grid-framework=("b3f" if Rails.env == 'development')]
