@@ -15,4 +15,5 @@
 //= require bootstrap
 //= require bootstrap-validator
 //= require underscore
+//= require alertify
 // = require_tree .

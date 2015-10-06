@@ -37,11 +37,13 @@ gem 'enum_help'
 gem 'omniauth'
 gem 'omniauth-linkedin'
 gem 'linkedin'
+gem 'alertifyjs-rails'
 
 # see https://rails-assets.org/
 source 'https://rails-assets.org' do
   gem 'rails-assets-backbone.marionette'
   gem 'rails-assets-bootstrap-validator'
+  gem 'rails-assets-alertify-bootstrap-3'
 end
 
 group :development do
