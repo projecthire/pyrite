@@ -10,7 +10,10 @@ Rails.application.routes.draw do
   resources :contacts, only: [:new, :create]
   devise_for :candidates,
              path_names: { sign_in: 'login', sign_out: 'logout', sign_up: 'register' },
-             controllers: { registrations: 'candidates/registrations' }
+             controllers: {
+               registrations: 'candidates/registrations',
+               omniauth_callbacks: 'candidates/omniauth_callbacks'
+             }
 
   resources :registration_wizard, path: 'registration'
 
