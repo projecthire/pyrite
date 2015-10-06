@@ -8,7 +8,8 @@ nav.navbar.navbar-default.navbar-fixed-top
           span.icon-bar
           span.icon-bar
         = link_to root_path do
-          = image_tag 'logo_inverse.svg', class: 'navbar-brand'
+          = image_tag 'logo_inverse.svg', id: 'navbar_logo', class: 'navbar-brand logo',
+                      data: { scrolled_src: image_path('logo.svg') }
       #navbar.collapse.navbar-collapse
         ul.nav.navbar-nav
           li.text-center = link_to 'HOW IT WORKS'

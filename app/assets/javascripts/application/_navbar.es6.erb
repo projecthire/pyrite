@@ -1,13 +1,20 @@
 $(window).on('scroll', () =>
 {
   var $navbar = $('.navbar'),
-      //navbarHeight = 611,  // bottom of hero
-      navbarHeight = 0,
-      scrolledClass = 'navbar-scrolled';
+      scrolledTop = 0,
+      scrolledClass = 'navbar-scrolled',
+      $logo = $('.navbar .logo'),
+      altImgSrc = $logo.data('scrolled-src');
 
-  if ($(document).scrollTop() > navbarHeight) {
+  if ($(document).scrollTop() > scrolledTop) {
+    if (!$navbar.hasClass(scrolledClass)) {
+      $logo.data('scrolled-src', $logo.attr('src'));
+      $logo.attr('src', altImgSrc);
+    }
     $navbar.addClass(scrolledClass);
   } else {
     $navbar.removeClass(scrolledClass);
+    $logo.data('scrolled-src', $logo.attr('src'));
+    $logo.attr('src', altImgSrc);
   }
 });

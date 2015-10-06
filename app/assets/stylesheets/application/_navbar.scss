@@ -5,41 +5,48 @@
     background: rgba(255, 255, 255, 0.05);
 
     &.navbar-scrolled {
-      //background: #545360;
-      background: #454453;
+      background: #fff;
+      color: #828282;
     }
   }
 }
 
 .navbar {
   margin-bottom: 0;
-
   background: #454453;
+  border: none;
 
-  &.navbar-default {
-    border: none;
-
-    .navbar-nav > li > a,
-    .navbar-nav > li > button > a {
-      color: #fff;
-      letter-spacing: 1px;
-    }
+  .navbar-nav > li > a,
+  .navbar-nav > li > button > a {
+    color: #fff;
+    letter-spacing: 1px;
   }
 
   .navbar-right {
-    margin-right: 15px;
+    margin-right: 30px;
   }
 
   // need the specificity of .container-fluid
   .container-fluid {
     .navbar-brand {
       margin-left: 0;
-      padding: $navbar-padding-vertical/2 $navbar-padding-horizontal;
+      height: 89px;
+      padding: 18px 30px 22px;
     }
   }
 
   .btn.btn-link {
     color: #fff;
+  }
+
+  &.navbar-scrolled {
+    .navbar-nav > li > a,
+    .navbar-nav > li > button > a {
+      color: #828282;
+    }
+    .btn.btn-link {
+      color: #828282;
+    }
   }
 }
 
