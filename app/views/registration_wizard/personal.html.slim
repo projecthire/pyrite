@@ -1,7 +1,5 @@
 h2 Sign up
 = simple_form_for Candidate.new, url: registration_path(:candidate)  do |f|
-  = f.error_notification
-  = render "application/flashes"
   .form-inputs
     = f.input :name, required: true, autofocus: true
     = f.input :email, required: true, autofocus: true
