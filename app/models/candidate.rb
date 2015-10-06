@@ -1,6 +1,7 @@
 class Candidate < ActiveRecord::Base
   devise :database_authenticatable, :registerable, :confirmable,
-         :recoverable, :rememberable, :trackable, :validatable
+         :recoverable, :rememberable, :trackable, :validatable,
+         :omniauthable, :omniauth_providers => [:linkedin]
 
   has_one :contact, foreign_key: :email, primary_key: :email
 
