@@ -4,8 +4,6 @@ feature 'Candidate registration' do
     fill_in "candidate[name]", with: Faker::Name.name
     fill_in "candidate[email]", with: Faker::Internet.email
     password = Faker::Internet.password 8
-    fill_in "candidate[password]", with: password
-    fill_in "candidate[password_confirmation]", with: password
     click_button "new_candidate_registration_submit_btn"
 
     expect(Candidate.count == 1)
