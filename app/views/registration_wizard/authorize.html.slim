@@ -1,4 +1,4 @@
 h2 LinkedIn Authorization
-  - if devise_mapping.omniauthable?
-    - resource_class.omniauth_providers.each do |provider|
-      = link_to "Authorize #{provider.to_s.titleize}", omniauth_authorize_path(resource_name, provider)
+.row
+  = button_to "Authorize LinkedIn", omniauth_authorize_path(:candidate, :linkedin),
+              id: 'authorize_linkedin', class: 'btn btn-primary btn-block'
