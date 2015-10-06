@@ -3,12 +3,15 @@ footer {
   background-color: #262626;
 
   font-size: 12px;
+  font-family: "Open Sans", "Helvetica Neue Light", sans-serif;
+  letter-spacing: .05em;
   padding-top: 54px;
   padding-bottom: 120px;
 
   h4 {
     color: inherit;
     font-size: 16px;
+    font-family: $font-family-base;
     margin-bottom: 28px;
   }
 }

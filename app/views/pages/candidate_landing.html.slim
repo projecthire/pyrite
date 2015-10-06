@@ -4,13 +4,13 @@ section.row.row-centered
     .col-sm-12.col-centered
       h1.text-center = t "marketing.candidate_landing.hero.heading"
     .row-centered
-      .col-sm-10.col-md-8.col-lg-6.col-centered
+      .col-sm-10.col-md-9.col-lg-6.col-centered
         p.text-center = t "marketing.candidate_landing.hero.body.line_1"
         p.text-center = t "marketing.candidate_landing.hero.body.line_2"
     .row-centered
       .col-xs-10.col-sm-6.col-md-3.col-centered.call-to-action
         = button_to t("marketing.candidate_landing.hero.button"), new_candidate_registration_path,
-                    class: 'btn btn-warning btn-block', method: :get
+                    class: 'btn btn-warning btn-block text-uppercase', method: :get
 section.row.row-centered
   .how-it-works
     .row-centered
@@ -49,7 +49,7 @@ section.row.row-centered
     .row-centered
       .col-xs-8.col-sm-4.col-md-2.col-centered.call-to-action
         = button_to t("marketing.candidate_landing.how_it_works.button"), new_candidate_registration_path,
-                    class: 'btn btn-warning-stroke btn-block', method: :get
+                    class: 'btn btn-warning-stroke btn-block text-uppercase', method: :get
 
 section.row.row-centered
   .submission
@@ -64,7 +64,7 @@ section.row.row-centered
         .row-centered
           .col-xs-8.col-md-4.col-lg-4.col-centered.call-to-action
             = button_to t("marketing.candidate_landing.submission.test.button"), new_candidate_registration_path,
-                        class: 'btn btn-default-stroke btn-block', method: :get
+                        class: 'btn btn-default-stroke btn-block text-uppercase', method: :get
       .col-sm-6
         h4.text-center.text-uppercase = t "marketing.candidate_landing.submission.idea.heading"
         p.text-center = t "marketing.candidate_landing.submission.idea.body.line_1"
@@ -73,7 +73,7 @@ section.row.row-centered
         .row-centered
           .col-xs-8.col-md-4.col-lg-4.col-centered.call-to-action
             = button_to t("marketing.candidate_landing.submission.idea.button"), new_candidate_registration_path,
-                        class: 'btn btn-default-stroke btn-block', method: :get
+                        class: 'btn btn-default-stroke btn-block text-uppercase', method: :get
 section.row.row-centered
   .get-certified
     .row-centered
@@ -87,7 +87,7 @@ section.row.row-centered
     .row-centered
       .col-xs-8.col-sm-4.col-md-2.col-centered.call-to-action
         = button_to t("marketing.candidate_landing.get_certified.button"), new_candidate_registration_path,
-                    class: 'btn btn-warning-stroke btn-block', method: :get
+                    class: 'btn btn-warning-stroke btn-block text-uppercase', method: :get
 section.row.row-centered
   .get-hired
     .row-centered
@@ -99,4 +99,4 @@ section.row.row-centered
     .row-centered
       .col-xs-10.col-sm-6.col-md-3.col-centered.call-to-action
         = button_to t("marketing.candidate_landing.get_hired.button"), new_candidate_registration_path,
-                    class: 'btn btn-warning btn-block', method: :get
+                    class: 'btn btn-warning btn-block text-uppercase', method: :get
