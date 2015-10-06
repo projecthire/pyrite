@@ -29,6 +29,8 @@ feature 'Candidate registers' do
     # third step of funnel
     expect(current_path).to eq(registration_wizard_path(:authorize))
 
+    mock_auth_hash
+
     click_button "authorize_linkedin"
 
     # candidate dashboard
