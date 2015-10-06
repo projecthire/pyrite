@@ -17,5 +17,11 @@ Rails.application.routes.draw do
 
   resources :registration_wizard, path: 'registration'
 
-  root 'pages#candidate_landing'
+  authenticated :candidate do
+    root 'candidates#dashboard', as: :candidate_dashboard
+  end
+
+  unauthenticated :candidate do
+    root 'pages#candidate_landing'
+  end
 end
