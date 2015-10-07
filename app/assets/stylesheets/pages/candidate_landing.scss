@@ -2,6 +2,12 @@
 
 .pages-candidate_landing {
 
+  .btn {
+    letter-spacing: .1em;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
   section {
     h1 {
       margin-top: 146px;
@@ -60,7 +66,7 @@
 
     .how-it-works {
       .step-circle {
-        @include circle-stroke(80px, #f0f0f0, 2px solid #454453);
+        @include circle-stroke(80px, #fff, 2px solid #454453);
 
         h3 {
           font-size: 32px;
@@ -82,7 +88,7 @@
         color: #fff;
       }
 
-      h4 {
+      h3 {
         color: #fff;
       }
     }
@@ -91,10 +97,20 @@
       h4 {
         color: #828282;
       }
+
+      p.lead {
+        font-size: 20px;
+        font-weight: 200;
+      }
     }
 
     .get-hired {
       background-color: #f2f2f2;
+
+      p.lead {
+        font-size: 20px;
+        font-weight: 200;
+      }
 
       .btn {
         font-size: 20px;
