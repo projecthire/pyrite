@@ -1,20 +1,44 @@
-$(window).on('scroll', () =>
-{
-  var $navbar = $('.navbar'),
-      scrolledTop = 0,
-      scrolledClass = 'navbar-scrolled',
-      $logo = $('.navbar .logo'),
-      altImgSrc = $logo.data('scrolled-src');
+//$(document).on('ready', function()
+//{
+//  var scrolledTop = 0,
+//    $navbar = $('.navbar'),
+//    scrolledClass = 'navbar-scrolled',
+//    $logo = $('.navbar .logo'),
+//    altImgSrc = $logo.data('scrolled-src');
+//
+//  if ($(document).scrollTop() > scrolledTop) {
+//    console.log(`$(document).on('ready'): $(document).scrollTop() > ${scrolledTop}: `, true);
+//    $logo.data('scrolled-src', $logo.attr('src'));
+//    $logo.attr('src', altImgSrc);
+//    $navbar.addClass(scrolledClass);
+//  }
+//});
 
-  if ($(document).scrollTop() > scrolledTop) {
-    if (!$navbar.hasClass(scrolledClass)) {
-      $logo.data('scrolled-src', $logo.attr('src'));
-      $logo.attr('src', altImgSrc);
+$(window).on('scroll', function()
+{
+  var scrolledTop = 635,
+    $navbar = $('.navbar'),
+    scrolledClass = 'navbar-scrolled',
+    $logo = $('.navbar .logo'),
+    altImgSrc = $logo.data('scrolled-src');
+
+  //if ($(window).width() > 640) {
+  //  $logo.data('scrolled-src', $logo.attr('src'));
+  //  $logo.attr('src', altImgSrc);
+  //  $navbar.addClass(scrolledClass);
+  //} else {
+    if ($(document).scrollTop() > scrolledTop) {
+      if (!$navbar.hasClass(scrolledClass)) {
+        $logo.data('scrolled-src', $logo.attr('src'));
+        $logo.attr('src', altImgSrc);
+      }
+      $navbar.addClass(scrolledClass);
+    } else {
+      if ($navbar.hasClass(scrolledClass)) {
+        $logo.data('scrolled-src', $logo.attr('src'));
+        $logo.attr('src', altImgSrc);
+      }
+      $navbar.removeClass(scrolledClass);
     }
-    $navbar.addClass(scrolledClass);
-  } else {
-    $navbar.removeClass(scrolledClass);
-    $logo.data('scrolled-src', $logo.attr('src'));
-    $logo.attr('src', altImgSrc);
-  }
+  //}
 });

@@ -18,13 +18,13 @@ nav.navbar.navbar-default.navbar-fixed-top
           li.divider[role="separator"]
         ul.nav.navbar-nav.navbar-right
           - if candidate_signed_in?
-            li.text-center
+            li.text-center.navbar-logout
               = button_to "Logout", destroy_candidate_session_path,
-                          class: 'btn btn-warning navbar-btn btn-block', method: :get
+                          class: 'btn btn-warning navbar-btn btn-block text-uppercase', method: :get
           - else
-            li.text-center
+            li.text-center.navbar-login
               = button_to "Log in", new_candidate_session_path,
-                          class: 'btn btn-link navbar-btn btn-block', method: :get
+                          class: 'btn btn-link navbar-btn btn-block text-uppercase', method: :get
             li.text-center
               = button_to "Sign up", new_candidate_registration_path,
-                          class: 'btn btn-warning navbar-btn btn-block', method: :get
+                          class: 'btn btn-warning-stroke navbar-btn btn-block text-uppercase', method: :get
