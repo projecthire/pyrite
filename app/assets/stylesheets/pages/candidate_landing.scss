@@ -126,8 +126,10 @@
         margin-bottom: 86px;
       }
 
-      .submission-row:nth-of-type(1) {
-        border-right: 1px solid #fff;
+      @media (min-width: $screen-sm) {
+        .submission-row:nth-of-type(1) {
+          border-right: 1px solid #fff;
+        }
       }
 
       .call-to-action {
