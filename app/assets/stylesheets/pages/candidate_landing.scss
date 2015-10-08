@@ -53,7 +53,7 @@
     }
 
     .hero {
-      @include background-image("hero-1600px.jpg", no-repeat fixed center top);
+      @include background-image("hero-1600px.jpg", no-repeat scroll center top);
 
       padding-top: $navbar-height;
       color: #fff;
@@ -114,6 +114,18 @@
 
       h3 {
         color: #fff;
+      }
+
+      .submission-row {
+        margin-bottom: 100px;
+      }
+
+      .submission-row:nth-of-type(1) {
+        border-right: 1px solid #fff;
+      }
+
+      .call-to-action {
+        margin-bottom: 0;
       }
     }
 
