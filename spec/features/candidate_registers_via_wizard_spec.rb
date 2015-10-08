@@ -31,7 +31,7 @@ feature 'Candidate registration wizard' do
   end
 
   def when_they_click_sign_up_button
-    click_button 'navbar_candidate_signup_btn'
+    click_button 'Sign up'
   end
 
   def then_they_see_first_step_of_wizard
