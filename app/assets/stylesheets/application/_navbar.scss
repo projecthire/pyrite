@@ -90,6 +90,13 @@
   }
 
   &.navbar-scrolled {
+    background: rgba(255, 255, 255, 1);
+    color: #828282;
+
+    .btn-warning-stroke {
+      background-color: #fff;
+    }
+
     .navbar-nav > li > a,
     .navbar-nav > li > button > a,
     .btn.btn-link {
@@ -106,9 +113,29 @@
     }
   }
 
+  // only on mobile
+  @media (max-width: $screen-sm - 1) {
+    &.navbar-scrolled {
+      border-bottom: solid 1px #828282;
+    }
+
+    .navbar-collapse {
+      ul:first-of-type {
+        margin-bottom: 0;
+      }
+      ul:last-of-type {
+        margin-top: 0;
+      }
+    }
+  }
+
   .navbar-collapse {
     border: none;
     box-shadow: none;
+  }
+
+  .navbar-toggle {
+    margin-right: 30px;
   }
 
   .navbar-toggle,
@@ -141,7 +168,7 @@
 }
 
 // ...and for tablets
-@media (min-width: 768px) {
+@media (min-width: $screen-sm) {
   .navbar-right {
     margin-right: 30px;
   }

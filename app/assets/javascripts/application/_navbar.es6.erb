@@ -1,44 +1,48 @@
-//$(document).on('ready', function()
-//{
-//  var scrolledTop = 0,
-//    $navbar = $('.navbar'),
-//    scrolledClass = 'navbar-scrolled',
-//    $logo = $('.navbar .logo'),
-//    altImgSrc = $logo.data('scrolled-src');
-//
-//  if ($(document).scrollTop() > scrolledTop) {
-//    console.log(`$(document).on('ready'): $(document).scrollTop() > ${scrolledTop}: `, true);
-//    $logo.data('scrolled-src', $logo.attr('src'));
-//    $logo.attr('src', altImgSrc);
-//    $navbar.addClass(scrolledClass);
-//  }
-//});
-
-$(window).on('scroll', function()
+$(document).on('ready', function()
 {
-  var scrolledTop = 635,
+  var scrolledTop = 648,
     $navbar = $('.navbar'),
     scrolledClass = 'navbar-scrolled',
     $logo = $('.navbar .logo'),
-    altImgSrc = $logo.data('scrolled-src');
+    altLogoImgSrc;
 
-  //if ($(window).width() > 640) {
-  //  $logo.data('scrolled-src', $logo.attr('src'));
-  //  $logo.attr('src', altImgSrc);
-  //  $navbar.addClass(scrolledClass);
-  //} else {
+  // on mobile, always use white (scrolled) navbar
+  if ($(window).width() <= 640) {
+    altLogoImgSrc = $logo.data('scrolled-src');
+    $logo.data('scrolled-src', $logo.attr('src'));
+    $logo.attr('src', altLogoImgSrc);
+    $navbar.addClass(scrolledClass);
+  } else {
+    // we've already scrolled below `scrolledTop`
+    if ($(document).scrollTop() > scrolledTop) {
+      altLogoImgSrc = $logo.data('scrolled-src');
+      $logo.data('scrolled-src', $logo.attr('src'));
+      $logo.attr('src', altLogoImgSrc);
+      $navbar.addClass(scrolledClass);
+    }
+  }
+
+  $(window).on('scroll', () =>
+  {
+    // do nothing on mobile
+    if ($(window).width() <= 640) {
+      return;
+    }
+
     if ($(document).scrollTop() > scrolledTop) {
       if (!$navbar.hasClass(scrolledClass)) {
+        altLogoImgSrc = $logo.data('scrolled-src');
         $logo.data('scrolled-src', $logo.attr('src'));
-        $logo.attr('src', altImgSrc);
+        $logo.attr('src', altLogoImgSrc);
       }
       $navbar.addClass(scrolledClass);
     } else {
       if ($navbar.hasClass(scrolledClass)) {
+        altLogoImgSrc = $logo.data('scrolled-src');
         $logo.data('scrolled-src', $logo.attr('src'));
-        $logo.attr('src', altImgSrc);
+        $logo.attr('src', altLogoImgSrc);
       }
       $navbar.removeClass(scrolledClass);
     }
-  //}
+  });
 });
