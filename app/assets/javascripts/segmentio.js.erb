@@ -1,5 +1,5 @@
-if ("<%= Rails.env.production?.to_s %>" == 'true' ||
-    "<%= Rails.env.staging?.to_s %>" == 'true') {
+if (("<%= Rails.env.production?.to_s %>" == 'true' ||
+    "<%= Rails.env.staging?.to_s %>" == 'true') && "<%= ENV["SEGMENT_IO_KEY"] %>".length > 0) {
   (function(){
 
     // Create a queue, but don't obliterate an existing one!

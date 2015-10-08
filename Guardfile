@@ -27,9 +27,6 @@
 
 guard :foreman do
   watch(/^app\/(controllers|models|helpers)\/.+\.rb$/)
-  watch(/^app\/assets\/javascripts\/.+\.(js|coffee|es6)$/)
-  watch(/^app\/assets\/stylesheets\/.+\.(css|scss|sass)$/)
-  watch(/^app\/views\/.+\.erb/)
   watch(/^lib\/.+\.rb$/)
   watch(/^config\/*/)
 end

@@ -6,7 +6,7 @@ feature 'Admin login' do
       visit new_admin_session_path
       fill_in 'admin[email]', with: admin.email
       fill_in 'admin[password]', with: admin.password
-      click_button 'Log in'
+      click_button 'new_admin_session_submit_btn'
 
       expect(page).to have_text 'projectHire Admin'
     end
@@ -17,7 +17,7 @@ feature 'Admin login' do
       visit new_admin_session_path
       fill_in 'admin[email]', with: candidate.email
       fill_in 'admin[password]', with: candidate.password
-      click_button 'Log in'
+      click_button 'new_admin_session_submit_btn'
 
       expect(page).not_to have_text 'projectHire Admin'
     end

@@ -1,0 +1,30 @@
+nav.navbar.navbar-default.navbar-fixed-top
+  .container-fluid
+    .row
+      .navbar-header
+        button.navbar-toggle.collapsed[data-toggle="collapse" data-target="#navbar"]
+          span.sr-only Toggle Navigation
+          span.icon-bar
+          span.icon-bar
+          span.icon-bar
+        = link_to root_path do
+          = image_tag 'logo_inverse.svg', id: 'navbar_logo', class: 'navbar-brand logo',
+                      data: { scrolled_src: image_path('logo.svg') }
+      #navbar.collapse.navbar-collapse
+        ul.nav.navbar-nav
+          li.text-center = link_to 'HOW IT WORKS'
+          li.text-center = link_to 'ABOUT'
+          li.text-center = link_to 'FAQ'
+          li.divider[role="separator"]
+        ul.nav.navbar-nav.navbar-right
+          - if candidate_signed_in?
+            li.text-center.navbar-logout
+              = button_to "Logout", destroy_candidate_session_path,
+                          class: 'btn btn-warning navbar-btn btn-block text-uppercase', method: :get
+          - else
+            li.text-center.navbar-login.hidden-sm
+              = button_to "Log in", new_candidate_session_path,
+                          class: 'btn btn-link navbar-btn text-uppercase', method: :get
+            li.text-center
+              = button_to "Sign up", new_candidate_registration_path,
+                          class: 'btn btn-warning-stroke navbar-btn text-uppercase', method: :get

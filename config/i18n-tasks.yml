@@ -5,10 +5,14 @@ search:
     - "app/presenters"
     - "app/views"
     - "app/assets/javascripts"
-
+data:
+  read:
+     - config/locales/%{locale}.yml
+     - config/locales/**/*.%{locale}.yml
 ignore_unused:
   - activerecord.*
   - date.*
+  - devise.*
   - simple_form.*
   - time.*
   - titles.*

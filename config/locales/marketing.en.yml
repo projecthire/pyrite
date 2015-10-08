@@ -1,0 +1,54 @@
+en:
+  marketing:
+    candidate_landing:
+      hero:
+        heading: Get The Job You Deserve
+        body:
+          line_1: Project Hire is a merit-based recruiting platform for elite hedge funds and private equity firms.
+          line_2: Join now, demonstrate your capabilities, and get hired!
+        button: Sign Up Now
+      how_it_works:
+        heading: How It Works
+        button: Learn More
+        step_1:
+          heading: Sign Up
+          body: Join for free in under two minutes—your identity remains anonymous.
+        step_2:
+          heading: Submit
+          body: Evaluate a company (selected by Project Hire) OR submit your own investment idea.
+        step_3:
+          heading: Succeed
+          body: Submit a great write-up to become a Certified Candidate, which lets employers recruit you.
+        step_4:
+          heading: Get Hired
+          body: Interview with elite hedge funds and private equity firms to get the job you deserve.
+      submission:
+        heading: Start Your Submission
+        test:
+          heading: The PH Case
+          body:
+            line_1: We choose the company
+            line_2: You have 48 hours to evaluate the business
+            line_3: Give us your recommendation.
+          button: Learn More
+        idea:
+          heading: The PH Idea Forum
+          body:
+            line_1: You pick the company
+            line_2: Present your investment thesis
+            line_3: Publish it to the Forum for review.
+          button: Learn More
+      get_certified:
+        heading: Get Certified
+        body:
+          lead: |
+            A candidate who submits a great investment idea or an excellent company write-up becomes a Certified Candidate and can make their profile visible to employers.
+          text:
+            line_1: Each submission is evaluated solely on its merits - the candidate's background is not considered.
+            line_2: Investment professionals from both hedge funds and private equity participate in our review process.
+        button: Learn More
+      get_hired:
+        heading: Get Hired
+        body: |
+          Candidates get access to an elite nework of employers.  50+ funds with over $100 Billion in total AUM subscribe to Project Hire, including great brands like:
+        button: Sign Up Now

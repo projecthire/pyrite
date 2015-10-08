@@ -1,0 +1,179 @@
+// special style for candidate landing page
+.pages-candidate_landing {
+  .navbar.navbar-default {
+    //transition: background-color 0.3s ease;
+    background: rgba(69, 68, 83, 1);
+
+    &.navbar-scrolled {
+      background: rgba(255, 255, 255, 1);
+      color: #828282;
+      border-bottom: solid 1px #828282;
+
+      .btn-warning-stroke {
+        color: $brand-warning;
+        background-color: #fff;
+
+        &:hover,
+        &.hover,
+        &:focus,
+        &.focus {
+          color: #fff;
+          background-color: $brand-warning;
+        }
+      }
+    }
+  }
+}
+
+// need the specificity of .navbar-default
+.navbar.navbar-default {
+  margin-bottom: 0;
+  background: rgba(69, 68, 83, 1);
+  border: none;
+
+  font-size: 14px;
+
+  .btn-warning-stroke {
+    background-color: #454453;
+
+    padding-left: 15px;
+    padding-right: 15px;
+
+    &:focus,
+    &.focus,
+    &:hover,
+    &.hover {
+      color: #fff;
+      background-color: $brand-warning;
+      border: 2px solid $brand-warning;
+    }
+  }
+
+  .navbar-nav > li > a {
+    padding-left: 25px;
+    padding-right: 25px;
+    color: #fff;
+    letter-spacing: .1em;
+
+    &:hover,
+    &:focus {
+      color: $brand-warning;
+    }
+  }
+
+  .navbar-btn {
+    letter-spacing: .1em;
+  }
+
+  @media (min-width: $screen-md - 1) {
+    .navbar-right {
+      margin-right: 30px;
+    }
+  }
+
+  // need the specificity of .container-fluid
+  .container-fluid {
+    .navbar-brand {
+      margin-left: 0;
+      height: 89px;
+      padding: 18px 30px 22px;
+    }
+  }
+
+  .btn {
+    font-size: 14px;
+    &.btn-link {
+      color: #fff;
+      &:hover,
+      &:focus {
+        color: $brand-warning;
+        text-decoration: none;
+      }
+    }
+  }
+
+  &.navbar-scrolled {
+    background: rgba(255, 255, 255, 1);
+    color: #828282;
+
+    .btn-warning-stroke {
+      color: #fff;
+      background-color: $brand-warning;
+    }
+
+    .navbar-nav > li > a,
+    .navbar-nav > li > button > a,
+    .btn.btn-link {
+      color: #828282;
+      &:hover,
+      &:focus {
+        color: $brand-warning;
+        text-decoration: none;
+      }
+    }
+
+    .navbar-toggle .icon-bar {
+      background-color: #828282;
+    }
+  }
+
+  // only on mobile
+  @media (max-width: $screen-sm - 1) {
+    &.navbar-scrolled {
+      border-bottom: solid 1px #828282;
+    }
+
+    .navbar-collapse {
+      ul:first-of-type {
+        margin-bottom: 0;
+      }
+      ul:last-of-type {
+        margin-top: 0;
+      }
+    }
+  }
+
+  .navbar-collapse {
+    border: none;
+    box-shadow: none;
+  }
+
+  .navbar-toggle {
+    margin-right: 30px;
+  }
+
+  .navbar-toggle,
+  .navbar-toggle:focus,
+  .navbar-toggle:hover {
+    border-color: #828282;
+  }
+
+  .navbar-toggle:focus,
+  .navbar-toggle:hover {
+    background-color: transparent;
+  }
+
+  .navbar-toggle .icon-bar {
+    background-color: #fff;
+  }
+}
+
+// fix button margins for phones
+@media (max-width: $screen-sm - 1) {
+  .navbar {
+    .navbar-btn {
+      margin-top: 15px;
+      margin-bottom: 15px;
+    }
+    .navbar-right {
+      margin-right: -15px;
+    }
+  }
+}
+
+// ...and for tablets
+@media (min-width: $screen-sm) {
+  .navbar-right {
+    margin-right: 30px;
+  }
+}
