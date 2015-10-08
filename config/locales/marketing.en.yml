@@ -36,7 +36,7 @@ en:
           body:
             line_1: You pick the company
             line_2: Present your investment thesis
-            line_3: Publish it to the Forum for comments and review.
+            line_3: Publish it to the Forum for review.
           button: Learn More
       get_certified:
         heading: Get Certified
