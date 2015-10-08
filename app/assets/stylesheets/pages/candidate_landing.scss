@@ -2,13 +2,6 @@
 
 .pages-candidate_landing {
 
-  .btn {
-    letter-spacing: .1em;
-    font-weight: bold;
-    padding-left: 30px;
-    padding-right: 30px;
-  }
-
   section {
 
     h1 {
@@ -45,6 +38,13 @@
       font-size: 15px;
       font-family: "Open Sans", "Helvetica Neue Light", sans-serif;
       letter-spacing: .05em;
+    }
+
+    .btn {
+      letter-spacing: .1em;
+      font-weight: bold;
+      padding-left: 30px;
+      padding-right: 30px;
     }
 
     .call-to-action {
