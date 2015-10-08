@@ -10,7 +10,16 @@
       border-bottom: solid 1px #828282;
 
       .btn-warning-stroke {
+        color: $brand-warning;
         background-color: #fff;
+
+        &:hover,
+        &.hover,
+        &:focus,
+        &.focus {
+          color: #fff;
+          background-color: $brand-warning;
+        }
       }
     }
   }
@@ -88,7 +97,8 @@
     color: #828282;
 
     .btn-warning-stroke {
-      background-color: #fff;
+      color: #fff;
+      background-color: $brand-warning;
     }
 
     .navbar-nav > li > a,
