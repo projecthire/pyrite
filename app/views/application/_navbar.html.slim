@@ -26,5 +26,5 @@ nav.navbar.navbar-default.navbar-fixed-top
               = button_to "Log in", new_candidate_session_path,
                           class: 'btn btn-link navbar-btn text-uppercase', method: :get
             li.text-center
-              = button_to "Sign up", new_candidate_registration_path,
+              = button_to "Sign up", registration_wizard_path(id: :personal),
                           class: 'btn btn-warning-stroke navbar-btn text-uppercase', method: :get
