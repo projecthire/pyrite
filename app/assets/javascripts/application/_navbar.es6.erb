@@ -6,29 +6,16 @@ $(document).on('ready', function()
     $logo = $('.navbar .logo'),
     altLogoImgSrc;
 
-  // on mobile, always use white (scrolled) navbar
-  if ($(window).width() <= 640) {
+  // we've already scrolled below `scrolledTop`
+  if ($(document).scrollTop() > scrolledTop) {
     altLogoImgSrc = $logo.data('scrolled-src');
     $logo.data('scrolled-src', $logo.attr('src'));
     $logo.attr('src', altLogoImgSrc);
     $navbar.addClass(scrolledClass);
-  } else {
-    // we've already scrolled below `scrolledTop`
-    if ($(document).scrollTop() > scrolledTop) {
-      altLogoImgSrc = $logo.data('scrolled-src');
-      $logo.data('scrolled-src', $logo.attr('src'));
-      $logo.attr('src', altLogoImgSrc);
-      $navbar.addClass(scrolledClass);
-    }
   }
 
   $(window).on('scroll', () =>
   {
-    // do nothing on mobile
-    if ($(window).width() <= 640) {
-      return;
-    }
-
     if ($(document).scrollTop() > scrolledTop) {
       if (!$navbar.hasClass(scrolledClass)) {
         altLogoImgSrc = $logo.data('scrolled-src');
