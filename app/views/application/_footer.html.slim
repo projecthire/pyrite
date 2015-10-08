@@ -3,12 +3,15 @@ footer.footer
     .row
       .col-sm-3.footer-row
         h4.text-uppercase follow us
-        .col-xs-3.col-sm-4.col-md-2.social-logo
-          = image_tag "facebook.svg", class: 'img-responsive'
-        .col-xs-3.col-sm-4.col-md-2.social-logo
-          = image_tag "twitter.svg", class: 'img-responsive'
-        .col-xs-3.col-sm-4.col-md-2.social-logo
-          = image_tag "linkedin.svg", class: 'img-responsive'
+        .col-xs-3.col-sm-4.social-logo
+          = link_to do
+            = image_tag "facebook.svg", class: 'img-responsive'
+        .col-xs-3.col-sm-4.social-logo
+          = link_to do
+            = image_tag "twitter.svg", class: 'img-responsive'
+        .col-xs-3.col-sm-4.social-logo
+          = link_to do
+            = image_tag "linkedin.svg", class: 'img-responsive'
         .clearfix
       .col-sm-3.footer-row
         h4.text-uppercase company
