@@ -4,14 +4,26 @@
 
   .btn {
     letter-spacing: .1em;
+    font-weight: bold;
     padding-left: 30px;
     padding-right: 30px;
   }
 
   section {
+
     h1 {
       margin-top: 146px;
       font-size: 55px;
+    }
+
+    // mobile styling
+    @media (max-width: $screen-sm) {
+      h1 {
+        margin-top: 100px;
+        margin-bottom: 30px;
+        font-size: 45px;
+        line-height: 1.2;
+      }
     }
 
     h2 {
@@ -53,6 +65,7 @@
       p {
         font-size: 20px;
         font-weight: 200;
+        line-height: 1.667;
       }
 
       .call-to-action {
@@ -77,6 +90,10 @@
       p {
         font-size: 14px;
       }
+
+      .how-it-works-row {
+        margin-bottom: 36px;
+      }
     }
 
     .submission {
@@ -86,6 +103,13 @@
 
       h2 {
         color: #fff;
+      }
+
+      // mobile styling
+      @media (max-width: $screen-sm) {
+        h2 {
+          line-height: 1.2;
+        }
       }
 
       h3 {
@@ -101,6 +125,7 @@
       p.lead {
         font-size: 20px;
         font-weight: 200;
+        line-height: 1.667;
       }
     }
 
@@ -110,6 +135,7 @@
       p.lead {
         font-size: 20px;
         font-weight: 200;
+        line-height: 1.667;
       }
 
       .btn {

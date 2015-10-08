@@ -1,13 +1,17 @@
 // special style for candidate landing page
 .pages-candidate_landing {
   .navbar.navbar-default {
-    transition: background-color 0.3s ease;
-    background: rgba(255, 255, 255, 0.05);
+    //transition: background-color 0.3s ease;
+    background: rgba(69, 68, 83, 1);
 
     &.navbar-scrolled {
-      background: #fff;
+      background: rgba(255, 255, 255, 1);
       color: #828282;
       border-bottom: solid 1px #828282;
+
+      .btn-warning-stroke {
+        background-color: #fff;
+      }
     }
   }
 }
@@ -15,13 +19,13 @@
 // need the specificity of .navbar-default
 .navbar.navbar-default {
   margin-bottom: 0;
-  background: #454453;
+  background: rgba(69, 68, 83, 1);
   border: none;
 
   font-size: 14px;
 
   .btn-warning-stroke {
-    background: rgba(255, 255, 255, 0.05);
+    background-color: #454453;
 
     padding-left: 15px;
     padding-right: 15px;
@@ -58,8 +62,10 @@
     }
   }
 
-  .navbar-login {
-    margin-right: 10px;
+  @media (min-width: $screen-xs) {
+    .navbar-login {
+      margin-right: 10px;
+    }
   }
 
   // need the specificity of .container-fluid
@@ -94,6 +100,30 @@
         text-decoration: none;
       }
     }
+
+    .navbar-toggle .icon-bar {
+      background-color: #828282;
+    }
+  }
+
+  .navbar-collapse {
+    border: none;
+    box-shadow: none;
+  }
+
+  .navbar-toggle,
+  .navbar-toggle:focus,
+  .navbar-toggle:hover {
+    border-color: #828282;
+  }
+
+  .navbar-toggle:focus,
+  .navbar-toggle:hover {
+    background-color: transparent;
+  }
+
+  .navbar-toggle .icon-bar {
+    background-color: #fff;
   }
 }
 

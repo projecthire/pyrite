@@ -1,6 +1,6 @@
 footer {
   color: #aeaeae;
-  background-color: #262626;
+  background-color: #222;
 
   font-size: 14px;
   font-family: "Open Sans", "Helvetica Neue Light", sans-serif;
@@ -13,7 +13,7 @@ footer {
     color: inherit;
     font-size: 16px;
     font-family: $font-family-base;
-    margin-bottom: 28px;
+    margin-bottom: 24px;
   }
 
   .container-fluid {
@@ -23,6 +23,10 @@ footer {
 
   .social-logo:first-of-type {
     margin-left: -15px;
+  }
+
+  .footer-row {
+    margin-bottom: 48px;
   }
 
   a {

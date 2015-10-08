@@ -1,7 +1,16 @@
 footer.footer
   .container-fluid
     .row
-      .col-sm-3
+      .col-sm-3.footer-row
+        h4.text-uppercase follow us
+        .col-xs-3.col-sm-4.col-md-2.social-logo
+          = image_tag "facebook.svg", class: 'img-responsive'
+        .col-xs-3.col-sm-4.col-md-2.social-logo
+          = image_tag "twitter.svg", class: 'img-responsive'
+        .col-xs-3.col-sm-4.col-md-2.social-logo
+          = image_tag "linkedin.svg", class: 'img-responsive'
+        .clearfix
+      .col-sm-3.footer-row
         h4.text-uppercase company
         ul.list-unstyled
           li
@@ -16,7 +25,7 @@ footer.footer
             = link_to "Submission Guidelines", root_path
           li
             = link_to "Careers", root_path
-      .col-sm-3
+      .col-sm-3.footer-row
         h4.text-uppercase content
         ul.list-unstyled
           li
@@ -31,7 +40,7 @@ footer.footer
             = link_to "Get Verified", root_path
           li
             = link_to "Get Hired", root_path
-      .col-sm-3
+      .col-sm-3.footer-row
         h4.text-uppercase other
         ul.list-unstyled
           li
