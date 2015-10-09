@@ -4,6 +4,7 @@ class Candidate < ActiveRecord::Base
          :omniauthable, :omniauth_providers => [:linkedin]
 
   has_one :contact, foreign_key: :email, primary_key: :email
+  has_one :linkedin_auth
 
   has_many :candidate_desired_professions
   has_many :desired_professions, through: :candidate_desired_professions
