@@ -52,3 +52,12 @@ en:
         body: |
           Candidates get access to an elite nework of employers.  50+ funds with over $100 Billion in total AUM subscribe to Project Hire, including great brands like:
         button: Sign Up Now
+    candidate_registration_wizard:
+      personal_step:
+        heading: Sign Up
+        already_registered:
+          text: Already Registered?
+          link: Log in
+        employer:
+          text: Are you an Employer?  Go to the
+          link: Employer Page
