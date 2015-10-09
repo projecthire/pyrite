@@ -1,4 +1,14 @@
 feature 'Candidate registration wizard' do
+  before(:all) do
+    @desired_professions = []
+    @desired_locations = []
+    @desired_professions << create(:desired_profession, name: 'Hedge Fund')
+    @desired_professions << create(:desired_profession, name: 'Private Equity')
+    @desired_locations << create(:desired_location, name: 'New York City')
+    @desired_locations << create(:desired_location, name: 'London')
+    @desired_locations << create(:desired_location, name: 'San Francisco')
+  end
+
   scenario 'Candidate begins wizard' do
     given_a_guest_is_at_landing_page
     when_they_click_sign_up_button
@@ -66,12 +76,12 @@ feature 'Candidate registration wizard' do
     select 'mba_student', from: 'candidate[current_profession]'
     select '3-5', from: 'candidate[years_experience]'
 
-    check 'candidate_desired_profession_ids_1'
-    check 'candidate_desired_profession_ids_2'
+    check "candidate_desired_profession_ids_#{@desired_professions[0].id}"
+    check "candidate_desired_profession_ids_#{@desired_professions[1].id}"
 
-    check 'candidate_desired_location_ids_1'
-    check 'candidate_desired_location_ids_2'
-    check 'candidate_desired_location_ids_4'
+    check "candidate_desired_location_ids_#{@desired_locations[0].id}"
+    check "candidate_desired_location_ids_#{@desired_locations[1].id}"
+    check "candidate_desired_location_ids_#{@desired_locations[2].id}"
 
     select 'us_citizen', from: 'candidate[work_status]'
   end

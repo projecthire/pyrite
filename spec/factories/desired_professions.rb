@@ -1,5 +1,5 @@
 FactoryGirl.define do
   factory :desired_profession do
-    name "MyString"
+    name "Hedge Fund"
   end
 end

@@ -1,5 +1,5 @@
 FactoryGirl.define do
   factory :desired_location do
-    name "MyString"
+    name "New York City"
   end
 end
