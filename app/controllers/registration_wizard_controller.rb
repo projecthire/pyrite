@@ -20,9 +20,9 @@ class RegistrationWizardController < ApplicationController
           when 'personal'
             [:name, :email]
           when 'professional'
-            [:current_profession, :years_experience, :desired_profession,
-             :desired_location, :work_status, :password, :password_confirmation]
-          end
+            [:current_profession, :years_experience, :work_status, :password,
+             :password_confirmation, desired_profession_ids: [], desired_location_ids: []]
+        end
 
       params.require(:candidate).permit(permitted_attributes)
     end

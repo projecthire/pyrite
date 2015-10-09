@@ -65,8 +65,14 @@ feature 'Candidate registration wizard' do
   def when_they_select_the_professional_options_best_describing_themselves
     select 'mba_student', from: 'candidate[current_profession]'
     select '3-5', from: 'candidate[years_experience]'
-    select 'hedge_fund', from: 'candidate[desired_profession]'
-    select 'london', from: 'candidate[desired_location]'
+
+    check 'candidate_desired_profession_ids_1'
+    check 'candidate_desired_profession_ids_2'
+
+    check 'candidate_desired_location_ids_1'
+    check 'candidate_desired_location_ids_2'
+    check 'candidate_desired_location_ids_4'
+
     select 'us_citizen', from: 'candidate[work_status]'
   end
 

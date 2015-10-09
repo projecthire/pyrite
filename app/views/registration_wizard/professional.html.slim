@@ -3,8 +3,8 @@ h2 Tell Us About Yourself
   .form-inputs
     = f.input :current_profession, Candidate.current_professions
     = f.input :years_experience, Candidate.years_experiences
-    = f.input :desired_profession, Candidate.desired_professions
-    = f.input :desired_location, Candidate.desired_locations
+    = f.association :desired_professions, as: :check_boxes
+    = f.association :desired_locations, as: :check_boxes
     = f.input :work_status, Candidate.work_statuses
     = f.input :password, required: true, hint: ("#{@minimum_password_length} characters minimum" if @minimum_password_length)
     = f.input :password_confirmation, required: true
