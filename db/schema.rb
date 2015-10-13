@@ -73,9 +73,7 @@ ActiveRecord::Schema.define(version: 20151008235907) do
     t.datetime "created_at",                          null: false
     t.datetime "updated_at",                          null: false
     t.integer  "years_experience"
-    t.integer  "desired_profession"
     t.integer  "current_profession"
-    t.integer  "desired_location"
     t.integer  "work_status"
   end
 
