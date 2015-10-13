@@ -14,8 +14,8 @@ module Candidates
           secret: omniauth_hash[:credentials][:secret]
       )
 
-      redirect_to candidate_dashboard_path,
-                  notice: "Successfully authorized LinkedIn with email: #{omniauth_hash[:info][:email]}"
+      redirect_to new_candidate_session_path,
+                  alert: t("marketing.candidate_registration_wizard.authorize_step.success_msg")
     end
   end
 end

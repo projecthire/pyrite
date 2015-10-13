@@ -109,6 +109,6 @@ feature 'Candidate registration wizard' do
   end
 
   def then_they_see_their_candidate_dashboard
-    expect(current_path).to eq(candidate_dashboard_path)
+    expect(current_path).to eq(new_candidate_session_path)
   end
 end
