@@ -82,3 +82,7 @@ en:
           placeholder: Your Password
         password_confirmation:
           placeholder: Confirm Your Password
+      authorize_step:
+        success_msg: |
+          Congratualations on signing up.  Please login to continue.
+          If you have not yet confirmed your email address, you'll need to do that before you can login.
