@@ -5,7 +5,6 @@ Admin.create!(email: 'admin@projecthire.com', password: 'pr0j3ctH1r3', password_
 
 DesiredProfession.create!(name: 'Hedge Fund')
 DesiredProfession.create!(name: 'Private Equity')
-DesiredProfession.create!(name: 'Other')
 
 DesiredLocation.create!(name: 'New York City')
 DesiredLocation.create!(name: 'London')
