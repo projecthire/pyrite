@@ -1,0 +1,31 @@
+// Site-wide Form Styles
+
+.form-control {
+  height: 55px;
+  font-size: 14px;
+  color: #000;
+}
+
+select.form-control {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.form-actions {
+  .btn {
+    height: 55px;
+    font-size: 21px;
+  }
+}
+
+.form-actions {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.has-success .control-label,
+.has-success .help-block,
+.has-success .form-control-feedback {
+  color: $brand-success;
+}
