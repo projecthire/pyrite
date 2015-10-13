@@ -16,4 +16,8 @@
 //= require bootstrap-validator
 //= require underscore
 //= require alertify
+//= require formValidation
+//= require formValidation/framework/bootstrap
+//= require formValidation/language/en_US
+//= require bootstrap-select
 // = require_tree .

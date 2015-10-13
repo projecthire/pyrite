@@ -9,6 +9,9 @@
 @import "alertify/alertify.core.scss";
 @import 'alertify-bootstrap-3/alertify.bootstrap3.scss';
 
+@import "formValidation";
+@import "bootstrap-select";
+
 @import "application/navbar";
 @import "application/footer";
 @import "application/mixins";
@@ -55,8 +58,6 @@ main {
   float: none;
   // reset the text-align
   text-align: left;
-  // inline-block space fix
-  //margin-right: -4px;
 }
 
 .bg-gray-darker {
