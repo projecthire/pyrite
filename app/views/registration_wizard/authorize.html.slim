@@ -1,4 +1,9 @@
-h2 LinkedIn Authorization
-.row
-  = button_to "Authorize LinkedIn", omniauth_authorize_path(:candidate, :linkedin),
-              id: 'authorize_linkedin', class: 'btn btn-primary btn-block'
+.row.row-centered
+  h2 LinkedIn Authorization
+.row.row-centered
+  .col-xs-12.col-sm-6.col-md-4.col-lg-3.col-centered
+    p.lead American Apparel gentrify Vice pork belly lo-fi Godard quinoa, try-hard occupy locavore fashion axe chia swag. Fap meggings Banksy, organic tilde blog photo booth cornhole Pinterest gluten-free Odd Future mumblecore Helvetica Austin.
+    hr
+    p Bitters bespoke quinoa, Neutra biodiesel mumblecore synth authentic lomo Vice meh cred keytar master cleanse stumptown. 8-bit beard pickled meditation. Distillery retro quinoa irony High Life. Marfa Wes Anderson gastropub flannel, listicle direct trade Blue Bottle letterpress church-key raw denim.
+    = button_to "Authorize LinkedIn", omniauth_authorize_path(:candidate, :linkedin),
+                id: 'authorize_linkedin', class: 'btn btn-primary btn-block'
