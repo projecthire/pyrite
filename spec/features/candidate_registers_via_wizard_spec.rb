@@ -73,7 +73,7 @@ feature 'Candidate registration wizard' do
   end
 
   def when_they_select_the_professional_options_best_describing_themselves
-    select 'mba_student', from: 'candidate[current_profession]'
+    select 'MBA Student', from: 'candidate[current_profession]'
     select '3-5', from: 'candidate[years_experience]'
 
     check "candidate_desired_profession_ids_#{@desired_professions[0].id}"
@@ -83,7 +83,7 @@ feature 'Candidate registration wizard' do
     check "candidate_desired_location_ids_#{@desired_locations[1].id}"
     check "candidate_desired_location_ids_#{@desired_locations[2].id}"
 
-    select 'us_citizen', from: 'candidate[work_status]'
+    select 'US Citizen', from: 'candidate[work_status]'
   end
 
   def and_they_choose_and_confirm_a_password
