@@ -12,8 +12,8 @@ class Candidate < ActiveRecord::Base
   has_many :desired_locations, through: :candidate_desired_locations
 
   enum years_experience: [:'0-2', :'3-5', :'5-8', :'9+']
-  enum current_profession: [:consultant, :banker, :mba_student, :undergrad_student, :trader, :accountant, :engineer]
-  enum work_status: [:us_citizen, :h1b_visa, :other_us_work_visa, :none_of_the_above]
+  enum current_profession: [:'Consultant', :'Banker', :'MBA Student', :'Undergrad Student', :'Trader', :'Accountant', :'Engineer', :'Other']
+  enum work_status: [:'US Citizen', :'H1B Visa', :'Other US Work Visa', :'None of the Above']
 
   accepts_nested_attributes_for :desired_professions
   accepts_nested_attributes_for :desired_locations
