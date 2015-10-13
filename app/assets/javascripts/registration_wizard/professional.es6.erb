@@ -1,0 +1,77 @@
+$(document).on('ready', function()
+{
+  $('.edit_candidate')
+    .find('[name="candidate[current_profession]"]')
+      .selectpicker()
+      .change((e) =>
+      {
+        // revalidate candidate[current_profession] when changed
+        $('.edit_candidate').formValidation('revalidateField', 'candidate[current_profession]');
+      })
+      .end()
+    .find('[name="candidate[years_experience]"]')
+      .selectpicker()
+      .change((e) =>
+      {
+        // revalidate candidate[years_experience] when changed
+        $('.edit_candidate').formValidation('revalidateField', 'candidate[years_experience]');
+      })
+      .end()
+    .find('[name="candidate[work_status]"]')
+      .selectpicker()
+      .change((e) =>
+      {
+        // revalidate candidate[work_status] when changed
+        $('.edit_candidate').formValidation('revalidateField', 'candidate[work_status]');
+      })
+      .end()
+    .formValidation({
+      framework: 'bootstrap',
+      excluded: ':disabled',
+      fields: {
+        'candidate[current_profession]': {
+          validators: {
+            notEmpty: {
+              message: 'Current Profession is required.'
+            }
+          }
+        },
+        'candidate[years_experience]': {
+          validators: {
+            notEmpty: {
+              message: 'Years Experience is required.'
+            }
+          }
+        },
+        'candidate[work_status]': {
+          validators: {
+            notEmpty: {
+              message: 'Work Status is required.'
+            }
+          }
+        },
+        'candidate[password]': {
+          validators: {
+            notEmpty: {
+              message: 'Password is required.'
+            },
+            identical: {
+              field: 'candidate[password_confirmation]',
+              message: 'The password and its confirmation are not the same.'
+            }
+          }
+        },
+        'candidate[password_confirmation]': {
+          validators: {
+            notEmpty: {
+              message: 'Confirm Password is required.'
+            },
+            identical: {
+              field: 'candidate[password]',
+              message: 'The password and its confirmation are not the same'
+            }
+          }
+        }
+      }
+    });
+});
