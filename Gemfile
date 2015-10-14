@@ -44,6 +44,7 @@ source 'https://rails-assets.org' do
   gem 'rails-assets-bootstrap-validator'
   gem 'rails-assets-alertify-bootstrap-3'
   gem 'rails-assets-bootstrap-select'
+  gem 'rails-assets-momentjs'
 end
 
 group :development do

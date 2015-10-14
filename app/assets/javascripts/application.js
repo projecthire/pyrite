@@ -14,6 +14,7 @@
 //= require jquery_ujs
 //= require bootstrap
 //= require underscore
+//= require momentjs
 //= require bootstrap-select
 //= require formValidation
 //= require formValidation/framework/bootstrap
