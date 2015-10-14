@@ -14,6 +14,8 @@ module Candidates
           secret: omniauth_hash[:credentials][:secret]
       )
 
+      reset_session
+
       redirect_to new_candidate_session_path,
                   notice: t("marketing.candidate_registration_wizard.authorize_step.success_msg")
     end
