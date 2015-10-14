@@ -1,3 +1,8 @@
+.btn-warning.disabled,
+.btn-warning[disabled]:hover {
+  color: #fff;
+}
+
 .btn-default-stroke {
   @extend .btn-default;
   color: #fff;

@@ -13,15 +13,13 @@ select.form-control {
 }
 
 .form-actions {
+  margin-top: 30px;
+  margin-bottom: 30px;
+
   .btn {
     height: 55px;
     font-size: 21px;
   }
-}
-
-.form-actions {
-  margin-top: 30px;
-  margin-bottom: 30px;
 }
 
 .has-success .control-label,
