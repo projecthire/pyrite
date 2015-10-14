@@ -1,8 +1,9 @@
 $(document).on('ready', function()
 {
-  $('#new_candidate')
+  $('.registration_wizard form.new_candidate')
     .formValidation({
       framework: 'bootstrap',
+      trigger: 'blur',
       fields: {
         'candidate[name]': {
           validators: {
@@ -15,10 +16,34 @@ $(document).on('ready', function()
           validators: {
             notEmpty: {
               message: 'Email is required.'
+            },
+            emailAddress: {
+              message: 'Please enter a valid email address.'
+            },
+            remote: {
+              message: 'This email address has already been registered.',
+              threshold: 4,
+              url: '/candidates/email_valid',
+              type: 'GET'
             }
           }
         }
       }
+    })
+    .on('err.validator.fv', function(e, data)
+    {
+      // $(e.target)    --> The field element
+      // data.fv        --> The FormValidation instance
+      // data.field     --> The field name
+      // data.element   --> The field element
+      // data.validator --> The current validator name
+
+      data.element
+        .data('fv.messages')
+        // Hide all the messages
+        .find('.help-block[data-fv-for="' + data.field + '"]').hide()
+        // Show only message associated with current validator
+        .filter('[data-fv-validator="' + data.validator + '"]').show();
     })
     .on('success.form.fv', function(e)
     {

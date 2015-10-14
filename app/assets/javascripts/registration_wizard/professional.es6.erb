@@ -1,6 +1,6 @@
 $(document).on('ready', function()
 {
-  $('.edit_candidate')
+  $('.registration_wizard form.edit_candidate')
     .find('[name="candidate[current_profession]"]')
       .selectpicker()
       .change((e) =>
@@ -55,9 +55,9 @@ $(document).on('ready', function()
             notEmpty: {
               message: 'Password is required.'
             },
-            identical: {
-              field: 'candidate[password_confirmation]',
-              message: 'The password and its confirmation are not the same.'
+            stringLength: {
+              message: '8 characters minimum.',
+              min: 8
             }
           }
         },
@@ -71,6 +71,41 @@ $(document).on('ready', function()
               message: 'The password and its confirmation are not the same'
             }
           }
+        }
+      }
+    })
+    .on('err.validator.fv', function(e, data)
+    {
+      // $(e.target)    --> The field element
+      // data.fv        --> The FormValidation instance
+      // data.field     --> The field name
+      // data.element   --> The field element
+      // data.validator --> The current validator name
+
+      data.element
+        .data('fv.messages')
+        // Hide all the messages
+        .find('.help-block[data-fv-for="' + data.field + '"]').hide()
+        // Show only message associated with current validator
+        .filter('[data-fv-validator="' + data.validator + '"]').show();
+    })
+    .on('success.form.fv', function(e)
+    {
+      // the form is valid
+      var $form = $(e.target);
+      if ($form.data('remote')) {
+        e.preventDefault();
+        return false;
+      }
+    })
+    .on('submit', function(e)
+    {
+      var $form = $(e.target);
+      if ($form.data('remote')) {
+        var numInvalidFields = $form.data('formValidation').getInvalidFields().length;
+        if (numInvalidFields) {
+          e.preventDefault();
+          return false;
         }
       }
     });

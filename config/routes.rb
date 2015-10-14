@@ -15,6 +15,8 @@ Rails.application.routes.draw do
                omniauth_callbacks: 'candidates/omniauth_callbacks'
              }
 
+  get 'candidates/email_valid', to: 'candidates#email_valid'
+
   resources :registration_wizard, path: 'registration'
 
   authenticated :candidate do
