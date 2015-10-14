@@ -15,7 +15,7 @@ module Candidates
       )
 
       redirect_to new_candidate_session_path,
-                  alert: t("marketing.candidate_registration_wizard.authorize_step.success_msg")
+                  notice: t("marketing.candidate_registration_wizard.authorize_step.success_msg")
     end
   end
 end
