@@ -1,5 +1,12 @@
-#alertify,
-#alertify-logs {
-  font-size: 15px;
-  font-family: "Open Sans", "Helvetica Neue Light", sans-serif;
+.alert {
+  margin-top: $navbar-height;
+  margin-bottom: 0;
+
+  &.alert-info {
+    color: #666;
+  }
+
+  &.alert-warning {
+    color: #fff;
+  }
 }
