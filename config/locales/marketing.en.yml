@@ -74,6 +74,7 @@ en:
         work_status:
           prompt: Work Status
         password:
+          label: Create A Password
           placeholder: Your Password
         password_confirmation:
           placeholder: Confirm Your Password
