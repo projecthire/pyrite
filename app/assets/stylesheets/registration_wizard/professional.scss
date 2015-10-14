@@ -1,6 +1,6 @@
 @import "base";
 
-.registration_wizard-show {
+.registration_wizard {
   .bootstrap-select {
     .btn.dropdown-toggle {
       height: 55px;
@@ -21,14 +21,13 @@
     min-height: 55px;
     padding-top: 15px;
     padding-left: 35px;
-    font-weight: 300;
+    font-weight: 400;
     font-family: "Open Sans", "Helvetica Neue Light", sans-serif;
-    //letter-spacing: normal;
   }
 
   .dropdown-menu > li > a {
     color: #000;
-    font-weight: 300;
+    font-weight: 400;
     font-family: "Open Sans", "Helvetica Neue Light", sans-serif;
   }
 }

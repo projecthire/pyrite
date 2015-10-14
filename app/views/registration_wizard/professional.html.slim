@@ -1,18 +1,19 @@
 .row.row-centered
   .col-centered
-    h2 = t "marketing.candidate_registration_wizard.professional_step.heading"
+    h2
+      = t "marketing.candidate_registration_wizard.professional_step.heading"
+      small.text-center
+        = t "marketing.candidate_registration_wizard.professional_step.sub_heading"
 .row.row-centered
   .col-xs-12.col-sm-6.col-md-4.col-lg-3.col-centered
     = simple_form_for @candidate, url: wizard_path, method: :put do |f|
       .form-inputs
         = f.input :current_profession, collection: Candidate.current_professions,
                   required: true, label: false,
-                  prompt: t("marketing.candidate_registration_wizard.professional_step.current_profession.prompt"),
-                  input_html: { class: 'selectpicker' }
+                  input_html: { title: t("marketing.candidate_registration_wizard.professional_step.current_profession.prompt"), class: 'selectpicker' }
         = f.input :years_experience, collection: Candidate.years_experiences,
                   required: true, label: false,
-                  prompt: t("marketing.candidate_registration_wizard.professional_step.years_experience.prompt"),
-                  input_html: { class: 'selectpicker' }
+                  input_html: { title: t("marketing.candidate_registration_wizard.professional_step.years_experience.prompt"), class: 'selectpicker' }
         .row.row-centered
           = t("marketing.candidate_registration_wizard.professional_step.desired_professions.label")
         = f.association :desired_professions, as: :check_boxes,
@@ -24,8 +25,7 @@
                         class: 'clearfix'
         = f.input :work_status, collection: Candidate.work_statuses,
                   required: true, label: false,
-                  prompt: t("marketing.candidate_registration_wizard.professional_step.work_status.prompt"),
-                  input_html: { class: 'selectpicker' }
+                  input_html: { title: t("marketing.candidate_registration_wizard.professional_step.work_status.prompt"), class: 'selectpicker' }
         = f.input :password, required: true, label: false,
                   placeholder: t("marketing.candidate_registration_wizard.professional_step.password.placeholder")
         = f.input :password_confirmation, required: true, label: false,
