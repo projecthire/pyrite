@@ -18,7 +18,7 @@
     "HEROKU_APP_NAME": {
       "required": true
     },
-    "HOST": "pyrite-staging-pr-38.herokuapp.com"
+    "HOST": "pyrite-staging-pr-39.herokuapp.com"
   },
   "scripts": {
     "postdeploy": "bundle exec rake db:setup"
