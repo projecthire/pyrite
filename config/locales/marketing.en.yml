@@ -55,10 +55,10 @@ en:
     candidate_registration_wizard:
       personal_step:
         heading: Sign Up
-        sub_heading: (1 of 3)
+        sub_heading: (step 1 of 3)
       professional_step:
         heading: Sign Up
-        sub_heading: (2 of 3)
+        sub_heading: (step 2 of 3)
         current_profession:
           prompt: Current Profession
         years_experience:
@@ -80,7 +80,7 @@ en:
           placeholder: Confirm Your Password
       authorize_step:
         heading: LinkedIn Authorization
-        sub_heading: (3 of 3)
+        sub_heading: (step 3 of 3)
         success_msg: |
           Congratualations on signing up.  Please login to continue.
           If you have not yet confirmed your email address, you'll need to do that before you can login.
