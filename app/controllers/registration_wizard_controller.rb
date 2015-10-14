@@ -20,7 +20,7 @@ class RegistrationWizardController < ApplicationController
           when :personal
             [:name, :email]
           when :professional
-            [:current_profession, :years_experience, :work_status, :password,
+            [:current_profession, :years_experience, :start_date, :work_status, :password,
              :password_confirmation, desired_profession_ids: [], desired_location_ids: []]
         end
 
