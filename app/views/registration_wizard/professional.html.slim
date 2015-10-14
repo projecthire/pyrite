@@ -25,11 +25,11 @@
         .row.row-centered.label-row
           = t("marketing.candidate_registration_wizard.professional_step.desired_professions.label")
         = f.association :desired_professions, as: :check_boxes,
-                        label: false
+                        required: true, label: false
         .row.row-centered.label-row
           = t("marketing.candidate_registration_wizard.professional_step.desired_locations.label")
         = f.association :desired_locations, as: :check_boxes,
-                        label: false,
+                        required: true, label: false,
                         class: 'clearfix'
         = f.input :work_status, collection: Candidate.work_statuses,
                   required: true, label: false,

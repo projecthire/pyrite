@@ -19,6 +19,24 @@ $(document).on('ready', function()
         $form.formValidation('revalidateField', 'candidate[years_experience]');
       })
       .end()
+    .find('[name="candidate[desired_profession_ids][]"]')
+      .selectpicker({dropupAuto: false})
+      .change((e) =>
+      {
+        console.log(e);
+        // revalidate candidate[desired_profession_ids][] when changed
+        $form.formValidation('revalidateField', 'candidate[desired_profession_ids][]');
+      })
+      .end()
+    .find('[name="candidate[desired_location_ids][]"]')
+      .selectpicker({dropupAuto: false})
+      .change((e) =>
+      {
+        console.log(e);
+        // revalidate candidate[desired_location_ids][] when changed
+        $form.formValidation('revalidateField', 'candidate[desired_location_ids][]');
+      })
+      .end()
     .find('[name="candidate[work_status]"]')
       .selectpicker({dropupAuto: false})
       .change((e) =>
@@ -65,6 +83,22 @@ $(document).on('ready', function()
 
                 return !startDate.isBefore(now)
               }
+            }
+          }
+        },
+        'candidate[desired_profession_ids][]': {
+          validators: {
+            choice: {
+              message: 'Please choose at least 1 role.',
+              min: 1
+            }
+          }
+        },
+        'candidate[desired_location_ids][]': {
+          validators: {
+            choice: {
+              message: 'Please choose at least 1 location.',
+              min: 1
             }
           }
         },
