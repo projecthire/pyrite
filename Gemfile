@@ -37,7 +37,6 @@ gem 'enum_help'
 gem 'omniauth'
 gem 'omniauth-linkedin'
 gem 'linkedin'
-gem 'alertifyjs-rails'
 
 # see https://rails-assets.org/
 source 'https://rails-assets.org' do
