@@ -3,7 +3,6 @@ $(document).on('ready', function()
   $('.registration_wizard form.new_candidate')
     .formValidation({
       framework: 'bootstrap',
-      trigger: 'blur',
       fields: {
         'candidate[name]': {
           validators: {
@@ -17,7 +16,8 @@ $(document).on('ready', function()
             notEmpty: {
               message: 'Email is required.'
             },
-            emailAddress: {
+            regexp: {
+              regexp: /.+@.+\..+/i,
               message: 'Please enter a valid email address.'
             },
             remote: {

@@ -18,7 +18,10 @@ class Candidate < ActiveRecord::Base
   accepts_nested_attributes_for :desired_professions
   accepts_nested_attributes_for :desired_locations
 
-  validates :email, email: { message: I18n.t("coming_soon.form.state.email.errors.invalid") },
+  validates :email, format: {
+                      with: /.+@.+\..+/i,
+                      message: I18n.t("coming_soon.form.state.email.errors.invalid")
+                    },
                     uniqueness: { message: I18n.t("coming_soon.form.state.email.errors.duplicate") },
                     presence: { message: I18n.t("coming_soon.form.state.email.errors.missing") }
   validates :name, presence: { message: I18n.t("coming_soon.form.state.name.errors.missing") }
