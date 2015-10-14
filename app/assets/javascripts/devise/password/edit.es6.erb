@@ -1,0 +1,31 @@
+$(document).on('ready', function()
+{
+  $('.devise-passwords .new_candidate')
+    .formValidation({
+      framework: 'bootstrap',
+      fields: {
+        'candidate[password]': {
+          validators: {
+            notEmpty: {
+              message: 'Password is required.'
+            },
+            stringLength: {
+              message: '8 characters minimum.',
+              min: 8
+            }
+          }
+        },
+        'candidate[password_confirmation]': {
+          validators: {
+            notEmpty: {
+              message: 'Password confirmation is required.'
+            },
+            identical: {
+              field: 'candidate[password]',
+              message: 'The password and its confirmation are not the same'
+            }
+          }
+        }
+      }
+    });
+});
