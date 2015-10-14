@@ -4,7 +4,7 @@ $(document).on('ready', function()
 
   $form
     .find('[name="candidate[current_profession]"]')
-      .selectpicker()
+      .selectpicker({dropupAuto: false})
       .change((e) =>
       {
         // revalidate candidate[current_profession] when changed
@@ -12,7 +12,7 @@ $(document).on('ready', function()
       })
       .end()
     .find('[name="candidate[years_experience]"]')
-      .selectpicker()
+      .selectpicker({dropupAuto: false})
       .change((e) =>
       {
         // revalidate candidate[years_experience] when changed
@@ -20,7 +20,7 @@ $(document).on('ready', function()
       })
       .end()
     .find('[name="candidate[work_status]"]')
-      .selectpicker()
+      .selectpicker({dropupAuto: false})
       .change((e) =>
       {
         // revalidate candidate[work_status] when changed
@@ -28,7 +28,7 @@ $(document).on('ready', function()
       })
       .end()
     .find('#candidate_start_date_1i, #candidate_start_date_2i')
-      .selectpicker()
+      .selectpicker({dropupAuto: false})
       .change((e) =>
       {
         $form.formValidation('revalidateField', 'candidate[start_date(2i)]');
