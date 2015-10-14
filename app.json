@@ -18,6 +18,12 @@
     "HEROKU_APP_NAME": {
       "required": true
     },
+    "LINKEDIN_CLIENT_KEY": {
+      "required": true
+    },
+    "LINKEDIN_CLIENT_SECRET": {
+      "required": true
+    }
     "HOST": "pyrite-staging-pr-39.herokuapp.com"
   },
   "scripts": {
