@@ -1,12 +1,14 @@
 $(document).on('ready', function()
 {
-  $('.registration_wizard form.edit_candidate')
+  var $form = $('.registration_wizard form.edit_candidate');
+
+  $form
     .find('[name="candidate[current_profession]"]')
       .selectpicker()
       .change((e) =>
       {
         // revalidate candidate[current_profession] when changed
-        $('.edit_candidate').formValidation('revalidateField', 'candidate[current_profession]');
+        $form.formValidation('revalidateField', 'candidate[current_profession]');
       })
       .end()
     .find('[name="candidate[years_experience]"]')
@@ -14,7 +16,7 @@ $(document).on('ready', function()
       .change((e) =>
       {
         // revalidate candidate[years_experience] when changed
-        $('.edit_candidate').formValidation('revalidateField', 'candidate[years_experience]');
+        $form.formValidation('revalidateField', 'candidate[years_experience]');
       })
       .end()
     .find('[name="candidate[work_status]"]')
@@ -22,7 +24,14 @@ $(document).on('ready', function()
       .change((e) =>
       {
         // revalidate candidate[work_status] when changed
-        $('.edit_candidate').formValidation('revalidateField', 'candidate[work_status]');
+        $form.formValidation('revalidateField', 'candidate[work_status]');
+      })
+      .end()
+    .find('#candidate_start_date_1i, #candidate_start_date_2i')
+      .selectpicker()
+      .change((e) =>
+      {
+        $form.formValidation('revalidateField', 'candidate[start_date(2i)]');
       })
       .end()
     .formValidation({
@@ -40,6 +49,22 @@ $(document).on('ready', function()
           validators: {
             notEmpty: {
               message: 'Years Experience is required.'
+            }
+          }
+        },
+        'candidate[start_date(2i)]': {
+          validators: {
+            callback: {
+              message: 'Start Date has already passed.',
+              callback: function(startMonth, validator)
+              {
+                var startYear = $form.find('[name="candidate[start_date(1i)]"]').val(),
+                    startDay = $form.find('[name="candidate[start_date(3i)]"]').val(),
+                    startDate = moment(`${startYear}-${startMonth}-${startDay}`, 'YYYY-M-D'),
+                    now = moment();
+
+                return !startDate.isBefore(now)
+              }
             }
           }
         },
