@@ -3,7 +3,7 @@ class RegistrationWizardController < ApplicationController
   steps :personal, :professional, :authorize
 
   def show
-    @candidate = Candidate.find_by_confirmation_token session[:candidate_confirmation_token]
+    @candidate = Candidate.find_by_confirmation_token(session[:candidate_confirmation_token]) || Candidate.new
     render_wizard
   end
 
@@ -16,10 +16,10 @@ class RegistrationWizardController < ApplicationController
   private
     def candidate_params(step)
       permitted_attributes =
-        case step
-          when 'personal'
+        case step.to_sym
+          when :personal
             [:name, :email]
-          when 'professional'
+          when :professional
             [:current_profession, :years_experience, :work_status, :password,
              :password_confirmation, desired_profession_ids: [], desired_location_ids: []]
         end
