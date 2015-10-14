@@ -1,11 +1,17 @@
-h2 Change your password
-= simple_form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :put }) do |f|
-  = f.error_notification
-  = f.input :reset_password_token, as: :hidden
-  = f.full_error :reset_password_token
-  .form-inputs
-    = f.input :password, label: "New password", required: true, autofocus: true, hint: ("#{@minimum_password_length} characters minimum" if @minimum_password_length)
-    = f.input :password_confirmation, label: "Confirm your new password", required: true
-  .form-actions
-    = f.button :submit, "Change my password"
-= render "devise/shared/links"
+.row.row-centered
+  .col-centered
+    h2 Change Your Password
+.row.row-centered
+  .col-xs-12.col-sm-6.col-md-4.col-lg-3.col-centered
+    = simple_form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :put }) do |f|
+      = f.error_notification
+      = f.input :reset_password_token, as: :hidden
+      = f.full_error :reset_password_token
+      .form-inputs
+        = f.input :password, required: true, autofocus: true,
+                  label: false, placeholder: "New password"
+        = f.input :password_confirmation, required: true,
+                  label: false, placeholder: "Confirm your new password"
+      .form-actions
+        = f.button :submit, "Change my password",
+                   class: 'btn btn-block btn-warning text-uppercase'

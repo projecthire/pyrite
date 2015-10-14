@@ -18,11 +18,11 @@ en:
       unconfirmed: "You have to confirm your email address before continuing."
     mailer:
       confirmation_instructions:
-        subject: "Confirmation instructions"
+        subject: "[Project Hire] Confirmation Instructions"
       reset_password_instructions:
-        subject: "Reset password instructions"
+        subject: "[Project Hire] Password Reset Instructions"
       unlock_instructions:
-        subject: "Unlock instructions"
+        subject: "[Project Hire] Unlock Instructions"
     omniauth_callbacks:
       failure: "Could not authenticate you from %{kind} because \"%{reason}\"."
       success: "Successfully authenticated from %{kind} account."
@@ -48,3 +48,22 @@ en:
       send_instructions: "You will receive an email with instructions for how to unlock your account in a few minutes."
       send_paranoid_instructions: "If your account exists, you will receive an email with instructions for how to unlock it in a few minutes."
       unlocked: "Your account has been unlocked successfully. Please sign in to continue."
+    shared:
+      candidate_log_in:
+        text: "Trying to login?"
+        link: "Click here"
+      resend_confirmation:
+        text: "Didn't receive confirmation instructions?"
+        link: "Click here"
+      forgot_password:
+        text: "Forgot your password?"
+        link: "Click here"
+      already_registered:
+        text: "Already registered?"
+        link: "Log in"
+      not_registered:
+        text: "Not yet registered?  Click here to"
+        link: "Sign up"
+      employer:
+        text: "Are you an Employer?  Go to the"
+        link: "Employer Page"

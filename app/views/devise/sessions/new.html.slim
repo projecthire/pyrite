@@ -1,9 +1,23 @@
-h2 Log in
-= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f|
-  .form-inputs
-    = f.input :email, required: false, autofocus: true
-    = f.input :password, required: false
-    = f.input :remember_me, as: :boolean if devise_mapping.rememberable?
-  .form-actions
-    = f.button :submit, "Log in", id: "new_#{resource_name}_session_submit_btn"
-= render "devise/shared/links"
+.row.row-centered
+  .col-centered
+    h2 Login
+.row.row-centered
+  .col-xs-12.col-sm-6.col-md-4.col-lg-3.col-centered
+    = simple_form_for(resource, as: resource_name, url: session_path(resource_name), html: {novalidate: true}) do |f|
+      .form-inputs
+        = f.input :email, required: false, autofocus: true,
+                  label: false, placeholder: 'Email'
+        = f.input :password, required: false,
+                  label: false, placeholder: 'Password'
+        = f.input :remember_me, as: :boolean if devise_mapping.rememberable?
+      .form-actions
+        = f.button :submit, "Log in", id: "new_#{resource_name}_session_submit_btn",
+                   class: 'btn btn-block btn-warning text-uppercase'
+.row.row-centered
+  .col-xs-12.col-centered
+    p.text-center
+      = t "devise.shared.forgot_password.text"
+      = link_to t("devise.shared.forgot_password.link"), new_password_path(:candidate)
+    p.text-center
+      = t "devise.shared.resend_confirmation.text"
+      = link_to t("devise.shared.resend_confirmation.link"), new_confirmation_path(:candidate)

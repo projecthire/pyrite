@@ -1,0 +1,25 @@
+.devise-sessions,
+.devise-passwords,
+.devise-confirmations,
+.candidates-registrations {
+  main {
+    background-color: #f2f2f2;
+  }
+
+  h2 {
+    font-size: 40px;
+    margin-top: 45px;
+    margin-bottom: 45px;
+  }
+
+  p {
+    font-size: 15px;
+    font-family: "Open Sans", "Helvetica Neue Light", sans-serif;
+    letter-spacing: .05em;
+
+    a {
+      color: $brand-warning;
+      margin-left: 5px;
+    }
+  }
+}
