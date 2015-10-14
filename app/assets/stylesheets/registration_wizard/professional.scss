@@ -47,7 +47,9 @@
     display: inline-block;
   }
 
-  .date:nth-of-type(odd) {
-    margin-right: 1%;
+  @media (min-width: $screen-sm) {
+    .date:nth-of-type(odd) {
+      margin-right: 1%;
+    }
   }
 }
