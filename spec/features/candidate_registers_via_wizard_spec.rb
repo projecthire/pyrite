@@ -26,6 +26,7 @@ feature 'Candidate registration wizard' do
     given_a_candidate_has_completed_first_step
     when_they_select_the_professional_options_best_describing_themselves
     and_they_choose_and_confirm_a_password
+    and_see_terms_and_conditions_text
     and_click_continue
     then_they_see_final_step_of_funnel
   end
@@ -84,6 +85,11 @@ feature 'Candidate registration wizard' do
     check "candidate_desired_location_ids_#{@desired_locations[2].id}"
 
     select 'US Citizen', from: 'candidate[work_status]'
+  end
+
+  def and_see_terms_and_conditions_text
+    expect(page).to have_text t "marketing.candidate_registration_wizard.professional_step.terms_and_conditions.label"
+    expect(page).to have_css "a[href='#{terms_path}']"
   end
 
   def and_they_choose_and_confirm_a_password

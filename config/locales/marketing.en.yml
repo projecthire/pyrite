@@ -73,6 +73,9 @@ en:
           label: Preferred Locations
         work_status:
           prompt: Work Status
+        terms_and_conditions:
+          label: By clicking Continue you agree to the
+          link: terms and conditions
         password:
           label: Create A Password
           placeholder: Your Password

@@ -19,6 +19,8 @@ Rails.application.routes.draw do
 
   resources :registration_wizard, path: 'registration'
 
+  get 'terms' => 'high_voltage/pages#show', id: 'terms_and_conditions'
+
   authenticated :candidate do
     root 'candidates#dashboard', as: :candidate_dashboard
   end

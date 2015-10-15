@@ -42,3 +42,8 @@
                   placeholder: t("marketing.candidate_registration_wizard.professional_step.password_confirmation.placeholder")
       .form-actions
         = f.button :submit, "Continue", class: 'btn btn-block btn-warning text-uppercase'
+        .row.row-centered.terms-row
+          .col-xs-12.col-centered
+            p.text-center
+              = t "marketing.candidate_registration_wizard.professional_step.terms_and_conditions.label"
+              = link_to t("marketing.candidate_registration_wizard.professional_step.terms_and_conditions.link"), terms_path
