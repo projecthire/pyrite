@@ -1,6 +1,6 @@
 module OmniauthHelpers
-  def mock_auth_hash
-    OmniAuth.config.mock_auth[:linkedin] = {
+  def mock_auth_hash(provider)
+    OmniAuth.config.mock_auth[provider] = {
       'provider': 'linkedin',
       'uid': '5XY_Lczdly',
       'info': {
@@ -17,5 +17,9 @@ module OmniauthHelpers
         'secret': 'e5c86471-a02d-41ba-ad74-235e8060c427'
       }
     }
+  end
+
+  def mock_auth_failure(provider)
+    OmniAuth.config.mock_auth[provider] = :invalid_credentials
   end
 end

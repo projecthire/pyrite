@@ -37,6 +37,12 @@ feature 'Candidate registration wizard' do
     then_they_see_their_candidate_dashboard
   end
 
+  scenario 'Candidate cancels LinkedIn authorization' do
+    given_a_candidate_has_completed_steps_one_and_two
+    when_they_fail_linkedin_authorization
+    then_they_see_the_authorize_step_of_funnel
+  end
+
   def given_a_guest_is_at_landing_page
     visit root_path
   end
@@ -110,11 +116,20 @@ feature 'Candidate registration wizard' do
   end
 
   def when_they_click_authorize_linkedin_button
-    mock_auth_hash
+    mock_auth_hash :linkedin
+    click_button "authorize_linkedin"
+  end
+
+  def when_they_fail_linkedin_authorization
+    mock_auth_failure :linkedin
     click_button "authorize_linkedin"
   end
 
   def then_they_see_their_candidate_dashboard
     expect(current_path).to eq(new_candidate_session_path)
+  end
+
+  def then_they_see_the_authorize_step_of_funnel
+    expect(current_path).to eq(registration_wizard_path(id: :authorize))
   end
 end

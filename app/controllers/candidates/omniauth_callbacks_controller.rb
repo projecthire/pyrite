@@ -1,6 +1,5 @@
 module Candidates
   class OmniauthCallbacksController < Devise::OmniauthCallbacksController
-
     def linkedin
       @candidate = Candidate.find_by_confirmation_token session[:candidate_confirmation_token]
       omniauth_hash = request.env["omniauth.auth"]
@@ -18,6 +17,10 @@ module Candidates
 
       redirect_to new_candidate_session_path,
                   notice: t("marketing.candidate_registration_wizard.authorize_step.success_msg")
+    end
+
+    def after_omniauth_failure_path_for(scope)
+      registration_wizard_path(id: :authorize)
     end
   end
 end
