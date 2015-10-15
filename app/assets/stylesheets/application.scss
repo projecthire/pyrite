@@ -6,13 +6,25 @@
 @import "bootstrap-sprockets";
 @import "pyrite.bootstrap";
 
+@import "formValidation";
+@import "bootstrap-select";
+
 @import "application/navbar";
 @import "application/footer";
 @import "application/mixins";
 @import "application/buttons";
+@import "application/flashes";
+@import "application/forms";
 
+// devise view styles
+@import "devise/base";
+
+// view styles
 @import "contacts/new";
 @import "pages/candidate_landing";
+@import "registration_wizard/personal";
+@import "registration_wizard/professional";
+@import "registration_wizard/authorize";
 
 html, body{
   min-height: 100%;
@@ -49,8 +61,6 @@ main {
   float: none;
   // reset the text-align
   text-align: left;
-  // inline-block space fix
-  //margin-right: -4px;
 }
 
 .bg-gray-darker {

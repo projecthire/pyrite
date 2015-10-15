@@ -1,30 +1,3 @@
-// special style for candidate landing page
-.pages-candidate_landing {
-  .navbar.navbar-default {
-    //transition: background-color 0.3s ease;
-    background: rgba(69, 68, 83, 1);
-
-    &.navbar-scrolled {
-      background: rgba(255, 255, 255, 1);
-      color: #828282;
-      border-bottom: solid 1px #828282;
-
-      .btn-warning-stroke {
-        color: $brand-warning;
-        background-color: #fff;
-
-        &:hover,
-        &.hover,
-        &:focus,
-        &.focus {
-          color: #fff;
-          background-color: $brand-warning;
-        }
-      }
-    }
-  }
-}
-
 // need the specificity of .navbar-default
 .navbar.navbar-default {
   margin-bottom: 0;
@@ -93,12 +66,21 @@
   }
 
   &.navbar-scrolled {
-    background: rgba(255, 255, 255, 1);
     color: #828282;
+    background: rgba(255, 255, 255, 1);
+    border-bottom: solid 1px #828282;
 
     .btn-warning-stroke {
-      color: #fff;
-      background-color: $brand-warning;
+      color: $brand-warning;
+      background-color: #fff;
+
+      &:hover,
+      &.hover,
+      &:focus,
+      &.focus {
+        color: #fff;
+        background-color: $brand-warning;
+      }
     }
 
     .navbar-nav > li > a,
@@ -106,7 +88,9 @@
     .btn.btn-link {
       color: #828282;
       &:hover,
-      &:focus {
+      &.hover,
+      &:focus,
+      &.focus {
         color: $brand-warning;
         text-decoration: none;
       }

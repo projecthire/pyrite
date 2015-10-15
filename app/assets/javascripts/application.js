@@ -13,6 +13,9 @@
 //= require jquery
 //= require jquery_ujs
 //= require bootstrap
-//= require bootstrap-validator
 //= require underscore
+//= require momentjs
+//= require bootstrap-select
+//= require formValidation
+//= require formValidation/framework/bootstrap
 // = require_tree .

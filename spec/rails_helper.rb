@@ -21,6 +21,9 @@ RSpec.configure do |config|
   # Extensions
   config.extend FeatureSubdomainHelpers, type: :feature
   config.extend RequestSubdomainHelpers, type: :request
+
+  # Includes
+  config.include OmniauthHelpers, type: :feature
 end
 
 ActiveRecord::Migration.maintain_test_schema!

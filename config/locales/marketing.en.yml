@@ -52,3 +52,36 @@ en:
         body: |
           Candidates get access to an elite nework of employers.  50+ funds with over $100 Billion in total AUM subscribe to Project Hire, including great brands like:
         button: Sign Up Now
+    candidate_registration_wizard:
+      personal_step:
+        heading: Sign Up
+        sub_heading: (step 1 of 3)
+      professional_step:
+        heading: Sign Up
+        sub_heading: (step 2 of 3)
+        current_profession:
+          prompt: Current Profession
+        years_experience:
+          prompt: Years of Experience
+        start_date:
+          prompt: When Could You Start?
+        desired_professions:
+          #label: What Kind of Job Do You Want?
+          #label: What Kind of Job Are You Interested In?
+          label: Roles You're Interested In
+        desired_locations:
+          label: Preferred Locations
+        work_status:
+          prompt: Work Status
+        terms_and_conditions:
+          label: By clicking Continue you agree to the
+          link: terms and conditions
+        password:
+          label: Create A Password
+          placeholder: Your Password
+        password_confirmation:
+          placeholder: Confirm Your Password
+      authorize_step:
+        heading: LinkedIn Authorization
+        sub_heading: (step 3 of 3)
+        success_msg: Congratualations on signing up.  If you have not yet confirmed your email address, you'll need to before you can login.

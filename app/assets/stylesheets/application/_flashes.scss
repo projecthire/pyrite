@@ -1,0 +1,12 @@
+.alert {
+  margin-top: $navbar-height;
+  margin-bottom: 0;
+
+  &.alert-info {
+    color: #828282;
+  }
+
+  &.alert-warning {
+    color: #fff;
+  }
+}

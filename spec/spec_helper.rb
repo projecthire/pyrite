@@ -22,3 +22,4 @@ RSpec.configure do |config|
 end
 
 WebMock.disable_net_connect!(allow_localhost: true, allow: "codeclimate.com")
+OmniAuth.config.test_mode = true

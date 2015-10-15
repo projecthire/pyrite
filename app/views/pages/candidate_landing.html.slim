@@ -9,7 +9,7 @@ section.row.row-centered
         p.text-center = t "marketing.candidate_landing.hero.body.line_2"
     .row-centered
       .col-centered.call-to-action
-        = button_to t("marketing.candidate_landing.hero.button"), new_candidate_registration_path,
+        = button_to t("marketing.candidate_landing.hero.button"), registration_wizard_path(id: :personal),
                     class: 'btn btn-warning btn-block text-uppercase', method: :get
 section.row.row-centered
   .how-it-works
@@ -48,7 +48,7 @@ section.row.row-centered
               p.text-center = t "marketing.candidate_landing.how_it_works.step_4.body"
     .row-centered
       .col-centered.call-to-action
-        = button_to t("marketing.candidate_landing.how_it_works.button"), new_candidate_registration_path,
+        = button_to t("marketing.candidate_landing.how_it_works.button"), registration_wizard_path(id: :personal),
                     class: 'btn btn-warning-stroke btn-block text-uppercase', method: :get
 section.row.row-centered
   .submission
@@ -62,7 +62,7 @@ section.row.row-centered
         p.text-center = t "marketing.candidate_landing.submission.test.body.line_3"
         .row-centered
           .col-centered.call-to-action
-            = button_to t("marketing.candidate_landing.submission.test.button"), new_candidate_registration_path,
+            = button_to t("marketing.candidate_landing.submission.test.button"), registration_wizard_path(id: :personal),
                         class: 'btn btn-warning btn-block text-uppercase', method: :get
       .col-sm-6.submission-row
         h3.text-center = t "marketing.candidate_landing.submission.idea.heading"
@@ -71,7 +71,7 @@ section.row.row-centered
         p.text-center = t "marketing.candidate_landing.submission.idea.body.line_3"
         .row-centered
           .col-centered.call-to-action
-            = button_to t("marketing.candidate_landing.submission.idea.button"), new_candidate_registration_path,
+            = button_to t("marketing.candidate_landing.submission.idea.button"), registration_wizard_path(id: :personal),
                         class: 'btn btn-warning btn-block text-uppercase', method: :get
 section.row.row-centered
   .get-certified
@@ -86,7 +86,7 @@ section.row.row-centered
         p.text-center = t "marketing.candidate_landing.get_certified.body.text.line_2"
     .row-centered
       .col-centered.call-to-action
-        = button_to t("marketing.candidate_landing.get_certified.button"), new_candidate_registration_path,
+        = button_to t("marketing.candidate_landing.get_certified.button"), registration_wizard_path(id: :personal),
                     class: 'btn btn-warning-stroke btn-block text-uppercase', method: :get
 section.row.row-centered
   .get-hired
@@ -98,5 +98,5 @@ section.row.row-centered
         p.lead.text-center = t "marketing.candidate_landing.get_hired.body"
     .row-centered
       .col-centered.call-to-action
-        = button_to t("marketing.candidate_landing.get_hired.button"), new_candidate_registration_path,
+        = button_to t("marketing.candidate_landing.get_hired.button"), registration_wizard_path(id: :personal),
                     class: 'btn btn-warning btn-block text-uppercase', method: :get

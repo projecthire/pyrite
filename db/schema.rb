@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150924004225) do
+ActiveRecord::Schema.define(version: 20151014163148) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -35,6 +35,26 @@ ActiveRecord::Schema.define(version: 20150924004225) do
   add_index "admins", ["email"], name: "index_admins_on_email", unique: true, using: :btree
   add_index "admins", ["unlock_token"], name: "index_admins_on_unlock_token", unique: true, using: :btree
 
+  create_table "candidate_desired_locations", force: :cascade do |t|
+    t.integer  "candidate_id"
+    t.integer  "desired_location_id"
+    t.datetime "created_at",          null: false
+    t.datetime "updated_at",          null: false
+  end
+
+  add_index "candidate_desired_locations", ["candidate_id"], name: "index_candidate_desired_locations_on_candidate_id", using: :btree
+  add_index "candidate_desired_locations", ["desired_location_id"], name: "index_candidate_desired_locations_on_desired_location_id", using: :btree
+
+  create_table "candidate_desired_professions", force: :cascade do |t|
+    t.integer  "candidate_id"
+    t.integer  "desired_profession_id"
+    t.datetime "created_at",            null: false
+    t.datetime "updated_at",            null: false
+  end
+
+  add_index "candidate_desired_professions", ["candidate_id"], name: "index_candidate_desired_professions_on_candidate_id", using: :btree
+  add_index "candidate_desired_professions", ["desired_profession_id"], name: "index_candidate_desired_professions_on_desired_profession_id", using: :btree
+
   create_table "candidates", force: :cascade do |t|
     t.string   "email",                  default: "", null: false
     t.string   "encrypted_password",     default: "", null: false
@@ -52,6 +72,10 @@ ActiveRecord::Schema.define(version: 20150924004225) do
     t.string   "name"
     t.datetime "created_at",                          null: false
     t.datetime "updated_at",                          null: false
+    t.integer  "years_experience"
+    t.integer  "current_profession"
+    t.integer  "work_status"
+    t.datetime "start_date"
   end
 
   add_index "candidates", ["confirmation_token"], name: "index_candidates_on_confirmation_token", unique: true, using: :btree
@@ -85,4 +109,32 @@ ActiveRecord::Schema.define(version: 20150924004225) do
 
   add_index "delayed_jobs", ["priority", "run_at"], name: "delayed_jobs_priority", using: :btree
 
+  create_table "desired_locations", force: :cascade do |t|
+    t.string   "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "desired_professions", force: :cascade do |t|
+    t.string   "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "linkedin_auths", force: :cascade do |t|
+    t.string   "linkedin_uid"
+    t.string   "token"
+    t.string   "secret"
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
+    t.integer  "candidate_id"
+  end
+
+  add_index "linkedin_auths", ["candidate_id"], name: "index_linkedin_auths_on_candidate_id", using: :btree
+
+  add_foreign_key "candidate_desired_locations", "candidates"
+  add_foreign_key "candidate_desired_locations", "desired_locations"
+  add_foreign_key "candidate_desired_professions", "candidates"
+  add_foreign_key "candidate_desired_professions", "desired_professions"
+  add_foreign_key "linkedin_auths", "candidates"
 end

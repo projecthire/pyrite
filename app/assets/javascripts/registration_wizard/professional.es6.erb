@@ -1,0 +1,171 @@
+$(document).on('ready', function()
+{
+  var $form = $('.registration_wizard form.edit_candidate');
+
+  $form
+    .find('[name="candidate[current_profession]"]')
+      .selectpicker({dropupAuto: false})
+      .change((e) =>
+      {
+        // revalidate candidate[current_profession] when changed
+        $form.formValidation('revalidateField', 'candidate[current_profession]');
+      })
+      .end()
+    .find('[name="candidate[years_experience]"]')
+      .selectpicker({dropupAuto: false})
+      .change((e) =>
+      {
+        // revalidate candidate[years_experience] when changed
+        $form.formValidation('revalidateField', 'candidate[years_experience]');
+      })
+      .end()
+    .find('[name="candidate[desired_profession_ids][]"]')
+      .selectpicker({dropupAuto: false})
+      .change((e) =>
+      {
+        console.log(e);
+        // revalidate candidate[desired_profession_ids][] when changed
+        $form.formValidation('revalidateField', 'candidate[desired_profession_ids][]');
+      })
+      .end()
+    .find('[name="candidate[desired_location_ids][]"]')
+      .selectpicker({dropupAuto: false})
+      .change((e) =>
+      {
+        console.log(e);
+        // revalidate candidate[desired_location_ids][] when changed
+        $form.formValidation('revalidateField', 'candidate[desired_location_ids][]');
+      })
+      .end()
+    .find('[name="candidate[work_status]"]')
+      .selectpicker({dropupAuto: false})
+      .change((e) =>
+      {
+        // revalidate candidate[work_status] when changed
+        $form.formValidation('revalidateField', 'candidate[work_status]');
+      })
+      .end()
+    .find('#candidate_start_date_1i, #candidate_start_date_2i')
+      .selectpicker({dropupAuto: false})
+      .change((e) =>
+      {
+        $form.formValidation('revalidateField', 'candidate[start_date(2i)]');
+      })
+      .end()
+    .formValidation({
+      framework: 'bootstrap',
+      excluded: ':disabled',
+      fields: {
+        'candidate[current_profession]': {
+          validators: {
+            notEmpty: {
+              message: 'Current Profession is required.'
+            }
+          }
+        },
+        'candidate[years_experience]': {
+          validators: {
+            notEmpty: {
+              message: 'Years Experience is required.'
+            }
+          }
+        },
+        'candidate[start_date(2i)]': {
+          validators: {
+            callback: {
+              message: 'Start Date has already passed.',
+              callback: function(startMonth, validator)
+              {
+                var startYear = $form.find('[name="candidate[start_date(1i)]"]').val(),
+                    startDay = $form.find('[name="candidate[start_date(3i)]"]').val(),
+                    startDate = moment(`${startYear}-${startMonth}-${startDay}`, 'YYYY-M-D'),
+                    now = moment();
+
+                return !startDate.isBefore(now)
+              }
+            }
+          }
+        },
+        'candidate[desired_profession_ids][]': {
+          validators: {
+            choice: {
+              message: 'Please choose at least 1 role.',
+              min: 1
+            }
+          }
+        },
+        'candidate[desired_location_ids][]': {
+          validators: {
+            choice: {
+              message: 'Please choose at least 1 location.',
+              min: 1
+            }
+          }
+        },
+        'candidate[work_status]': {
+          validators: {
+            notEmpty: {
+              message: 'Work Status is required.'
+            }
+          }
+        },
+        'candidate[password]': {
+          validators: {
+            notEmpty: {
+              message: 'Password is required.'
+            },
+            stringLength: {
+              message: '8 characters minimum.',
+              min: 8
+            }
+          }
+        },
+        'candidate[password_confirmation]': {
+          validators: {
+            notEmpty: {
+              message: 'Confirm Password is required.'
+            },
+            identical: {
+              field: 'candidate[password]',
+              message: 'The password and its confirmation are not the same'
+            }
+          }
+        }
+      }
+    })
+    .on('err.validator.fv', function(e, data)
+    {
+      // $(e.target)    --> The field element
+      // data.fv        --> The FormValidation instance
+      // data.field     --> The field name
+      // data.element   --> The field element
+      // data.validator --> The current validator name
+
+      data.element
+        .data('fv.messages')
+        // Hide all the messages
+        .find('.help-block[data-fv-for="' + data.field + '"]').hide()
+        // Show only message associated with current validator
+        .filter('[data-fv-validator="' + data.validator + '"]').show();
+    })
+    .on('success.form.fv', function(e)
+    {
+      // the form is valid
+      var $form = $(e.target);
+      if ($form.data('remote')) {
+        e.preventDefault();
+        return false;
+      }
+    })
+    .on('submit', function(e)
+    {
+      var $form = $(e.target);
+      if ($form.data('remote')) {
+        var numInvalidFields = $form.data('formValidation').getInvalidFields().length;
+        if (numInvalidFields) {
+          e.preventDefault();
+          return false;
+        }
+      }
+    });
+});
