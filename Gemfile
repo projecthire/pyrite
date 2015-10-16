@@ -5,6 +5,7 @@ ruby "2.2.3"
 gem "airbrake"
 gem "autoprefixer-rails"
 gem "coffee-rails", "~> 4.1.0"
+gem 'contentful_model'
 gem "delayed_job_active_record"
 gem "email_validator"
 gem "flutie"
