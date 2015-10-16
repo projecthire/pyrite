@@ -1,0 +1,15 @@
+.step-circle {
+  @include circle-stroke(80px, #d6d6d6, none);
+  color: white;
+  display: block;
+  font-size: 32px;
+  margin-top: 16px;
+  margin: auto;
+  text-align: center;
+  line-height: 80px;
+
+  &:hover {
+    background-color: $orange;
+    color: white;
+  }
+}
