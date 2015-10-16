@@ -1,10 +1,26 @@
-hr {
-  border-top: 1px solid $gray;
-}
+.registration_wizard {
 
-#authorize_linkedin {
-  height: 55px;
-  font-size: 21px;
-  margin-top: 60px;
-  margin-bottom: 60px;
+  h2 {
+    line-height: 1.2;
+  }
+
+  hr {
+    border-top: 1px solid $gray;
+  }
+
+  #authorize_linkedin {
+    height: 55px;
+    font-size: 21px;
+    letter-spacing: .1em;
+    font-weight: bold;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    background-color: #1b86bc;
+
+    &:hover,
+    &.hover {
+      color: #1b86bc;
+      background-color: #fff;
+    }
+  }
 }

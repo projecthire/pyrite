@@ -1,12 +1,22 @@
 .alert {
   margin-top: $navbar-height;
   margin-bottom: 0;
+  font-weight: 400;
+  font-family: "Open Sans", "Helvetica Neue Light", sans-serif;
 
   &.alert-info {
-    color: #828282;
+    color: #fff;
+    background-color: $brand-primary;
+    border: none;
   }
 
   &.alert-warning {
     color: #fff;
+  }
+
+  &.alert-danger {
+    color: $brand-danger;
+    border: none;
+    background-color: #828282;
   }
 }

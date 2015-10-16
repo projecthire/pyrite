@@ -29,6 +29,37 @@
   }
 }
 
+.btn-primary {
+  &:focus,
+  &.focus {
+    color: $brand-primary;
+    background-color: #fff;
+    border-color: #fff;
+  }
+
+  &:hover,
+  &.hover {
+    color: $brand-primary;
+    background-color: #fff;
+    border-color: #fff;
+  }
+
+  &:active,
+  &.active {
+    color: $brand-primary;
+    background-color: #fff;
+    border-color: #fff;
+
+    &:hover,
+    &:focus,
+    &.focus {
+      color: $brand-primary;
+      background-color: #fff;
+      border-color: #fff;
+    }
+  }
+}
+
 .btn-success-stroke {
   @extend .btn-success;
   color: $brand-success;

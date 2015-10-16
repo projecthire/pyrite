@@ -84,4 +84,4 @@ en:
       authorize_step:
         heading: LinkedIn Authorization
         sub_heading: (step 3 of 3)
-        success_msg: Congratualations on signing up.  If you have not yet confirmed your email address, you'll need to before you can login.
+        success_msg: Congratulations on signing up.  If you have not yet confirmed your email address, you'll need to before you can login.

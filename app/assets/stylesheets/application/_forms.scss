@@ -1,6 +1,8 @@
 // Site-wide Form Styles
 
 .form-control {
+  font-family: "Open Sans", "Helvetica Neue Light", sans-serif;
+  letter-spacing: .05em;
   height: 55px;
   font-size: 14px;
   color: #000;
@@ -19,7 +21,14 @@ select.form-control {
   .btn {
     height: 55px;
     font-size: 21px;
+    letter-spacing: .1em;
+    font-weight: bold;
   }
+}
+
+.help-block {
+  font-family: "Open Sans", "Helvetica Neue Light", sans-serif;
+  letter-spacing: .05em;
 }
 
 .has-success .control-label,

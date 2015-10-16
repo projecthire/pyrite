@@ -20,7 +20,7 @@ nav.navbar.navbar-default.navbar-fixed-top
           - if candidate_signed_in?
             li.text-center.navbar-logout
               = button_to "Logout", destroy_candidate_session_path,
-                          class: 'btn btn-warning navbar-btn btn-block text-uppercase', method: :get
+                          class: 'btn btn-warning-stroke navbar-btn text-uppercase', method: :get
           - else
             li.text-center.navbar-login.hidden-sm
               = button_to "Log in", new_candidate_session_path,
