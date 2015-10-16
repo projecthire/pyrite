@@ -1,4 +1,5 @@
 // Site-wide Form Styles
+@import "bootstrap/mixins/forms";
 
 .form-control {
   font-family: "Open Sans", "Helvetica Neue Light", sans-serif;
@@ -35,4 +36,12 @@ select.form-control {
 .has-success .help-block,
 .has-success .form-control-feedback {
   color: $brand-success;
+}
+
+.has-success .form-control {
+  border: 1px solid #adadad;
+}
+
+.has-success .form-control:focus {
+  @include form-control-focus($brand-primary);
 }
