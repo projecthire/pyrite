@@ -4,7 +4,12 @@ $(document).on('ready', function()
 
   $form
     .find('[name="candidate[current_profession]"]')
-      .selectpicker({dropupAuto: false})
+      .selectpicker({
+        dropupAuto: false,
+        template: {
+          caret: '<i class="fa fa-lg fa-angle-down"></i>'
+        }
+      })
       .change((e) =>
       {
         // revalidate candidate[current_profession] when changed
@@ -12,7 +17,12 @@ $(document).on('ready', function()
       })
       .end()
     .find('[name="candidate[years_experience]"]')
-      .selectpicker({dropupAuto: false})
+      .selectpicker({
+        dropupAuto: false,
+        template: {
+          caret: '<i class="fa fa-lg fa-angle-down"></i>'
+        }
+      })
       .change((e) =>
       {
         // revalidate candidate[years_experience] when changed
@@ -20,7 +30,12 @@ $(document).on('ready', function()
       })
       .end()
     .find('[name="candidate[desired_profession_ids][]"]')
-      .selectpicker({dropupAuto: false})
+      .selectpicker({
+        dropupAuto: false,
+        template: {
+          caret: '<i class="fa fa-lg fa-angle-down"></i>'
+        }
+      })
       .change((e) =>
       {
         console.log(e);
@@ -29,7 +44,12 @@ $(document).on('ready', function()
       })
       .end()
     .find('[name="candidate[desired_location_ids][]"]')
-      .selectpicker({dropupAuto: false})
+      .selectpicker({
+        dropupAuto: false,
+        template: {
+          caret: '<i class="fa fa-lg fa-angle-down"></i>'
+        }
+      })
       .change((e) =>
       {
         console.log(e);
@@ -38,7 +58,12 @@ $(document).on('ready', function()
       })
       .end()
     .find('[name="candidate[work_status]"]')
-      .selectpicker({dropupAuto: false})
+      .selectpicker({
+        dropupAuto: false,
+        template: {
+          caret: '<i class="fa fa-lg fa-angle-down"></i>'
+        }
+      })
       .change((e) =>
       {
         // revalidate candidate[work_status] when changed
@@ -46,7 +71,12 @@ $(document).on('ready', function()
       })
       .end()
     .find('#candidate_start_date_1i, #candidate_start_date_2i')
-      .selectpicker({dropupAuto: false})
+      .selectpicker({
+        dropupAuto: false,
+        template: {
+          caret: '<i class="fa fa-lg fa-angle-down"></i>'
+        }
+      })
       .change((e) =>
       {
         $form.formValidation('revalidateField', 'candidate[start_date(2i)]');
