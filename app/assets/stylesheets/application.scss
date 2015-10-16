@@ -5,6 +5,7 @@
 
 @import "bootstrap-sprockets";
 @import "pyrite.bootstrap";
+@import "swiper";
 
 @import "formValidation";
 @import "bootstrap-select";
@@ -25,6 +26,8 @@
 @import "registration_wizard/personal";
 @import "registration_wizard/professional";
 @import "registration_wizard/authorize";
+@import "pages/base";
+@import "patterns/base";
 
 html, body{
   min-height: 100%;

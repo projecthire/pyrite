@@ -18,4 +18,5 @@
 //= require bootstrap-select
 //= require formValidation
 //= require formValidation/framework/bootstrap
-// = require_tree .
+//= require swiper
+//= require_tree .

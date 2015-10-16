@@ -3,12 +3,21 @@
   color: white;
   display: block;
   font-size: 32px;
+  line-height: 80px;
   margin-top: 16px;
   margin: auto;
   text-align: center;
-  line-height: 80px;
 
   &:hover {
+    background-color: $orange;
+    color: white;
+    text-decoration: none;
+  }
+
+}
+
+.swiper-pagination-bullet-active {
+  .step-circle {
     background-color: $orange;
     color: white;
   }

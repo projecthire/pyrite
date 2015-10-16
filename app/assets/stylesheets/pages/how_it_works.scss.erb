@@ -1,0 +1,120 @@
+.pages-how_it_works {
+  background-color: #f0f0f0;
+  color: black;
+
+  @media (min-width: $screen-sm-min) {
+    .main-header-holder {
+      display: none;
+    }
+  }
+
+  main {
+    @include background-image('shutterstock_229339990_gray_blur', no-repeat scroll center top);
+    background-size: contain;
+    padding-top: 10%;
+  }
+
+  .main-header-holder {
+    text-align: center;
+  }
+
+  .main-header {
+    border-bottom: 1px solid $gray;
+    color: $gray;
+    display: inline-block;
+    font-size: 1em;
+    font-weight: 300;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .header-ending {
+    color: $orange;
+  }
+
+  .fade-carousel-holder {
+    @media (min-width: $screen-sm-min) {
+      padding-top: 4em;
+      padding-bottom: 4em;
+    }
+  }
+
+  .fade-carousel {
+    margin-bottom: 2em;
+    padding-bottom: 3em;
+    margin-bottom: 3em;
+    text-align: center;
+  }
+
+  .step-circle-holder.swiper-pagination-bullet {
+    background: transparent;
+    border-bottom: 3px solid $gray-light;
+    border-radius: 0;
+    display: inline-block;
+    height: auto;
+    opacity: 1;
+    padding-bottom: 2em;
+    text-align: center;
+    width: 25%;
+
+    > div {
+      display: none;
+    }
+
+    @media (min-width: $screen-sm-min) {
+      > div {
+        display: block;
+      }
+    }
+
+    &.swiper-pagination-bullet-active {
+      border-color: $orange;
+    }
+  }
+
+  .step-circle {
+    margin-bottom: 0.25em;
+    opacity: 1;
+
+    @media (max-width: $screen-sm-min) {
+      width: 50px;
+      height: 50px;
+      line-height: 50px;
+      padding-bottom: 1em;
+    }
+  }
+
+  .how-it-works-carousel {
+    margin-bottom: 2em;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    border-bottom: 1px solid $gray-light;
+
+    h2 {
+      text-align: center;
+      margin: 0 0 2em;
+      font-size: 1.5em;
+    }
+
+    @media (min-width: $screen-sm-min) {
+      h2 {
+        display: none;
+      }
+    }
+
+    .swiper-slide {
+      color: $gray-dark;
+
+      @media (min-width: $screen-sm-min) {
+        padding: 0 2em;
+      }
+    }
+  }
+
+  .how-it-works-steps {
+    background: white;
+    padding-top: 3em;
+    padding-bottom: 4em;
+    margin-bottom: 6em;
+  }
+}

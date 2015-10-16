@@ -269,6 +269,7 @@ GEM
       rails-assets-jquery (>= 1.8.3)
     rails-assets-jquery (2.1.4)
     rails-assets-momentjs (2.10.6)
+    rails-assets-swiper (3.1.7)
     rails-assets-underscore (1.8.3)
     rails-deprecated_sanitizer (1.0.3)
       activesupport (>= 4.2.0.alpha)
@@ -450,6 +451,7 @@ DEPENDENCIES
   rails-assets-bootstrap-select!
   rails-assets-bootstrap-validator!
   rails-assets-momentjs!
+  rails-assets-swiper
   rails_admin
   recipient_interceptor
   refills

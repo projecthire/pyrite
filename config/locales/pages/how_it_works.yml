@@ -1,0 +1,168 @@
+en:
+  pages:
+    how_it_works:
+      heading: How It Works
+      button: Learn More
+      fade_carousel:
+        header:
+          Project Hire is
+        header_ending_1:
+          easy-to-use.
+        header_ending_2:
+          merit-based.
+        header_ending_3:
+          anonymous.
+        content_1:
+          A candidate submits a write-up on a company, which is evaluated by our
+          investment professionals.  A high scoring candidate becomes
+          “Certified” and can make their profile visible to employers – who can
+          contact the candidate to continue the process.
+        content_2:
+          Project Hire is a merit-based recruiting platform for hedge funds and
+          private equity firms which creates a level playing field for all applicants.
+        content_3:
+          Project Hire’s platform is anonymous, so established professionals can
+          confidently participate, and is open to anyone.
+      carousel:
+        sign_up:
+          Sign Up
+        step_1:
+          heading: Sign Up
+          body_html: |
+            <p>
+              Sign-up is open to anyone 18 years of age or older.
+            </p>
+
+            <p>
+              The sign up process is quick (under two minutes) and easy.
+            </p>
+
+            <p>
+              Signing up is free and your identity will be kept completely
+              anonymous.
+            </p>
+
+            <p>
+              To complete the sign up process, you’ll be asked to authenticate
+              your identity using your LinkedIn account.  Your LinkedIn account
+              will not indicate any association with Project Hire.
+            </p>
+
+            <p>
+              After signing up, you'll have access to additional resources to
+              help you prepare to submit, including a practice case, example
+              submissions, and tips from fund managers.
+            </p>
+
+            <p>
+              <em>Visit our FAQ for more info on signing up.</em>
+            </p>
+        step_2:
+          heading: Submit
+          body_html: |
+            <p>
+              There are two types of write-up that a candidate can submit: a case
+              study (the “PH Case”) or an original investment idea.
+            </p>
+
+            <h4>
+              PH Case
+            </h4>
+
+            <p>
+              We select a public company and provide you with an investment
+              thesis for the company.  You determine what the company is worth,
+              support that valuation with data, and recommend whether we should
+              buy, sell or neither.  You'll also evaluate a hypothetical private
+              equity transaction to bring that same company private and complete
+              a 45 minute short-answer test on finance and accounting basics.
+            </p>
+
+            <p>
+              Once you begin the case you’ll have 48 hours to submit your answers.  Completing the case will take at
+              least four hours of dedicated effort.
+            </p>
+
+            <h4>
+              Investment Idea
+            </h4>
+
+            <p>
+              You select the company.  Present your investment thesis and the
+              data and investment logic to support it.  Be sure to incorporate
+              background information on the company and industry, key risks, and
+              return expectations.  Most of the investment ideas which are
+              submitted are published on the PH Idea Forum.
+            </p>
+
+            <h4>
+              PH Idea Forum
+            </h4>
+
+            <p>
+              The PH Idea Forum is a place to share and discuss investment
+              ideas.  Once an idea has been published, other members (candidates
+              and employers) can add comments, ask questions, or provide
+              feedback.  The forum can be an invaluable resource for investors
+              who seek original ideas and uncommon insights.
+            </p>
+
+            <p>
+              <em>Visit our FAQ for more info on submissions.</em>
+            </p>
+        step_3:
+          heading: Succeed
+          body_html: |
+            <p>
+              After a candidate submits their work - either an investment idea or
+              the PH Case – our investment professionals will evaluate it.  If the
+              reviewers' collective opinion is that it is a great write-up, the
+              candidate who submitted it becomes "Certified."
+            </p>
+
+            <p>
+              We evaluate each submission by asking how valuable the work would
+              be to someone actively considering the investment: Is the
+              conclusion valid? Is it supported by data? Does it capture the key
+              drivers of the business? Are there fresh insights? Is the
+              communication effective?
+            </p>
+
+            <p>
+              Once someone becomes a Certified Candidate, our hedge funds and
+              private equity employers will be able to actively recruit them.
+            </p>
+
+            <p>
+              <em>Visit our FAQ for more info on evaluation.</em>
+            </p>
+        step_4:
+          heading: Get Hired
+          body_html: |
+            <p>
+              Employers use Project Hire to recruit investment professionals,
+              from Analysts to Portfolio Managers.  A Certified candidate will
+              be actively recruited by an elite group of hedge funds and private
+              equity firms with ~$50 Billion in assets under management.
+            </p>
+
+            <p>
+              Once a candidate has been Certified their profile becomes visible
+              to employers. By default, each profile showcases the work the
+              candidate has submitted (and our evaluation of it), plus their
+              background (education, job history).  Candidates may also choose
+              to include a two minute video of themselves or additional profile
+              information.
+            </p>
+
+            <p>
+              Employers can request an interview (or additional info) from the
+              candidate, but the candidate’s name and personal info remain
+              anonymous until the candidate permits the employer to view them.
+              Candidates will typically interview with multiple employers before
+              they accept a job offer.
+            </p>
+
+            <p>
+              <em>Visit our FAQ for more info on getting hired.</em>
+            </p>

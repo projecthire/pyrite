@@ -29,4 +29,6 @@ Rails.application.routes.draw do
   unauthenticated :candidate do
     root 'pages#candidate_landing'
   end
+
+  get 'how_it_works', to: 'pages#how_it_works', as: 'how_it_works'
 end
