@@ -22,6 +22,7 @@
                   start_month: Date.today.month,
                   default: Date.today.at_beginning_of_month.next_month,
                   input_html: { class: 'selectpicker' }
+        .clearfix
         .row.row-centered.label-row
           = t("marketing.candidate_registration_wizard.professional_step.desired_professions.label")
         = f.association :desired_professions, as: :check_boxes,
