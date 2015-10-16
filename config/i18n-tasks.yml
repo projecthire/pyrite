@@ -7,8 +7,8 @@ search:
     - "app/assets/javascripts"
 data:
   read:
-     - config/locales/%{locale}.yml
-     - config/locales/**/*.%{locale}.yml
+     - config/locales/*.yml
+     - config/locales/**/*.yml
 ignore_unused:
   - activerecord.*
   - date.*
