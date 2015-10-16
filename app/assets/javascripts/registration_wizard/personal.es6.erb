@@ -1,6 +1,8 @@
 $(document).on('ready', function()
 {
-  $('.registration_wizard form.new_candidate')
+  var $form = $('.registration_wizard form.new_candidate');
+
+  $form
     .formValidation({
       framework: 'bootstrap',
       fields: {
@@ -18,11 +20,16 @@ $(document).on('ready', function()
             },
             regexp: {
               regexp: /.+@.+\..+/i,
-              message: 'Please enter a valid email address.'
+              message: 'Please enter a valid email address.',
+              onSuccess(e, data)
+              {
+                $form.formValidation('enableFieldValidators', 'candidate[email]', true, 'remote');
+              }
             },
             remote: {
               message: 'This email address has already been registered.',
               threshold: 4,
+              enabled: false,
               url: '/candidates/email_valid',
               type: 'GET'
             }
