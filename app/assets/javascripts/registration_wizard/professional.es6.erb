@@ -38,7 +38,14 @@ $(document).on('ready', function()
       })
       .change((e) =>
       {
-        console.log(e);
+        if ($(e.target).is(':checked')) {
+          $(e.target).parents('.checkbox').css('backgroundColor', '#1e90ff');
+          $(e.target).parents('.checkbox label').css('color', '#fff');
+        } else {
+          $(e.target).parents('.checkbox').css('backgroundColor', 'inherit');
+          $(e.target).parents('.checkbox label').css('color', '#444');
+        }
+
         // revalidate candidate[desired_profession_ids][] when changed
         $form.formValidation('revalidateField', 'candidate[desired_profession_ids][]');
       })
@@ -52,7 +59,14 @@ $(document).on('ready', function()
       })
       .change((e) =>
       {
-        console.log(e);
+        if ($(e.target).is(':checked')) {
+          $(e.target).parents('.checkbox').css('backgroundColor', '#1e90ff');
+          $(e.target).parents('.checkbox label').css('color', '#fff');
+        } else {
+          $(e.target).parents('.checkbox').css('backgroundColor', 'inherit');
+          $(e.target).parents('.checkbox label').css('color', '#444');
+        }
+
         // revalidate candidate[desired_location_ids][] when changed
         $form.formValidation('revalidateField', 'candidate[desired_location_ids][]');
       })
