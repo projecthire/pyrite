@@ -22,6 +22,8 @@ Rails.application.routes.draw do
   get 'terms' => 'high_voltage/pages#show', id: 'terms_and_conditions'
   get 'privacy' => 'high_voltage/pages#show', id: 'privacy_policy'
 
+  get 'employers' => 'high_voltage/pages#show', id: 'employer_landing', as: :employer_landing
+
   authenticated :candidate do
     root 'candidates#dashboard', as: :candidate_dashboard
   end
