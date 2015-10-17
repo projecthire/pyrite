@@ -7,6 +7,7 @@
     .btn.dropdown-toggle {
       height: 55px;
       padding-left: 17px;
+      padding-right: 35px;
     }
 
     &.btn-group .dropdown-toggle .caret {
@@ -54,13 +55,11 @@
 
   .bootstrap-select.date {
     width: 49%;
-    display: inline-block;
+    float: left;
   }
 
-  @media (min-width: $screen-sm) {
-    .date:nth-of-type(odd) {
-      margin-right: 1%;
-    }
+  .date:nth-of-type(odd) {
+    margin-right: 2%;
   }
 
   #candidate_password {

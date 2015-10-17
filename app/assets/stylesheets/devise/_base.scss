@@ -23,3 +23,15 @@
     }
   }
 }
+
+.devise-sessions {
+  input[type="checkbox"] {
+    margin-top: 6px;
+  }
+
+  label[for="candidate_remember_me"] {
+    font-size: 15px;
+    font-family: "Open Sans", "Helvetica Neue Light", sans-serif;
+    letter-spacing: .05em;
+  }
+}

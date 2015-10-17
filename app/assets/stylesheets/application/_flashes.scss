@@ -1,8 +1,10 @@
 .alert {
   margin-top: $navbar-height;
   margin-bottom: 0;
+  padding-left: 35px;
   font-weight: 400;
   font-family: "Open Sans", "Helvetica Neue Light", sans-serif;
+  letter-spacing: .05em;
 
   &.alert-info {
     color: #fff;
@@ -11,12 +13,19 @@
   }
 
   &.alert-warning {
-    color: #fff;
+    color: #ff0021;
+    border: none;
+    background-color: #ffd9d9;
   }
 
   &.alert-danger {
-    color: $brand-danger;
+    color: #ff0021;
     border: none;
-    background-color: #828282;
+    background-color: #ffd9d9;
+  }
+
+  .close:focus,
+  .close:hover {
+    color: #ff0021;
   }
 }
