@@ -52,6 +52,75 @@ en:
         body: |
           Candidates get access to an elite nework of employers.  Funds representing nearly $50 Billion in total AUM subscribe to Project Hire.
         button: Sign Up Now
+    employer_landing:
+      hero:
+        heading: Discover More Great Talent
+        body:
+          line_1: Project Hire is a merit-based recruiting platform that massively expands the universe of candidates and identifies exceptional candidates for hedge funds and private equity firms.
+          line_2: Subscribe now to get access to exceptional candidates from an expanded talent pool.
+        button: Sign Up Now
+      how_it_works:
+        heading: How It Works
+        button: Learn More
+        step_1:
+          heading: Candidate Sourcing
+          body: Project Hire expands the talent pool by reducing candidate evaluation costs.  All candidates have equal access to our platform, regardless of pedigree.
+        step_2:
+          heading: Submission
+          body: Our testing recognizes both fundamental strengths and unconvential insights.  Submissions are evaluated solely on their merits — no info about the candidate is given to graders.
+        step_3:
+          heading: Evaluation
+          body: Project Hire does the labor intensive filtering to determine which candidates are qualified.  Rigorous review yields a small group of remarkable candidates.
+        step_4:
+          heading: Certified Talent
+          body: Only candidates whose submissions are accepted are seen by employers.  Intuitive interface allows employers to easily review, compare, interview and hire candidates.
+      expanded_talent_pool:
+        heading: Expanded Talent Pool
+        body:
+          line_1: Surfaces unconventional candidates like bankruptcy lawyers, operators and NASA engineers
+          line_2: Enables hedge fund and private equity professionals to safely participate (by providing anonymity)
+          line_3: Incorporates candidates from consulting, technology firms and more than 35 investment banks
+          line_4: Open platform massively expands the total number of candidates who can be considered
+        button: Learn More
+      rigorous_evaluation:
+        heading: Rigorous Evaluation
+        body:
+          line_1: Each candidate submits an original investment idea or evaluates a company (selected by Project Hire)
+          line_2: All submissions are thoroughly evaluated by two investment professionals
+          line_3: Fewer than 10% of submissions are Certified — and only Certified candidates are visible to employers
+        button: Learn More
+        note:
+          text: "*All investment ideas that are submitted are published on the"
+          link: PH IDEA Forum
+      meet_candidates:
+        heading: Meet Candidates
+        # Hipster Ipsum
+        sub_heading: Craft beer slow-carb XOXO health goth before they sold out retro asymmetrical pickled photo booth artisan. Sustainable narwhal lumbersexual small batch mustache.
+        candidates:
+          link_all: Read More
+          candidate_1:
+            name: Sofia Cruz
+            line_1: Analyst at Citadel
+            line_2: Duke '11 (3.7 GPA)
+            line_3: 2 WSOP Bracelets
+          candidate_2:
+            name: Patrick Li
+            line_1: Counsel at Skadden Arps
+            line_2: Securities Practice
+            line_3: Harvard Law '12
+          candidate_3:
+            name: John Smith
+            line_1: Rice MBA (top 1%)
+            line_2: Former NASA Engineer
+            line_3: "PA: +26.2% / year"
+      join_now:
+        heading: Join Now
+        body:
+          line_1: Hire better — Discover more great talent
+          line_2: Streamline recruiting — easily access a pool of strong candidates
+          line_3: Simple deal terms — no upfront cost, no exclusivity
+        charity: Support a good cause — 75% of company stock will be donated to charitable organizations
+        button: Sign Up Now
     candidate_registration_wizard:
       personal_step:
         heading: Sign Up
