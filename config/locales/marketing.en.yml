@@ -73,7 +73,7 @@ en:
           body: Each submission is evaluted by investment professionals who work with Project Hire and receives a score.
         step_4:
           heading: Certified Talent
-          body: A candidate who submits a great write-up becomes "Certified." Employers only see candidates who are Certified.
+          body: A candidate who submits a great write-up becomes "Certified". Employers only see candidates who are Certified.
       expanded_talent_pool:
         heading: Expanded Talent Pool
         body:
@@ -90,7 +90,7 @@ en:
           line_3: Fewer than 10% of submissions are Certified — and only Certified candidates are visible to employers
         button: Learn More
         note:
-          text: "*All investment ideas that are submitted are published on the"
+          text: "*All investment ideas that are submitted are published on the "
           link: PH IDEA Forum
       meet_candidates:
         heading: Meet Candidates

@@ -46,6 +46,12 @@
       }
     }
 
+    span {
+      font-size: 15px;
+      font-family: "Open Sans", "Helvetica Neue Light", sans-serif;
+      letter-spacing: .05em;
+    }
+
     .btn {
       letter-spacing: .1em;
       font-weight: bold;
@@ -128,6 +134,14 @@
 
       h4 {
         color: #828282;
+      }
+    }
+
+    #rigorous-evaluation {
+      .published-note {
+        font-size: 12px;
+        margin-top: 35px;
+        text-align: center;
       }
     }
 
