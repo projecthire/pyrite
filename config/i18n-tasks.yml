@@ -7,12 +7,14 @@ search:
     - "app/assets/javascripts"
 data:
   read:
-     - config/locales/*.yml
-     - config/locales/**/*.yml
+    - config/locales/*.yml
+    - config/locales/**/*.yml
 ignore_unused:
   - activerecord.*
   - date.*
   - devise.*
+  - pages.how_it_works.carousel.*
+  - pages.how_it_works.fade_carousel.*
   - simple_form.*
   - time.*
   - titles.*
