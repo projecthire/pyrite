@@ -97,31 +97,37 @@ section.row.row-centered
       .col-xs-11.col-sm-10.col-md-9.col-centered
         p.text-center.sub-heading = t "marketing.employer_landing.meet_candidates.sub_heading"
     .row-centered
-      .col-xs-10.col-sm-10.col-lg-8.col-centered
-        .col-sm-4.candidate-card
-          .candidate-img
-            = image_tag "sofia.jpg", class: 'img-responsive'
-            .candidate-name = t "marketing.employer_landing.meet_candidates.candidates.candidate_1.name"
-          ul.list-unstyled
-            li = t "marketing.employer_landing.meet_candidates.candidates.candidate_1.line_1"
-            li = t "marketing.employer_landing.meet_candidates.candidates.candidate_1.line_2"
-            li = t "marketing.employer_landing.meet_candidates.candidates.candidate_1.line_3"
-        .col-sm-4.candidate-card
-          .candidate-img
-            = image_tag "patrick.jpg", class: 'img-responsive' do
-            .candidate-name = t "marketing.employer_landing.meet_candidates.candidates.candidate_2.name"
-          ul.list-unstyled
-            li = t "marketing.employer_landing.meet_candidates.candidates.candidate_2.line_1"
-            li = t "marketing.employer_landing.meet_candidates.candidates.candidate_2.line_2"
-            li = t "marketing.employer_landing.meet_candidates.candidates.candidate_2.line_3"
-        .col-sm-4.candidate-card
-          .candidate-img
-            = image_tag "john.jpg", class: 'img-responsive' do
-            .candidate-name = t "marketing.employer_landing.meet_candidates.candidates.candidate_3.name"
-          ul.list-unstyled
-            li = t "marketing.employer_landing.meet_candidates.candidates.candidate_3.line_1"
-            li = t "marketing.employer_landing.meet_candidates.candidates.candidate_3.line_2"
-            li = t "marketing.employer_landing.meet_candidates.candidates.candidate_3.line_3"
+      .col-xs-10.col-sm-10.col-lg-8.col-centered.candidate-card-container
+        .col-sm-4
+          .candidate-card.thumbnail
+            .candidate-img
+              = image_tag "sofia.jpg", class: 'img-responsive'
+              .candidate-name = t "marketing.employer_landing.meet_candidates.candidates.candidate_1.name"
+            .caption
+              ul.list-unstyled
+                li = t "marketing.employer_landing.meet_candidates.candidates.candidate_1.line_1"
+                li = t "marketing.employer_landing.meet_candidates.candidates.candidate_1.line_2"
+                li = t "marketing.employer_landing.meet_candidates.candidates.candidate_1.line_3"
+        .col-sm-4
+          .candidate-card.thumbnail
+            .candidate-img
+              = image_tag "patrick.jpg", class: 'img-responsive' do
+              .candidate-name = t "marketing.employer_landing.meet_candidates.candidates.candidate_2.name"
+            .caption
+              ul.list-unstyled
+                li = t "marketing.employer_landing.meet_candidates.candidates.candidate_2.line_1"
+                li = t "marketing.employer_landing.meet_candidates.candidates.candidate_2.line_2"
+                li = t "marketing.employer_landing.meet_candidates.candidates.candidate_2.line_3"
+        .col-sm-4
+          .candidate-card.thumbnail
+            .candidate-img
+              = image_tag "john.jpg", class: 'img-responsive' do
+              .candidate-name = t "marketing.employer_landing.meet_candidates.candidates.candidate_3.name"
+            .caption
+              ul.list-unstyled
+                li = t "marketing.employer_landing.meet_candidates.candidates.candidate_3.line_1"
+                li = t "marketing.employer_landing.meet_candidates.candidates.candidate_3.line_2"
+                li = t "marketing.employer_landing.meet_candidates.candidates.candidate_3.line_3"
 section.row.row-centered
   #join-now
     .row-centered
@@ -136,6 +142,14 @@ section.row.row-centered
     .row-centered
       .col-xs-11.col-sm-10.col-md-9.col-centered
         p.lead.text-center = t "marketing.employer_landing.join_now.body.line_3"
+    .row-centered
+      .col-xs-10.col-md-5.col-centered
+        .charity-text
+          .open-bracket
+            | [
+          .text-center = t "marketing.employer_landing.join_now.charity"
+          .close-bracket
+            | ]
     .row-centered
       .col-centered.call-to-action
         = button_to t("marketing.employer_landing.join_now.button"), employers_landing_path,

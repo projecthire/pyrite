@@ -144,9 +144,16 @@
 
       .candidate-card {
         background-color: #fff;
-        padding-left: 0;
-        padding-right: 0;
         margin-bottom: 110px;
+      }
+
+      .thumbnail {
+        padding: 0;
+        margin-right: 30px;
+      }
+
+      .thumbnail:last-of-type {
+        margin-right: 0;
       }
 
       ul {
@@ -161,15 +168,34 @@
 
       .candidate-name {
         position: absolute;
-        top: 15px;
-        left: 15px;
+        bottom: 35%;
+        left: 10%;
         font-size: 22px;
         color: #fff;
       }
     }
 
     #join-now {
+      .charity-text {
+        text-align: center;
 
+        .open-bracket,
+        .close-bracket {
+          position: absolute;
+          font-size: 72px;
+          font-weight: 300;
+          font-family: "Open Sans", "Helvetica Neue Light", sans-serif;
+        }
+
+        .open-bracket {
+          right: 100%;
+        }
+
+        .close-bracket {
+          left: 100%;
+        }
+
+      }
     }
   }
 }
