@@ -4,7 +4,7 @@
       h2.text-center.main-header = t ".heading"
 
   .row-centered
-    .col-xs-12.col-md-8.col-centered.fade-carousel-holder
+    .col-xs-12.col-md-9.col-centered.fade-carousel-holder
       .row-centered
         .col-xs-12.col-sm-10.col-centered
           .swiper-container.fade-carousel
@@ -21,7 +21,7 @@
             .swiper-pagination
 
   .row-centered
-    .col-xs-12.col-md-8.col-centered.how-it-works-steps
+    .col-xs-12.col-md-9.col-centered.how-it-works-steps
       .row-centered
         .col-xs-12.col-md-10.col-centered
           .how-it-works-circles
@@ -31,7 +31,8 @@
                 .swiper-slide[data-hash="step_#{index+1}", data-text=text_for(index+1)]
                   h2
                     = t ".carousel.step_#{index+1}.heading"
-                  span = t ".carousel.step_#{index+1}.body_html"
+                  div
+                    = t ".carousel.step_#{index+1}.body_html"
 
         .col-xs-12.col-sm-8.col-md-4.col-centered
           = button_to t(".carousel.sign_up"), new_candidate_registration_path,

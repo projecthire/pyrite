@@ -24,6 +24,7 @@
     display: inline-block;
     font-size: 1em;
     font-weight: 300;
+    margin-top: 3em;
     text-align: center;
     text-transform: uppercase;
   }
@@ -35,7 +36,6 @@
   .fade-carousel-holder {
     @media (min-width: $screen-sm-min) {
       padding-top: 4em;
-      padding-bottom: 4em;
     }
   }
 
@@ -89,6 +89,11 @@
     padding-top: 2em;
     padding-bottom: 2em;
     border-bottom: 1px solid $gray-light;
+    transition: 0.5s height;
+
+    &.notransition {
+      transition: none;
+    }
 
     h2 {
       text-align: center;
