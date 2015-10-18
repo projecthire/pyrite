@@ -1,6 +1,10 @@
 class CandidatesController < ApplicationController
   def dashboard
-    render 'candidates/dashboard.html.slim'
+    render 'candidates/dashboard'
+  end
+
+  def landing
+    render 'candidates/landing'
   end
 
   def email_valid
