@@ -151,11 +151,9 @@ section.row.row-centered
     .row-centered
       .col-xs-10.col-md-5.col-centered
         .charity-text
-          .open-bracket
-            | [
           .text-center = t "marketing.employer_landing.join_now.charity"
-          .close-bracket
-            | ]
+        .open-bracket
+        .close-bracket
     .row-centered
       .col-centered.call-to-action
         = button_to t("marketing.employer_landing.join_now.button"), employers_landing_path,

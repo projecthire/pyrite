@@ -191,24 +191,8 @@
 
     #join-now {
       .charity-text {
+        padding: 1em 0;
         text-align: center;
-
-        .open-bracket,
-        .close-bracket {
-          position: absolute;
-          font-size: 72px;
-          font-weight: 300;
-          font-family: "Open Sans", "Helvetica Neue Light", sans-serif;
-        }
-
-        .open-bracket {
-          right: 100%;
-        }
-
-        .close-bracket {
-          left: 100%;
-        }
-
       }
     }
   }
