@@ -64,16 +64,16 @@ en:
         button: Learn More
         step_1:
           heading: Candidate Sourcing
-          body: Project Hire expands the talent pool by reducing candidate evaluation costs.  All candidates have equal access to our platform, regardless of pedigree.
+          body: Candidates join to demonstrate their ability - anonymously, so established professionals can participate.
         step_2:
           heading: Submission
-          body: Our testing recognizes both fundamental strengths and unconvential insights.  Submissions are evaluated solely on their merits — no info about the candidate is given to graders.
+          body: Each candidate either submits an original investment idea OR evaluates a company (selected by Project Hire).
         step_3:
           heading: Evaluation
-          body: Project Hire does the labor intensive filtering to determine which candidates are qualified.  Rigorous review yields a small group of remarkable candidates.
+          body: Each submission is evaluted by investment professionals who work with Project Hire and receives a score.
         step_4:
           heading: Certified Talent
-          body: Only candidates whose submissions are accepted are seen by employers.  Intuitive interface allows employers to easily review, compare, interview and hire candidates.
+          body: A candidate who submits a great write-up becomes "Certified." Employers only see candidates who are Certified.
       expanded_talent_pool:
         heading: Expanded Talent Pool
         body:
@@ -113,6 +113,7 @@ en:
             line_1: Rice MBA (top 1%)
             line_2: Former NASA Engineer
             line_3: "PA: +26.2% / year"
+        button: Sign Up Now
       join_now:
         heading: Join Now
         body:
