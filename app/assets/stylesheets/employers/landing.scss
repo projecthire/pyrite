@@ -180,12 +180,17 @@
         letter-spacing: .05em;
       }
 
+      .candidate-img {
+        position: relative;
+      }
+
       .candidate-name {
         position: absolute;
-        bottom: 35%;
-        left: 10%;
+        bottom: 0.5em;
+        left: 1em;
         font-size: 22px;
         color: #fff;
+        text-shadow: 0 0 3px black;
       }
     }
 
