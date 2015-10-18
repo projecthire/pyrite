@@ -1,0 +1,6 @@
+en:
+  navbar:
+    employer_landing:
+      to_candidate_landing: "Candidates: Get the job you deserve"
+    candidate_landing:
+      to_employer_landing: "Employers: Learn more & find talent"
