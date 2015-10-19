@@ -176,6 +176,32 @@
   .navbar-toggle .icon-bar {
     background-color: #fff;
   }
+
+  @media(min-width: $screen-sm) {
+    .navbar-switch {
+      max-width: 140px;
+      .btn {
+        padding-top: 12px;
+        padding-bottom: 12px;
+      }
+    }
+  }
+
+  @media(max-width: $screen-xs){
+    .navbar-switch {
+      text-align: center;
+    }
+  }
+
+  .navbar-switch {
+    background-color: #000;
+
+    .btn {
+      margin-bottom: 0;
+      margin-top: 0;
+      white-space: normal;
+    }
+  }
 }
 
 .employers-landing {
