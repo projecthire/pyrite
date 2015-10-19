@@ -1,0 +1,142 @@
+.pages-faq {
+  background-color: #f0f0f0;
+  color: black;
+
+  .main-header-holder {
+    text-align: center;
+  }
+
+  .main-header {
+    color: #000000;
+    display: inline-block;
+    font-family: $font-family-body;
+    font-size: 2em;
+    font-weight: 1000;
+    letter-spacing: 0.1em;
+    margin-top: 3em;
+    text-align: center;
+    padding-top:1%;
+  }
+
+  .header-ending {
+    color: $orange;
+  }
+
+
+  .group-circle-holder.swiper-pagination-bullet {
+    background: transparent;
+    border-bottom: 3px solid $gray-light;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-radius: 0;
+    display: inline-block;
+    height: auto;
+    opacity: 1;
+    padding-bottom: 2em;
+    text-align: center;
+    width: 25%;
+
+    > h4 {
+      display: none;
+    }
+
+    @media (min-width: $screen-sm-min) {
+      > h4 {
+        display: block;
+      }
+    }
+
+    &.swiper-pagination-bullet-active {
+      border-color: $orange;
+    }
+  }
+
+  .group-circle {
+    margin-bottom: 0.25em;
+    opacity: 1;
+
+    @media (max-width: $screen-sm-min) {
+      width: 60px;
+      height: 60px;
+      line-height: 60px;
+      padding-bottom: 1em;
+    }
+
+
+    color: #222;
+    font-weight: bold;
+    font-size:20px;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+    margin-top: 12px;
+    margin-bottom: 12px;
+  }
+
+  .faq-carousel {
+    margin-bottom: 2em;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    transition: 0.5s height;
+
+    &.notransition {
+      transition: none;
+    }
+
+    h2 {
+      text-align: center;
+      margin: 0 0 2em;
+      font-size: 1.5em;
+    }
+
+    @media (min-width: $screen-sm-min) {
+      h2 {
+        display: none;
+      }
+    }
+
+    .swiper-slide {
+      .questionsection {
+        border-bottom: 1px solid $gray-light;
+        float:left;
+        width:100%;
+        padding-bottom:1em;
+        margin-bottom:1em;
+        .question {
+          color: black;
+          float:left;
+          width:20%;
+          margin-right:15%;
+        }
+        .answer {
+          color: $gray-dark;
+          float:left;
+          width:65%;
+          a {
+            color: darkorange;
+          }
+          p {
+            margin:0;
+            padding:0;
+            line-height: 1.5em;
+          }
+        }
+
+      }
+
+
+      @media (min-width: $screen-sm-min) {
+        padding: 0 2em;
+      }
+    }
+  }
+
+  .faq-groups {
+    background: white;
+    padding-top: 3em;
+    padding-bottom: 4em;
+    margin-bottom: 6em;
+  }
+
+
+}

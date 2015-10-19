@@ -15,7 +15,7 @@ nav.navbar.navbar-default.navbar-fixed-top
           li.text-center 
             = link_to 'HOW IT WORKS', how_it_works_path, id: "navbar_how_it_works"
           li.text-center = link_to 'ABOUT'
-          li.text-center = link_to 'FAQ'
+          li.text-center = link_to 'FAQ', faq_path, id: "navbar_faq"
           li.divider[role="separator"]
         ul.nav.navbar-nav.navbar-right
           - if candidate_signed_in?
