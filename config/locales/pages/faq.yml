@@ -1,0 +1,136 @@
+en:
+  pages:
+    faq:
+      headline: "Frequently Asked Questions"
+      faq_info:
+        content: " "
+      carousel:
+        group_1:
+          header: SIGN UP
+          questions:
+            question_1:
+              question: What is Project Hire?
+              answer_html: Project Hire (PH) is a merit-based recruiting platform for elite hedge funds and private equity firms that evaluates candidates based solely on the quality of their submission.
+            question_2:
+              question: Who can sign up?
+              answer_html: Anyone (18 years of age or older) who believes they have the ability to succeed at a Hedge Fund or Private Equity firm.
+            question_3:
+              question: How do I sign up?
+              answer_html: Create an account here and become a member by entering your email address and authenticating your LinkedIn account. It takes less than two minutes.
+            question_4:
+              question: Why do I need a LinkedIn account to sign up?
+              answer_html: LinkedIn authentication is used to verify your identity and to ensure that each person only opens one PH account.
+            question_5:
+              question: Will my LinkedIn account be associated with Project Hire?
+              answer_html: No! No information related to Project Hire will ever be posted to your profile, nor will anything on LinkedIn indicate that you are in any way associated with Project Hire.
+            question_6:
+              question: Will my Linkedin information be shared with Employers (or anyone else)?
+              answer_html: Your LinkedIn information remains private and confidential. It will never be shared without your permission.
+            question_7:
+              question: How do you ensure that I remain anonymous?
+              answer_html: Within the PH platform you will be identified exclusively by a username. No one will be able to access your identity or any biographical information without your permission.
+            question_8:
+              question: What does Project Hire cost?
+              answer_html: Project Hire is offered as a free service for candidates.
+            question_9:
+              question: Where can I find the Project Hire Privacy Policy and Terms and Conditions?
+              answer_html: |
+                <p>
+                  %{privacy_path}
+                </p>
+                <p>
+                  %{terms_path}
+                </p>
+            question_10:
+              question: How can I to speak with someone at Project Hire?
+              answer_html: "You can e-mail us at support@projecthire.com or call us during business hours at: 1-844-386-1185."
+        group_2:
+          header: SUBMIT
+          questions:
+            question_1:
+              question: Should I take the PH Case or submit my own investment idea?
+              answer_html: If you already have a well-developed investment idea (or a strong concept that needs research), then you should probably submit your investment idea.  If not, it probably makes more sense to take the PH Case.
+            question_2:
+              question: When am I allowed to submit?
+              answer_html: Both the PH Case and investment idea submission are available on-demand.  To start either, just follow the instructions on your dashboard after you've logged in.  You can submit multiple times.  Submissions may be in the same format (i.e. PH Case, Idea), or different formats.  Each submission is evaluated seperately.
+            question_3:
+              question: What is the PH Case?
+              answer_html: In the PH Case, we select a publicly traded company. You determine what the company is worth, support your position with analysis, and make a recommendation.  You'll also evaluate the viability of a private equity transaction to bring the company private, and take a 45 minute short-answer test on finance and accounting basics.
+            question_4:
+              question: How long is the PH Case?
+              answer_html: Once you begin the PH Case, you’ll have 48 hours to submit your answers.  Completing the case will take at least four hours of dedicated effort – perhaps more, depending on your approach.
+            question_5:
+              question: What resources are allowed for the PH Case?
+              answer_html: "For the company evaluation portion of the case,  you can use whatever resources you'd like, with the following exceptions: (1) No one other than you can actually prepare or create any of the materials that you submit and (2) You cannot use any non-public information in your assessment.  When you take the short answer portion of the case, no other person may be involved in any way."
+            question_6:
+              question: How does submitting an investment idea work?
+              answer_html: You select the company - present your investment thesis in whatever format you'd like.  Most submissions are text write-ups which use data or financials in-line to support the investment logic.  A good write-up typically has a clear investment thesis  with data and investment logic to support it, company / industry background, key risks, and return expectations.
+            question_7:
+              question: What materials am I expected to provide when I submit an investment idea?
+              answer_html: Most submissions are text write-ups which use data or financials in-line to support the investment logic.  You can include a model or any other supporting documents that you think are appropriate. What you provide should be driven by what you think you need to supply to make your case effectively.
+            question_8:
+              question: What is the PH Idea Forum?
+              answer_html: The PH Idea Forum is a place to share and discuss investment ideas.  Once an idea has been published, other members (candidates and employers) can add comments, ask questions, or provide feedback.
+            question_9:
+              question: If I submit an investment idea will it be posted on the PH Idea Forum?
+              answer_html: Probably.  All investment ideas are reviewed before they are posted on the PH Idea Forum.  In some cases, like if an idea is patently inaccurate, it won't be posted.  Typically though, it will be posted in less than 1 business day.
+            question_10:
+              question: Who owns the work I submit to Project Hire?
+              answer_html: You own the work, but you grant us a broad license to utilize the content.  Please see the Terms of Service for more details.  Once you submit something, you cannot edit it or remove it from the platform.
+        group_3:
+          header: SUCCEED
+          questions:
+            question_1:
+              question: How do I become a Certified Candidate?
+              answer_html: After you submit your work - either an investment idea or the PH Case - two Project Hire reviewers will evaluate it.  If the reviewers' collective opinion is that it is a great write-up, the candidate who submitted it becomes "Certified."
+            question_2:
+              question: What is the benefit of becoming a Certified Candidate?
+              answer_html: Certified Candidates are actively recruited by an elite group of hedge funds and private equity firms.
+            question_3:
+              question: Does it matter whether I become Certified by taking the PH Case or submitting an idea?
+              answer_html: No matter which type of submission you make, the benefits of being Certified are the same - and neither type of submission is intrinsically easier or harder.  However, candidates who are looking for a more senior role are encouraged to submit an investment idea.
+            question_4:
+              question: How long does it take to evaluate my submission?
+              answer_html: It takes anywhere from one to  three weeks to evaluate a submission.  Users can follow the progress of their evaluation - and the date on which it is expected to be completed - on their dashboard.
+            question_5:
+              question: How are PH Case submissions evaluated?
+              answer_html: "We look at whether the submission would be valuable to someone actually considering making an investment: Did the case reach a valid conclusion?  Was it well supported with data?  Did it capture the key drivers of the business?  Fresh insights?  Effective communication?"
+            question_6:
+              question: How are investment ideas evaluated?
+              answer_html: "We take a pragmatic view: is the idea, as presented, a good investment opportunity?  Our evaluation is structuredaround four criteria: (1) Idea - original? insightful? valid? (2) Investment Logic - is there compelling logic and solid data to support the idea? (3) Thoroughness - does the idea present a complete picture? (4) Presentation - is it persuasive?"
+            question_7:
+              question: Who evaluates my submission?
+              answer_html: Investment professionals from both hedge funds and private equity participate in our review process.
+            question_8:
+              question: What happens if my submission is not strong enough to make me a Certified Candidate?
+              answer_html: You're welcome to try again - candidates often submit multiple times.  Submissions may be in the same format (i.e. PH Case, Idea), or different formats.  Each submission is evaluated seperately.
+        group_4:
+          header: GET HIRED
+          questions:
+            question_1:
+              question: How does the hiring process work?
+              answer_html: Once a candidate is Certified, their profile will be visible to employers.  An interested employer will send a request to the (still anonymous) candidate, asking for permission to access their contact information.  If the candidate agrees, the coversation continues from there.
+            question_2:
+              question: How many funds should I expect to get in touch with me?
+              answer_html: Between 3 and 5, although it can vary significantly from candidate to candidate.
+            question_3:
+              question: Which employers recruit on Project Hire?
+              answer_html: Project Hire represents an elite network of hedge funds and private equity firms.  Our employers collectively have more than $50 Billion in AUM, and include firms like XXX, YYY, and ZZZ.
+            question_4:
+              question: What positions do employers recruit for on Project Hire?
+              answer_html: Employers use Project Hire to recruit investment professionals - from Junior Analyst to Portfolio Manager.
+            question_5:
+              question: Can I block (restrict) certain employers from seeing my profile?
+              answer_html: Yes, absolutely. You can provide us with the domain of any employer you would like to block.  Once you've done so, your profile will no longer be visible to anyone from that company.
+            question_6:
+              question: What is included in my profile?
+              answer_html: Each profile features the candidate's submission, including our evaluation of the write-up.  Each profile incorporates the candidate's bio, resume, and job preferences (geography, industry, etc.), and may include an optional two minute video of the candidate.
+            question_7:
+              question: Can I edit my profile?
+              answer_html: Yes, you can edit everything except for your submissions and our evaluations of them.  By default all submissions are included on a candidate's profile.  However,  if there is a good reason not to incorporate an earlier submission we'll consider the request.
+            question_8:
+              question: How long will employers be able to view my profile?
+              answer_html: Once you are Certified, employers will be able to view your profile until you set it to private.
+            question_9:
+              question: Now that I am a Certified Candidate, what more can I do?
+              answer_html: As a Certified candidate, your profile is visible to employers and you should expect to begin receiving interview requests.  Although you don't need to do anything else, if you submit a new investment idea, Project Hire will feature that idea (and you) in an e-mail to all employers.

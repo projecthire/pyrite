@@ -18,3 +18,4 @@ ignore_unused:
   - simple_form.*
   - time.*
   - titles.*
+  - pages.faq.carousel.*

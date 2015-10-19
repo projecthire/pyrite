@@ -1,0 +1,43 @@
+.faq
+  .row
+    .col-xs-12.col-centered.main-header-holder
+      h2.text-center.main-header
+        = t("pages.faq.headline")
+    .row-centered
+      .col-xs-7.col-centered
+        #p.text-center.lead
+          = t "pages.faq.faq_info.content"
+  .row-centered
+    .col-xs-12.col-md-9.col-centered.faq-steps
+      .row-centered
+        .col-xs-12.col-md-10.col-centered.faq-groups
+          .faq-circles
+          .swiper-container.faq-carousel
+            .swiper-wrapper
+              - 4.times do |index|
+                .swiper-slide[data-hash="group_#{index+1}", data-text=text_for(index+1)]
+                  h2
+                    = t ".carousel.group_#{index+1}.header"
+
+                  div
+                    - if index == 0 || index == 1
+                      - 10.times do |q_index|
+                        div.questionsection
+                          .question
+                            = t ".carousel.group_#{index+1}.questions.question_#{q_index+1}.question"
+                          .answer
+                            = t(".carousel.group_#{index+1}.questions.question_#{q_index+1}.answer_html", privacy_path: link_to('Privacy Policy', privacy_path), terms_path: link_to('Terms and Conditions', terms_path))
+                    - if index == 2
+                      - 8.times do |q_index|
+                        div.questionsection
+                          .question
+                            = t ".carousel.group_#{index+1}.questions.question_#{q_index+1}.question"
+                          .answer
+                            = t ".carousel.group_#{index+1}.questions.question_#{q_index+1}.answer_html"
+                    - if index == 3
+                      - 9.times do |q_index|
+                        div.questionsection
+                          .question
+                            = t ".carousel.group_#{index+1}.questions.question_#{q_index+1}.question"
+                          .answer
+                            = t ".carousel.group_#{index+1}.questions.question_#{q_index+1}.answer_html"
