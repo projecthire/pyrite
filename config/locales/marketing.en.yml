@@ -94,7 +94,6 @@ en:
       meet_candidates:
         heading: Meet Our Candidates
         candidates:
-          link_all: Read More
           candidate_1:
             name: Sofia Cruz
             line_1: Analyst at Citadel
@@ -110,7 +109,6 @@ en:
             line_1: Rice MBA (top 1%)
             line_2: Former NASA Engineer
             line_3: "PA: +26.2% / year"
-        button: Sign Up Now
       join_now:
         heading: Join Now
         body:
