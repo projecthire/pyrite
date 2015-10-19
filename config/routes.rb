@@ -20,8 +20,10 @@ Rails.application.routes.draw do
     get 'email_valid', to: 'candidates#email_valid'
   end
 
-  get 'terms' => 'high_voltage/pages#show', id: 'terms_and_conditions'
-  get 'privacy' => 'high_voltage/pages#show', id: 'privacy_policy'
+  get 'how_it_works', to: 'pages#how_it_works', as: 'how_it_works'
+  get 'terms', to: 'pages#terms_and_conditions', as: 'terms'
+  get 'privacy', to: 'pages#privacy_policy', as: 'privacy'
+  get 'faq', to: 'pages#faq', as: 'faq'
 
   get 'employers', to: 'employers#landing', as: :employers_landing
 
@@ -30,8 +32,4 @@ Rails.application.routes.draw do
   end
 
   root 'candidates#landing'
-
-  get 'how_it_works', to: 'pages#how_it_works', as: 'how_it_works'
-  get 'faq', to: 'pages#faq', as: 'faq'
-
 end
