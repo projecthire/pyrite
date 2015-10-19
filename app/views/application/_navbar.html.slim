@@ -17,19 +17,22 @@ nav.navbar.navbar-default.navbar-fixed-top
                         data: { scrolled_src: image_path('logo.svg') }
       #navbar.collapse.navbar-collapse
         ul.nav.navbar-nav
-          li.text-center 
+          li.text-center
             = link_to 'HOW IT WORKS', how_it_works_path, id: "navbar_how_it_works"
           li.text-center = link_to 'ABOUT'
           li.text-center = link_to 'FAQ', faq_path, id: "navbar_faq"
           li.divider[role="separator"]
         ul.nav.navbar-nav.navbar-right
           - if controller.class.name == 'EmployersController'
-              li.text-center.navbar-login.hidden-sm
-                = button_to "Log in", employers_landing_path,
-                            class: 'btn btn-link navbar-btn text-uppercase', method: :get
-              li.text-center
-                = button_to "Sign up", employers_landing_path,
-                            class: 'btn btn-primary-stroke navbar-btn text-uppercase', method: :get
+            li.text-center.navbar-login.hidden-sm
+              = button_to "Log in", employers_landing_path,
+                          class: 'btn btn-link navbar-btn text-uppercase', method: :get
+            li.text-center
+              = button_to "Sign up", employers_landing_path,
+                          class: 'btn btn-primary-stroke navbar-btn text-uppercase', method: :get
+            li.navbar-switch
+              = button_to t("navbar.employer_landing.to_candidate_landing"), root_path,
+                          class: 'btn btn-link navbar-btn', method: :get
           - else
             - if candidate_signed_in?
               li.text-center.navbar-logout
@@ -42,3 +45,6 @@ nav.navbar.navbar-default.navbar-fixed-top
               li.text-center
                 = button_to "Sign up", candidates_registration_wizard_path(id: :personal),
                             class: 'btn btn-warning-stroke navbar-btn text-uppercase', method: :get
+            li.navbar-switch
+              = button_to t("navbar.candidate_landing.to_employer_landing"), employers_landing_path,
+                          class: 'btn btn-link navbar-btn', method: :get
