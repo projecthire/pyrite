@@ -31,4 +31,6 @@ Rails.application.routes.draw do
   end
 
   get 'how_it_works', to: 'pages#how_it_works', as: 'how_it_works'
+  get 'faq', to: 'pages#faq', as: 'faq'
+
 end
