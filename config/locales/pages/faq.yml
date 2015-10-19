@@ -104,12 +104,6 @@ en:
             question_8:
               question: What happens if my submission is not strong enough to make me a Certified Candidate?
               answer_html: You're welcome to try again - candidates often submit multiple times.  Submissions may be in the same format (i.e. PH Case, Idea), or different formats.  Each submission is evaluated seperately.
-            question_9:
-              question:
-              answer_html:
-            question_10:
-              question:
-              answer_html:
         group_4:
           header: GET HIRED
           questions:
@@ -140,6 +134,3 @@ en:
             question_9:
               question: Now that I am a Certified Candidate, what more can I do?
               answer_html: As a Certified candidate, your profile is visible to employers and you should expect to begin receiving interview requests.  Although you don't need to do anything else, if you submit a new investment idea, Project Hire will feature that idea (and you) in an e-mail to all employers.
-            question_10:
-              question:
-              answer_html:
