@@ -30,8 +30,7 @@ class @.FAQCarousel
       paginationBulletRender: (index, className) ->
         text = textFor(index)
         "<div class='group-circle-holder #{className}'>" +
-          "<a class='group-circle' id='#{text}_link'></a>" +
-          "<h4>#{text}</h4>" +
+          "<a class='group-circle' id='#{text}_link'>#{text}</a>" +
           "</div>"
       hashnav: true
       speed: 500
