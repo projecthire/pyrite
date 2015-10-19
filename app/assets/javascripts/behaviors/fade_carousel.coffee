@@ -5,6 +5,7 @@ class @.FadeCarousel
         autoplay: 5000
         autoplayDisableOnInteraction: false
         pagination: '.fade-carousel .swiper-pagination'
+        paginationClickable: true
         effect: 'fade'
         fade:
           crossFade: true
