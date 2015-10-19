@@ -1,8 +1,19 @@
+.step-circle-holder {
+  border: none;
+
+  h4 {
+    font-weight: 400;
+    font-family: $font-family-body;
+  }
+}
+
 .step-circle {
   @include circle-stroke(80px, #d6d6d6, none);
   color: white;
   display: block;
   font-size: 32px;
+  font-family: $font-family-sans-serif;
+  font-weight: 700;
   line-height: 80px;
   margin-top: 16px;
   margin: auto;
@@ -13,7 +24,6 @@
     color: white;
     text-decoration: none;
   }
-
 }
 
 .swiper-pagination-bullet-active {

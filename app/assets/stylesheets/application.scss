@@ -10,12 +10,7 @@
 @import "formValidation";
 @import "bootstrap-select";
 
-@import "application/navbar";
-@import "application/footer";
-@import "application/mixins";
-@import "application/buttons";
-@import "application/flashes";
-@import "application/forms";
+@import "application/base";
 
 // devise view styles
 @import "devise/base";
@@ -35,7 +30,7 @@ html, body{
 
 body {
   margin-top: $navbar-height;
-  font-family: "Open Sans", "Helvetica Neue Light", sans-serif;
+  font-family: $font-family-body;
 }
 
 body.pages.pages-candidate_landing {

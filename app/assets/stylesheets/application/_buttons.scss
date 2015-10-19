@@ -1,3 +1,10 @@
+.btn {
+  letter-spacing: .1em;
+  font-weight: bold;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
 .btn-warning.disabled,
 .btn-warning[disabled]:hover {
   color: #fff;
