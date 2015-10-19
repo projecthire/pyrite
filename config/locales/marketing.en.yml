@@ -92,9 +92,7 @@ en:
           text: "*All investment ideas that are submitted are published on the "
           link: PH IDEA Forum
       meet_candidates:
-        heading: Meet Candidates
-        # Hipster Ipsum
-        sub_heading: Craft beer slow-carb XOXO health goth before they sold out retro asymmetrical pickled photo booth artisan. Sustainable narwhal lumbersexual small batch mustache.
+        heading: Meet Our Candidates
         candidates:
           link_all: Read More
           candidate_1:
