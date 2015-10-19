@@ -4,7 +4,14 @@
   background: rgba(69, 68, 83, 1);
   border: none;
 
+  font-family: $font-family-sans-serif;
   font-size: 14px;
+
+  .btn {
+    font-weight: 400;
+    padding-left: 1em;
+    padding-right: 1em;
+  }
 
   .btn-warning-stroke {
     background-color: #454453;
