@@ -87,6 +87,10 @@ main {
   background-color: $gray-lighter;
 }
 
+.notransition {
+  transition: none !important;
+}
+
 @media (max-width: $screen-md) {
   body > .container,
   body > .container-fluid {
