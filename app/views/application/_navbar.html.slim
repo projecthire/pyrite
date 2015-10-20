@@ -7,14 +7,9 @@ nav.navbar.navbar-default.navbar-fixed-top
           span.icon-bar
           span.icon-bar
           span.icon-bar
-        - if controller.class.name == 'EmployersController'
-          = link_to root_path do
-            = image_tag 'logo_inverse.svg', id: 'navbar_logo', class: 'navbar-brand logo',
-                        data: { scrolled_src: image_path('logo.svg') }
-        - else
-          = link_to root_path do
-            = image_tag 'logo_inverse.svg', id: 'navbar_logo', class: 'navbar-brand logo',
-                        data: { scrolled_src: image_path('logo.svg') }
+        = link_to root_path do
+          = image_tag 'logo_inverse.svg', id: 'navbar_logo', class: 'navbar-brand logo',
+                      data: { scrolled_src: image_path('logo.svg') }
       #navbar.collapse.navbar-collapse
         ul.nav.navbar-nav
           li.text-center
@@ -23,12 +18,12 @@ nav.navbar.navbar-default.navbar-fixed-top
           li.text-center = link_to 'FAQ', faq_path, id: "navbar_faq"
           li.divider[role="separator"]
         ul.nav.navbar-nav.navbar-right
-          - if controller.class.name == 'EmployersController'
-            li.text-center.navbar-login.hidden-sm
-              = button_to "Log in", employers_landing_path,
-                          class: 'btn btn-link navbar-btn text-uppercase', method: :get
+          - if employer_page(controller.class.name)
+            /li.text-center.navbar-login.hidden-sm
+            /  = button_to "Log in", employers_landing_path,
+            /              class: 'btn btn-link navbar-btn text-uppercase', method: :get
             li.text-center
-              = button_to "Sign up", employers_landing_path,
+              = button_to "Sign up", new_employer_contact_path,
                           class: 'btn btn-primary-stroke navbar-btn text-uppercase', method: :get
             li.navbar-switch
               = button_to t("navbar.employer_landing.to_candidate_landing"), root_path,

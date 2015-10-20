@@ -7,25 +7,25 @@
   letter-spacing: .05em;
 
   &.alert-info {
-    color: #fff;
-    background-color: $brand-primary;
+    color: $brand-primary;
     border: none;
+    background-color: #e8f0ff;
+
+    .close:focus,
+    .close:hover {
+      color: $brand-primary;
+    }
   }
 
-  &.alert-warning {
-    color: #ff0021;
-    border: none;
-    background-color: #ffd9d9;
-  }
-
+  &.alert-warning,
   &.alert-danger {
     color: #ff0021;
     border: none;
     background-color: #ffd9d9;
-  }
 
-  .close:focus,
-  .close:hover {
-    color: #ff0021;
+    .close:focus,
+    .close:hover {
+      color: #ff0021;
+    }
   }
 }
