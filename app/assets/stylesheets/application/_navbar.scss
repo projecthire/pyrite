@@ -132,6 +132,22 @@
       }
     }
 
+    .navbar-switch {
+      .btn.btn-link {
+        color: #fff;
+      }
+
+      .btn.btn-link {
+        &:hover,
+        &.hover,
+        &:focus,
+        &.focus {
+          color: $brand-warning;
+          text-decoration: none;
+        }
+      }
+    }
+
     .navbar-toggle .icon-bar {
       background-color: #828282;
     }
@@ -193,6 +209,13 @@
     }
   }
 
+  @media(min-width: $screen-sm) {
+    .navbar-switch {
+      margin-right: -30px;
+      margin-left: 30px;
+    }
+  }
+
   .navbar-switch {
     background-color: #000;
 
@@ -230,6 +253,19 @@
         &.focus {
           color: $brand-primary;
           text-decoration: none;
+        }
+      }
+
+      .navbar-switch {
+        .btn.btn-link {
+          color: #fff;
+          &:hover,
+          &.hover,
+          &:focus,
+          &.focus {
+            color: $brand-primary;
+            text-decoration: none;
+          }
         }
       }
     }
