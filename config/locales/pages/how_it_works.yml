@@ -48,7 +48,7 @@ en:
             </p>
 
             <p>
-              For more info on signing up <a href="#">Visit our FAQ</a>.
+              For more info on signing up <a href="/faq#group_1">Visit our FAQ</a>.
             </p>
         step_2:
           heading: Submit
@@ -102,7 +102,7 @@ en:
             </p>
 
             <p>
-              For more info on submissions <a href="#">Visit our FAQ</a>.
+              For more info on submissions <a href="/faq#group_2">Visit our FAQ</a>.
             </p>
         step_3:
           heading: Succeed
@@ -129,7 +129,7 @@ en:
             </p>
 
             <p>
-              For more info on evaluation <a href="#">Visit our FAQ</a>.
+              For more info on evaluation <a href="/faq#group_3">Visit our FAQ</a>.
             </p>
         step_4:
           heading: Get Hired
@@ -158,5 +158,6 @@ en:
             </p>
 
             <p>
-              For more info on getting hired <a href="#">Visit our FAQ</a>.
+              For more info on getting hired
+              <a href="/faq#group_4">Visit our FAQ</a>.
             </p>
