@@ -120,8 +120,10 @@ en:
     employer_contact:
       heading: Contact Us
       sub_heading:
-        text: Thanks for your interest in Project Hire. To contact us, please use the form below or write to us directly at
-        link: employers@projecthire.com
+        text: "Thanks for your interest in Project Hire. To contact us, please use the form below or write to us directly at "
+        mail:
+          address: employers@projecthire.com
+          subject: Project Hire Employer Inquiry
       button: Submit
       success: Thank you, your message has been submitted.
       contact_us: Need to speak with someone?  Call us at 844-386-1185 during regular business hours.

@@ -28,6 +28,10 @@ Rails.application.routes.draw do
 
   get 'employers', to: 'employers#landing', as: :employers_landing
 
+  scope '/employers' do
+    resources :employer_contacts, only: [:new, :create], path: 'contact'
+  end
+
   authenticated :candidate do
     root 'candidates#dashboard', as: :candidate_dashboard
   end

@@ -1,0 +1,26 @@
+.employer_contacts {
+  background-color: #f2f2f2;
+
+  h2 {
+    margin-bottom: 35px;
+  }
+
+  .sub-heading {
+    margin-bottom: 35px;
+  }
+
+  #new_employer_contact {
+    margin-top: 35px;
+  }
+
+  textarea[name="employer_contact[message]"] {
+    resize: none;
+    height: 200px;
+  }
+
+  .contact {
+    font-size: 12px;
+    margin-top: 35px;
+    text-align: center;
+  }
+}
