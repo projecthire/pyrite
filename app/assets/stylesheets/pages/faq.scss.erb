@@ -22,7 +22,6 @@
     color: $orange;
   }
 
-
   .group-circle-holder.swiper-pagination-bullet {
     background: transparent;
     border-bottom: 3px solid $gray-light;
@@ -63,6 +62,11 @@
       padding-bottom: 1em;
     }
 
+    @media (max-width: $screen-xs-min) {
+      height: 30px;
+      line-height: 30px;
+      font-size:14px;
+    }
 
     color: #222;
     font-weight: bold;
@@ -104,39 +108,42 @@
         margin-bottom:1em;
         .question {
           color: black;
-          float:left;
-          width:20%;
-          margin-right:15%;
+          float: left;
+          width: 20%;
+          margin-right: 15%;
+          @media (max-width: $screen-xs-min) {
+            width: 35%;
+            margin-right: 10%;
+          }
         }
         .answer {
           color: $gray-dark;
-          float:left;
-          width:65%;
+          float: left;
+          width: 65%;
+          @media (max-width: $screen-xs-min) {
+            width: 55%
+          }
           a {
             color: darkorange;
           }
           p {
-            margin:0;
-            padding:0;
+            margin: 0;
+            padding: 0;
             line-height: 1.5em;
           }
         }
-
       }
-
 
       @media (min-width: $screen-sm-min) {
         padding: 0 2em;
       }
+
     }
   }
-
   .faq-groups {
     background: white;
     padding-top: 3em;
     padding-bottom: 4em;
     margin-bottom: 6em;
   }
-
-
 }
