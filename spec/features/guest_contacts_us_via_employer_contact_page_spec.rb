@@ -10,11 +10,11 @@ feature 'Employer Contact' do
 
     expect(page).to have_text t("marketing.employer_contact.sub_heading.text")
 
-    name = Faker::Name.name
-    fill_in 'employer_contact[name]', with: name
-    fill_in 'employer_contact[company]', with: Faker::Company.name
-    fill_in 'employer_contact[email]', with: Faker::Internet.email(name)
-    fill_in 'employer_contact[message]', with: Faker::Lorem.paragraph
+    employer_contact = new(:employer_contact)
+    fill_in 'employer_contact[name]', with: employer_contact.name
+    fill_in 'employer_contact[company]', with: employer_contact.company
+    fill_in 'employer_contact[email]', with: employer_contact.email
+    fill_in 'employer_contact[message]', with: employer_contact.message
 
     within(:css, '#new_employer_contact') do
       click_button t "marketing.employer_contact.button"
