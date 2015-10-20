@@ -44,7 +44,7 @@ section.row.row-centered
               p.text-center = t "marketing.candidate_landing.how_it_works.step_4.body"
     .row-centered
       .col-centered.call-to-action
-        = button_to t("marketing.candidate_landing.how_it_works.button"), candidates_registration_wizard_path(id: :personal),
+        = button_to t("marketing.candidate_landing.how_it_works.button"), how_it_works_path,
                     class: 'btn btn-warning-stroke btn-block text-uppercase', method: :get
 section.row.row-centered
   #submission
@@ -58,7 +58,7 @@ section.row.row-centered
         p.text-center = t "marketing.candidate_landing.submission.test.body.line_3"
         .row-centered
           .col-centered.call-to-action
-            = button_to t("marketing.candidate_landing.submission.test.button"), candidates_registration_wizard_path(id: :personal),
+            = button_to t("marketing.candidate_landing.submission.test.button"), how_it_works_path(anchor: :step_2),
                         class: 'btn btn-warning btn-block text-uppercase', method: :get
       .col-sm-6.submission-row
         h3.text-center = t "marketing.candidate_landing.submission.idea.heading"
@@ -67,7 +67,7 @@ section.row.row-centered
         p.text-center = t "marketing.candidate_landing.submission.idea.body.line_3"
         .row-centered
           .col-centered.call-to-action
-            = button_to t("marketing.candidate_landing.submission.idea.button"), candidates_registration_wizard_path(id: :personal),
+            = button_to t("marketing.candidate_landing.submission.idea.button"), how_it_works_path(anchor: :step_2),
                         class: 'btn btn-warning btn-block text-uppercase', method: :get
 section.row.row-centered
   #get-certified
@@ -82,7 +82,7 @@ section.row.row-centered
         p.text-center = t "marketing.candidate_landing.get_certified.body.text.line_2"
     .row-centered
       .col-centered.call-to-action
-        = button_to t("marketing.candidate_landing.get_certified.button"), candidates_registration_wizard_path(id: :personal),
+        = button_to t("marketing.candidate_landing.get_certified.button"), how_it_works_path(anchor: :step_3),
                     class: 'btn btn-warning-stroke btn-block text-uppercase', method: :get
 section.row.row-centered
   #get-hired
