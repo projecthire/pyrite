@@ -17,8 +17,9 @@ Rails.application.routes.draw do
 
   namespace :candidates, module: :candidates do
     resources :registration_wizard, path: 'registration'
-    get 'email_valid', to: 'candidates#email_valid'
   end
+
+  get 'candidates/email_valid', to: 'candidates#email_valid'
 
   get 'how_it_works', to: 'pages#how_it_works', as: 'how_it_works'
   get 'terms', to: 'pages#terms_and_conditions', as: 'terms'
