@@ -117,6 +117,14 @@ en:
           line_3: Simple deal terms — no upfront cost, no exclusivity
         charity: Support a good cause — 75% of company stock will be donated to charitable organizations
         button: Sign Up Now
+    employer_contact:
+      heading: Contact Us
+      sub_heading:
+        text: Thanks for your interest in Project Hire. To contact us, please use the form below or write to us directly at
+        link: employers@projecthire.com
+      button: Submit
+      success: Thank you, your message has been submitted.
+      contact_us: Need to speak with someone?  Call us at 844-386-1185 during regular business hours.
     candidate_registration_wizard:
       personal_step:
         heading: Sign Up
