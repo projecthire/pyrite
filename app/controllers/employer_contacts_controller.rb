@@ -24,13 +24,15 @@ class EmployerContactsController < ApplicationController
               first_name: name_parts[0],
               last_name: name_parts[-1],
               email: clean_params[:email],
-              company: clean_params[:company]
+              company: clean_params[:company],
+              message: clean_params[:message]
           } :
           {
               name: clean_params[:name],
               first_name: name_parts[0],
               email: clean_params[:email],
-              company: clean_params[:company]
+              company: clean_params[:company],
+              message: clean_params[:message]
           }
     end
 end
