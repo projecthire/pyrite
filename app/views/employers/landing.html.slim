@@ -7,7 +7,7 @@ section.row.row-centered
         p.text-center = t "marketing.employer_landing.hero.body.line_1"
     .row-centered
       .col-centered.call-to-action
-        = button_to t("marketing.employer_landing.hero.button"), employers_landing_path,
+        = button_to t("marketing.employer_landing.hero.button"), root_path,
                     class: 'btn btn-primary btn-block text-uppercase', method: :get
 section.row.row-centered
   #how-it-works
@@ -17,28 +17,28 @@ section.row.row-centered
     .row-centered
       .col-xs-12.col-sm-12.col-lg-8.col-centered.steps
         .col-sm-3.how-it-works-row
-          = link_to root_path, class: 'step-circle center-block' do
+          = link_to  how_it_works_path, class: 'step-circle center-block' do
             h3.text-center 1
           h3.text-center = t "marketing.employer_landing.how_it_works.step_1.heading"
           .row-centered
             .col-sm-12.col-md-11.col-centered
               p.text-center = t "marketing.employer_landing.how_it_works.step_1.body"
         .col-sm-3.how-it-works-row
-          = link_to root_path, class: 'step-circle center-block' do
+          = link_to how_it_works_path, class: 'step-circle center-block' do
             h3.text-center 2
           h3.text-center = t "marketing.employer_landing.how_it_works.step_2.heading"
           .row-centered
             .col-md-11.col-centered
               p.text-center = t "marketing.employer_landing.how_it_works.step_2.body"
         .col-sm-3.how-it-works-row
-          = link_to root_path, class: 'step-circle center-block' do
+          = link_to how_it_works_path, class: 'step-circle center-block' do
             h3.text-center 3
           h3.text-center = t "marketing.employer_landing.how_it_works.step_3.heading"
           .row-centered
             .col-md-12.col-centered
               p.text-center = t "marketing.employer_landing.how_it_works.step_3.body"
         .col-sm-3.how-it-works-row
-          = link_to root_path, class: 'step-circle center-block' do
+          = link_to how_it_works_path, class: 'step-circle center-block' do
             h3.text-center 4
           h3.text-center = t "marketing.employer_landing.how_it_works.step_4.heading"
           .row-centered
@@ -46,7 +46,7 @@ section.row.row-centered
               p.text-center = t "marketing.employer_landing.how_it_works.step_4.body"
     .row-centered
       .col-centered.call-to-action
-        = button_to t("marketing.employer_landing.how_it_works.button"), employers_landing_path,
+        = button_to t("marketing.employer_landing.how_it_works.button"), how_it_works_path,
                     class: 'btn btn-primary-stroke btn-block text-uppercase', method: :get
 section.row.row-centered
   #expanded-talent-pool
@@ -87,7 +87,7 @@ section.row.row-centered
       .call-to-action
         .row
           .col-centered
-            = button_to t("marketing.employer_landing.rigorous_evaluation.button"), employers_landing_path,
+            = button_to t("marketing.employer_landing.rigorous_evaluation.button"), how_it_works_path(anchor: :step_3),
                         class: 'btn btn-primary-stroke btn-block text-uppercase', method: :get
         .row
           .col-xs-10.col-sm-8.col-centered.published-note.text-center
