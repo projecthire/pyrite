@@ -52,7 +52,7 @@ feature 'Candidate registration wizard' do
   end
 
   def then_they_see_first_step_of_wizard
-    expect(current_path).to eq(registration_wizard_path(:personal))
+    expect(current_path).to eq(candidates_registration_wizard_path(:personal))
   end
 
   def given_a_guest_is_at_first_step_of_wizard
@@ -70,7 +70,7 @@ feature 'Candidate registration wizard' do
   end
 
   def then_they_see_second_step_of_the_funnel
-    expect(current_path).to eq(registration_wizard_path(:professional))
+    expect(current_path).to eq(candidates_registration_wizard_path(:professional))
   end
 
   def given_a_candidate_has_completed_first_step
@@ -105,7 +105,7 @@ feature 'Candidate registration wizard' do
   end
 
   def then_they_see_final_step_of_funnel
-    expect(current_path).to eq(registration_wizard_path(:authorize))
+    expect(current_path).to eq(candidates_registration_wizard_path(:authorize))
   end
 
   def given_a_candidate_has_completed_steps_one_and_two
@@ -130,6 +130,6 @@ feature 'Candidate registration wizard' do
   end
 
   def then_they_see_the_authorize_step_of_funnel
-    expect(current_path).to eq(registration_wizard_path(id: :authorize))
+    expect(current_path).to eq(candidates_registration_wizard_path(id: :authorize))
   end
 end

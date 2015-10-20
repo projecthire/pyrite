@@ -24,7 +24,7 @@
     "LINKEDIN_CLIENT_SECRET": {
       "required": true
     },
-    "HOST": "pyrite-staging-pr-39.herokuapp.com"
+    "HOST": "pyrite-staging-pr-44.herokuapp.com"
   },
   "scripts": {
     "postdeploy": "bundle exec rake db:setup"

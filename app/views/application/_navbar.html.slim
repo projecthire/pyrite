@@ -7,25 +7,44 @@ nav.navbar.navbar-default.navbar-fixed-top
           span.icon-bar
           span.icon-bar
           span.icon-bar
-        = link_to root_path do
-          = image_tag 'logo_inverse.svg', id: 'navbar_logo', class: 'navbar-brand logo',
-                      data: { scrolled_src: image_path('logo.svg') }
+        - if controller.class.name == 'EmployersController'
+          = link_to employers_landing_path do
+            = image_tag 'logo_inverse.svg', id: 'navbar_logo', class: 'navbar-brand logo',
+                        data: { scrolled_src: image_path('logo.svg') }
+        - else
+          = link_to root_path do
+            = image_tag 'logo_inverse.svg', id: 'navbar_logo', class: 'navbar-brand logo',
+                        data: { scrolled_src: image_path('logo.svg') }
       #navbar.collapse.navbar-collapse
         ul.nav.navbar-nav
-          li.text-center 
+          li.text-center
             = link_to 'HOW IT WORKS', how_it_works_path, id: "navbar_how_it_works"
           li.text-center = link_to 'ABOUT'
           li.text-center = link_to 'FAQ', faq_path, id: "navbar_faq"
           li.divider[role="separator"]
         ul.nav.navbar-nav.navbar-right
-          - if candidate_signed_in?
-            li.text-center.navbar-logout
-              = button_to "Logout", destroy_candidate_session_path,
-                          class: 'btn btn-warning-stroke navbar-btn text-uppercase', method: :get
-          - else
+          - if controller.class.name == 'EmployersController'
             li.text-center.navbar-login.hidden-sm
-              = button_to "Log in", new_candidate_session_path,
+              = button_to "Log in", employers_landing_path,
                           class: 'btn btn-link navbar-btn text-uppercase', method: :get
             li.text-center
-              = button_to "Sign up", registration_wizard_path(id: :personal),
-                          class: 'btn btn-warning-stroke navbar-btn text-uppercase', method: :get
+              = button_to "Sign up", employers_landing_path,
+                          class: 'btn btn-primary-stroke navbar-btn text-uppercase', method: :get
+            li.navbar-switch
+              = button_to t("navbar.employer_landing.to_candidate_landing"), root_path,
+                          class: 'btn btn-link navbar-btn', method: :get
+          - else
+            - if candidate_signed_in?
+              li.text-center.navbar-logout
+                = button_to "Logout", destroy_candidate_session_path,
+                            class: 'btn btn-warning-stroke navbar-btn text-uppercase', method: :get
+            - else
+              li.text-center.navbar-login.hidden-sm
+                = button_to "Log in", new_candidate_session_path,
+                            class: 'btn btn-link navbar-btn text-uppercase', method: :get
+              li.text-center
+                = button_to "Sign up", candidates_registration_wizard_path(id: :personal),
+                            class: 'btn btn-warning-stroke navbar-btn text-uppercase', method: :get
+            li.navbar-switch
+              = button_to t("navbar.candidate_landing.to_employer_landing"), employers_landing_path,
+                          class: 'btn btn-link navbar-btn', method: :get

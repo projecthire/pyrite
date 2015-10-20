@@ -20,7 +20,7 @@ module Candidates
     end
 
     def after_omniauth_failure_path_for(scope)
-      registration_wizard_path(id: :authorize)
+      candidates_registration_wizard_path(id: :authorize)
     end
   end
 end

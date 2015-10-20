@@ -35,5 +35,5 @@
                     = t ".carousel.step_#{index+1}.body_html"
 
         .col-xs-12.col-sm-8.col-md-4.col-centered
-          = button_to t(".carousel.sign_up"), new_candidate_registration_path,
+          = button_to t(".carousel.sign_up"), candidates_registration_wizard_path(id: :personal),
                   class: 'btn btn-warning btn-block text-uppercase', method: :get

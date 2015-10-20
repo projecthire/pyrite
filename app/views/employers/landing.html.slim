@@ -1,0 +1,156 @@
+section.row.row-centered
+  #hero
+    .col-xs-12.col-centered
+      h1.text-center = t "marketing.employer_landing.hero.heading"
+    .row-centered
+      .col-sm-10.col-md-9.col-lg-6.col-centered
+        p.text-center = t "marketing.employer_landing.hero.body.line_1"
+    .row-centered
+      .col-centered.call-to-action
+        = button_to t("marketing.employer_landing.hero.button"), employers_landing_path,
+                    class: 'btn btn-primary btn-block text-uppercase', method: :get
+section.row.row-centered
+  #how-it-works
+    .row-centered
+      .col-xs-12.col-centered
+        h2.text-center = t "marketing.employer_landing.how_it_works.heading"
+    .row-centered
+      .col-xs-12.col-sm-12.col-lg-8.col-centered.steps
+        .col-sm-3.how-it-works-row
+          = link_to root_path, class: 'step-circle center-block' do
+            h3.text-center 1
+          h3.text-center = t "marketing.employer_landing.how_it_works.step_1.heading"
+          .row-centered
+            .col-sm-12.col-md-11.col-centered
+              p.text-center = t "marketing.employer_landing.how_it_works.step_1.body"
+        .col-sm-3.how-it-works-row
+          = link_to root_path, class: 'step-circle center-block' do
+            h3.text-center 2
+          h3.text-center = t "marketing.employer_landing.how_it_works.step_2.heading"
+          .row-centered
+            .col-md-11.col-centered
+              p.text-center = t "marketing.employer_landing.how_it_works.step_2.body"
+        .col-sm-3.how-it-works-row
+          = link_to root_path, class: 'step-circle center-block' do
+            h3.text-center 3
+          h3.text-center = t "marketing.employer_landing.how_it_works.step_3.heading"
+          .row-centered
+            .col-md-12.col-centered
+              p.text-center = t "marketing.employer_landing.how_it_works.step_3.body"
+        .col-sm-3.how-it-works-row
+          = link_to root_path, class: 'step-circle center-block' do
+            h3.text-center 4
+          h3.text-center = t "marketing.employer_landing.how_it_works.step_4.heading"
+          .row-centered
+            .col-md-12.col-centered
+              p.text-center = t "marketing.employer_landing.how_it_works.step_4.body"
+    .row-centered
+      .col-centered.call-to-action
+        = button_to t("marketing.employer_landing.how_it_works.button"), employers_landing_path,
+                    class: 'btn btn-primary-stroke btn-block text-uppercase', method: :get
+section.row.row-centered
+  #expanded-talent-pool
+    .row-centered
+      .col-xs-12.col-centered
+        h2.text-center = t "marketing.employer_landing.expanded_talent_pool.heading"
+    .row-centered
+      .col-xs-12.col-sm-10.col-md-9.col-centered
+        p.lead.text-center = t "marketing.employer_landing.expanded_talent_pool.body.lead"
+    .row-centered
+      .col-xs-12.col-sm-10.col-md-9.col-centered
+        p.text-center = t "marketing.employer_landing.expanded_talent_pool.body.line_1"
+    .row-centered
+      .col-xs-12.col-sm-10.col-md-9.col-centered
+        p.text-center = t "marketing.employer_landing.expanded_talent_pool.body.line_2"
+    .row-centered
+      .col-xs-12.col-sm-10.col-md-9.col-centered
+        p.text-center = t "marketing.employer_landing.expanded_talent_pool.body.line_3"
+    .row-centered
+      .col-centered.call-to-action
+        = button_to t("marketing.employer_landing.expanded_talent_pool.button"), employers_landing_path,
+                    class: 'btn btn-primary btn-block text-uppercase', method: :get
+section.row.row-centered
+  #rigorous-evaluation
+    .row-centered
+      .col-xs-12.col-centered
+        h2.text-center = t "marketing.employer_landing.rigorous_evaluation.heading"
+    .row-centered
+      .col-xs-11.col-sm-10.col-md-9.col-centered
+        p.lead.text-center = t "marketing.employer_landing.rigorous_evaluation.body.line_1"
+    .row-centered
+      .col-xs-11.col-sm-10.col-md-9.col-centered
+        p.lead.text-center = t "marketing.employer_landing.rigorous_evaluation.body.line_2"
+    .row-centered
+      .col-xs-11.col-sm-10.col-md-9.col-centered
+        p.lead.text-center = t "marketing.employer_landing.rigorous_evaluation.body.line_3"
+    .row-centered
+      .call-to-action
+        .row
+          .col-centered
+            = button_to t("marketing.employer_landing.rigorous_evaluation.button"), employers_landing_path,
+                        class: 'btn btn-primary-stroke btn-block text-uppercase', method: :get
+        .row
+          .col-xs-10.col-sm-8.col-centered.published-note.text-center
+            span = t "marketing.employer_landing.rigorous_evaluation.note.text"
+            = link_to t("marketing.employer_landing.rigorous_evaluation.note.link"), employers_landing_path
+section.row.row-centered
+  #meet-candidates
+    .row-centered
+      .col-xs-12.col-centered
+        h2.text-center = t "marketing.employer_landing.meet_candidates.heading"
+    .row-centered
+      .col-xs-10.col-sm-10.col-lg-8.col-centered.candidate-card-container
+        .col-sm-4
+          .candidate-card.thumbnail
+            .candidate-img
+              = image_tag "sofia.jpg", class: 'img-responsive'
+              .candidate-name = t "marketing.employer_landing.meet_candidates.candidates.candidate_1.name"
+            .caption
+              ul.list-unstyled
+                li = t "marketing.employer_landing.meet_candidates.candidates.candidate_1.line_1"
+                li = t "marketing.employer_landing.meet_candidates.candidates.candidate_1.line_2"
+                li = t "marketing.employer_landing.meet_candidates.candidates.candidate_1.line_3"
+        .col-sm-4
+          .candidate-card.thumbnail
+            .candidate-img
+              = image_tag "patrick.jpg", class: 'img-responsive' do
+              .candidate-name = t "marketing.employer_landing.meet_candidates.candidates.candidate_2.name"
+            .caption
+              ul.list-unstyled
+                li = t "marketing.employer_landing.meet_candidates.candidates.candidate_2.line_1"
+                li = t "marketing.employer_landing.meet_candidates.candidates.candidate_2.line_2"
+                li = t "marketing.employer_landing.meet_candidates.candidates.candidate_2.line_3"
+        .col-sm-4
+          .candidate-card.thumbnail
+            .candidate-img
+              = image_tag "john.jpg", class: 'img-responsive' do
+              .candidate-name = t "marketing.employer_landing.meet_candidates.candidates.candidate_3.name"
+            .caption
+              ul.list-unstyled
+                li = t "marketing.employer_landing.meet_candidates.candidates.candidate_3.line_1"
+                li = t "marketing.employer_landing.meet_candidates.candidates.candidate_3.line_2"
+                li = t "marketing.employer_landing.meet_candidates.candidates.candidate_3.line_3"
+section.row.row-centered
+  #join-now
+    .row-centered
+      .col-xs-12.col-centered
+        h2.text-center = t "marketing.employer_landing.join_now.heading"
+    .row-centered
+      .col-xs-11.col-sm-10.col-md-9.col-centered
+        p.lead.text-center = t "marketing.employer_landing.join_now.body.line_1"
+    .row-centered
+      .col-xs-11.col-sm-10.col-md-9.col-centered
+        p.lead.text-center = t "marketing.employer_landing.join_now.body.line_2"
+    .row-centered
+      .col-xs-11.col-sm-10.col-md-9.col-centered
+        p.lead.text-center = t "marketing.employer_landing.join_now.body.line_3"
+    .row-centered
+      .col-xs-10.col-md-5.col-centered
+        .charity-text
+          .text-center = t "marketing.employer_landing.join_now.charity"
+        .open-bracket
+        .close-bracket
+    .row-centered
+      .col-centered.call-to-action
+        = button_to t("marketing.employer_landing.join_now.button"), employers_landing_path,
+                    class: 'btn btn-primary-stroke btn-block text-uppercase', method: :get

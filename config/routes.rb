@@ -15,22 +15,21 @@ Rails.application.routes.draw do
                omniauth_callbacks: 'candidates/omniauth_callbacks'
              }
 
-  get 'candidates/email_valid', to: 'candidates#email_valid'
+  namespace :candidates, module: :candidates do
+    resources :registration_wizard, path: 'registration'
+    get 'email_valid', to: 'candidates#email_valid'
+  end
 
-  resources :registration_wizard, path: 'registration'
+  get 'how_it_works', to: 'pages#how_it_works', as: 'how_it_works'
+  get 'terms', to: 'pages#terms_and_conditions', as: 'terms'
+  get 'privacy', to: 'pages#privacy_policy', as: 'privacy'
+  get 'faq', to: 'pages#faq', as: 'faq'
 
-  get 'terms' => 'high_voltage/pages#show', id: 'terms_and_conditions'
-  get 'privacy' => 'high_voltage/pages#show', id: 'privacy_policy'
+  get 'employers', to: 'employers#landing', as: :employers_landing
 
   authenticated :candidate do
     root 'candidates#dashboard', as: :candidate_dashboard
   end
 
-  unauthenticated :candidate do
-    root 'pages#candidate_landing'
-  end
-
-  get 'how_it_works', to: 'pages#how_it_works', as: 'how_it_works'
-  get 'faq', to: 'pages#faq', as: 'faq'
-
+  root 'candidates#landing'
 end

@@ -29,6 +29,22 @@
     }
   }
 
+  .btn-primary-stroke {
+    background-color: #454453;
+
+    padding-left: 15px;
+    padding-right: 15px;
+
+    &:focus,
+    &.focus,
+    &:hover,
+    &.hover {
+      color: #fff;
+      background-color: $brand-primary;
+      border: 2px solid $brand-primary;
+    }
+  }
+
   .navbar-nav > li > a {
     padding-left: 25px;
     padding-right: 25px;
@@ -90,6 +106,19 @@
       }
     }
 
+    .btn-primary-stroke {
+      color: $brand-primary;
+      background-color: #fff;
+
+      &:hover,
+      &.hover,
+      &:focus,
+      &.focus {
+        color: #fff;
+        background-color: $brand-primary;
+      }
+    }
+
     .navbar-nav > li > a,
     .navbar-nav > li > button > a,
     .btn.btn-link {
@@ -100,6 +129,22 @@
       &.focus {
         color: $brand-warning;
         text-decoration: none;
+      }
+    }
+
+    .navbar-switch {
+      .btn.btn-link {
+        color: #fff;
+      }
+
+      .btn.btn-link {
+        &:hover,
+        &.hover,
+        &:focus,
+        &.focus {
+          color: $brand-warning;
+          text-decoration: none;
+        }
       }
     }
 
@@ -146,6 +191,84 @@
 
   .navbar-toggle .icon-bar {
     background-color: #fff;
+  }
+
+  @media(min-width: $screen-sm) {
+    .navbar-switch {
+      max-width: 140px;
+      .btn {
+        padding-top: 12px;
+        padding-bottom: 12px;
+      }
+    }
+  }
+
+  @media(max-width: $screen-xs){
+    .navbar-switch {
+      text-align: center;
+    }
+  }
+
+  @media(min-width: $screen-sm) {
+    .navbar-switch {
+      margin-right: -30px;
+      margin-left: 30px;
+    }
+  }
+
+  .navbar-switch {
+    background-color: #000;
+
+    .btn {
+      margin-bottom: 0;
+      margin-top: 0;
+      white-space: normal;
+    }
+  }
+}
+
+.employers-landing {
+  .navbar.navbar-default {
+    .navbar-nav > li > a,
+    .navbar-nav > li > button > a,
+    .btn.btn-link {
+      color: #fff;
+      &:hover,
+      &.hover,
+      &:focus,
+      &.focus {
+        color: $brand-primary;
+        text-decoration: none;
+      }
+    }
+
+    &.navbar-scrolled {
+      .navbar-nav > li > a,
+      .navbar-nav > li > button > a,
+      .btn.btn-link {
+        color: #828282;
+        &:hover,
+        &.hover,
+        &:focus,
+        &.focus {
+          color: $brand-primary;
+          text-decoration: none;
+        }
+      }
+
+      .navbar-switch {
+        .btn.btn-link {
+          color: #fff;
+          &:hover,
+          &.hover,
+          &:focus,
+          &.focus {
+            color: $brand-primary;
+            text-decoration: none;
+          }
+        }
+      }
+    }
   }
 }
 
