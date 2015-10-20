@@ -8,7 +8,7 @@ nav.navbar.navbar-default.navbar-fixed-top
           span.icon-bar
           span.icon-bar
         - if controller.class.name == 'EmployersController'
-          = link_to employers_landing_path do
+          = link_to root_path do
             = image_tag 'logo_inverse.svg', id: 'navbar_logo', class: 'navbar-brand logo',
                         data: { scrolled_src: image_path('logo.svg') }
         - else
