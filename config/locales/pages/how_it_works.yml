@@ -11,11 +11,10 @@ en:
           merit-based.
         header_ending_3:
           anonymous.
-        content_1:
-          A candidate submits a write-up on a company, which is evaluated by our
-          investment professionals.  A high scoring candidate becomes
-          “Certified” and can make their profile visible to employers – who can
-          contact the candidate to continue the process.
+        content_1: |
+          A candidate submits a company write-up, which is evaluated by Project Hire.
+          Candidates with strong submissions are "Certified" and can make their
+          profile visible to employers.
         content_2:
           Project Hire is a merit-based recruiting platform for hedge funds and
           private equity firms which creates a level playing field for all applicants.
@@ -152,8 +151,8 @@ en:
             <p>
               Employers can request an interview from the candidate, but the
               candidate’s name and personal info remain anonymous until the
-              candidate permits the employer permission to view them.
-              Candidates will typically interview with multiple employers before
+              candidate grants the employer permission to view them.
+              Candidates typically interview with multiple employers before
               they accept a job offer.
             </p>
 
