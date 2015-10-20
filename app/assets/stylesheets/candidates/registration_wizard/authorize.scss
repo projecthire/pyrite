@@ -2,6 +2,11 @@
 
   h2 {
     line-height: 1.2;
+
+    small {
+      margin-top: 20px;
+      font-size: 18px;
+    }
   }
 
   hr {
@@ -16,11 +21,17 @@
     margin-top: 60px;
     margin-bottom: 60px;
     background-color: #1b86bc;
+    border-color: #1b86bc;
 
     &:hover,
     &.hover {
       color: #1b86bc;
       background-color: #fff;
+      border-color: #fff;
     }
+  }
+
+  p.privacy {
+    font-size: 12px;
   }
 }

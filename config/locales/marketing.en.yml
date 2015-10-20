@@ -146,4 +146,7 @@ en:
           placeholder: Confirm Your Password
       authorize_step:
         heading: LinkedIn Authorization
+        sub_heading: Your account is almost complete — this is the last step.
+        body: Project Hire uses LinkedIn to authenticate the identity of our members. Click on the link below to open the LinkedIn authorization page, and sign in to complete your sign up.
+        privacy: "*We value your privacy — Project Hire will never be publicly associated with your LinkedIn account."
         success_msg: Congratulations on signing up.  If you have not yet confirmed your email address, you'll need to before you can login.
