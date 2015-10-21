@@ -151,6 +151,9 @@ GEM
     hashie (3.4.2)
     high_voltage (2.4.0)
     highline (1.7.8)
+    hologram (1.4.0)
+      redcarpet (>= 2.2, < 4.0)
+      rouge (>= 1.5)
     hpricot (0.8.6)
     html2slim (0.2.0)
       hpricot
@@ -304,10 +307,12 @@ GEM
       ffi (>= 0.5.0)
     recipient_interceptor (0.1.2)
       mail
+    redcarpet (3.3.3)
     refills (0.1.0)
     remotipart (1.2.1)
     responders (2.1.0)
       railties (>= 4.2.0, < 5)
+    rouge (1.10.1)
     rspec-core (3.3.2)
       rspec-support (~> 3.3.0)
     rspec-expectations (3.3.1)
@@ -428,6 +433,7 @@ DEPENDENCIES
   formulaic
   guard-foreman
   high_voltage
+  hologram
   html2slim
   i18n-tasks
   jquery-rails
