@@ -100,20 +100,6 @@
         text-decoration: none;
       }
 
-      .step-circle {
-        @include circle-stroke(80px, #fff, 2px solid #828282);
-
-        h3 {
-          font-size: 32px;
-          margin-top: 19px;
-        }
-
-        &:hover,
-        &:focus {
-          @include circle-stroke(80px, #fff, 2px solid $brand-primary);
-        }
-      }
-
       p {
         font-size: 14px;
       }

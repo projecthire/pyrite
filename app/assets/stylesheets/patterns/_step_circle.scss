@@ -19,16 +19,35 @@
   margin: auto;
   text-align: center;
 
-  &:hover {
-    background-color: $orange;
+  &:hover,
+  &.hover {
+    background-color: $brand-warning;
     color: white;
     text-decoration: none;
   }
 }
 
+.step-circle-primary {
+  @extend .step-circle;
+
+  &:hover,
+  &.hover {
+    background-color: $brand-primary;
+  }
+}
+
+.step-circle-warning {
+  @extend .step-circle;
+
+  &:hover,
+  &.hover {
+    background-color: $brand-warning;
+  }
+}
+
 .swiper-pagination-bullet-active {
   .step-circle {
-    background-color: $orange;
+    background-color: $brand-warning;
     color: white;
   }
 }

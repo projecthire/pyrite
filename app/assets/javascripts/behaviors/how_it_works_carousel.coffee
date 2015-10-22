@@ -16,7 +16,7 @@ class @.HowItWorksCarousel
         paginationBulletRender: (index, className) ->
           text = textFor(index)
           "<div class='step-circle-holder #{className}'>" +
-            "<a class='step-circle'>#{index+1}</a>" +
+            "<a class='step-circle-warning'>#{index+1}</a>" +
             "<h4>#{text}</h4>" +
           "</div>"
         hashnav: true
