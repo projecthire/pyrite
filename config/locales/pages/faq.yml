@@ -2,8 +2,6 @@ en:
   pages:
     faq:
       headline: "Frequently Asked Questions"
-      faq_info:
-        content: " "
       carousel:
         group_1:
           header: SIGN UP
