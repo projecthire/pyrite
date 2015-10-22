@@ -4,7 +4,6 @@
       h2.text-center.main-header
         = t("pages.faq.headline")
   .row-centered
-    / @TODEMO: multiple widths using col-* classes
     .col-xs-12.col-md-11.col-lg-10.col-centered.faq-steps
       .faq-circles
       .swiper-container.faq-carousel
@@ -16,7 +15,6 @@
               - if index == 0 || index == 1
                 - 10.times do |q_index|
                   .questionsection.row
-                    / @TODEMO: multiple widths using col-* classes (again)
                     .question.col-sm-5.col-md-4
                       = t ".carousel.group_#{index+1}.questions.question_#{q_index+1}.question"
                     .answer.col-sm-7.col-md-8
